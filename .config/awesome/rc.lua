@@ -71,9 +71,7 @@ local modkey1      = "Control"
 -- personal variables
 local browser           = "firefox"
 local editor            = os.getenv("EDITOR") or "vim"
-local editorgui         = "geany"
-local filemanager       = "thunar"
-local mailclient        = "geary"
+local editorgui         = "subl"
 local mediaplayer       = "vlc"
 local scrlocker         = "slimlock"
 local terminal          = "alacritty"
@@ -416,14 +414,6 @@ globalkeys = my_table.join(
     -- Dropdown application
     awful.key({ modkey, }, "z", function () awful.screen.focused().quake:toggle() end,
               {description = "dropdown application", group = "super"}),
-
-    -- Widgets popups
-    awful.key({ altkey, }, "c", function () lain.widget.calendar.show(7) end,
-              {description = "show calendar", group = "widgets"}),
-    awful.key({ altkey, }, "h", function () if beautiful.fs then beautiful.fs.show(7) end end,
-              {description = "show filesystem", group = "widgets"}),
-    awful.key({ altkey, }, "w", function () if beautiful.weather then beautiful.weather.show(7) end end,
-              {description = "show weather", group = "widgets"}),
 
     -- Brightness
     awful.key({ }, "XF86MonBrightnessUp", function () os.execute("xbacklight -inc 10") end,
