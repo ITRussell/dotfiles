@@ -218,6 +218,8 @@ globalkeys = my_table.join(
         {description = "vim" , group = "terminal apps" }),
     awful.key({ modkey, altkey  }, "f", function () awful.util.spawn( terminal.." -e sh ./.config/awesome/scripts/compton-toggle.sh" ) end,
         {description = "compton-toggle" , group = "terminal apps" }),
+    awful.key({ modkey, altkey  }, "m", function () awful.util.spawn( terminal.." -e ./Apps/tutanota&" ) end,
+        {description = "compton-toggle" , group = "terminal apps" }),
     
 
 
