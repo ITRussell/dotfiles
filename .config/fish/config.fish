@@ -11,9 +11,7 @@ alias python='python3'
 #alias youtube-dl='python3 $(which youtube-dl)'
 alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 
-function fish_greeting
-    neofetch
-end
+set -U fish_greeting
 
   # Start python env for current directory 
 function senv

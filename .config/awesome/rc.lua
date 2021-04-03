@@ -207,7 +207,7 @@ root.buttons(my_table.join(
 ))
 globalkeys = my_table.join(
 
-    -- dmenu
+    -- rofi 
     awful.key({ modkey, altkey }, "o", function () awful.spawn( "rofi -show run" ) end,
         {description = "show rofi", group = "hotkeys"}),
 
