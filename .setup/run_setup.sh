@@ -50,6 +50,12 @@ git config --global user.email "${GITEMAIL}"
 #config config --local status.showUntrackedFiles no
 
 # Set system preferences
+echo
+echo "Setting system preferences (GNOME)"
+crontab ~/.config/crontabs
+sudo systemctl start cron
+sudo service start cron
+sudo update-rc.d cron defaults
 dconf load / < ~/.config/dconf-settings.ini
 
 # Packages
