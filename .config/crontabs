@@ -23,3 +23,4 @@
 # m h  dom mon dow   command
 
 0 * * * * cp ~/.local/share/fish/fish_history cp ~/.local/share/fish/backup_fish
+
