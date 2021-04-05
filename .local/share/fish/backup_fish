@@ -2661,3 +2661,44 @@
   when: 1617597432
 - cmd: config add -u
   when: 1617597437
+- cmd: config add ~/.local/share/fish/fish_history
+  when: 1617625733
+- cmd: crontab -l
+  when: 1617625864
+- cmd: crontab -e
+  when: 1617625876
+- cmd: crontab -l
+  when: 1617626130
+- cmd: cd .local/share/fish/
+  when: 1617626139
+  paths:
+    - .local/share/fish/
+- cmd: ls
+  when: 1617626140
+- cmd: cd
+  when: 1617626170
+- cmd: ls
+  when: 1617626171
+- cmd: crontab -e
+  when: 1617626183
+- cmd: cd .local/share/fish/
+  when: 1617626221
+  paths:
+    - .local/share/fish/
+- cmd: ls
+  when: 1617626222
+- cmd: touch backup_fish
+  when: 1617626236
+- cmd: ls
+  when: 1617626237
+- cmd: cat backup_fish
+  when: 1617626286
+  paths:
+    - backup_fish
+- cmd: crontab -e
+  when: 1617626358
+- cmd: cp fish_history backup_fish
+  when: 1617626385
+  paths:
+    - fish_history
+    - backup_fish
