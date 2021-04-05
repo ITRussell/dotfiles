@@ -11,7 +11,7 @@ echo
 echo "Updating..."
 touch setup.log
 sudo apt update &>> setup.log && sudo apt upgrade -y &>> setup.log
-echo
+echo "Finished!"
 echo "Building directories..."
 # Add directories
 cd
@@ -30,24 +30,24 @@ GITEMAIL="IanThomasR@gmail.com";
 git config --global user.email "${GITEMAIL}"
 
 # And that your source repository ignores the folder where you'll clone it, so that you don't create weird recursion problems:
-#echo ".cfg" >> .gitignore
+echo ".cfg" >> .gitignore
 
 # Clone dot files repo
-#git clone --bare https://github.com/itrussell/dotfiles.git $HOME/.cfg
+git clone --bare https://github.com/itrussell/dotfiles.git $HOME/.cfg
 
 # Define the alias in the current shell scope:
-#alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
+alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 
 # backup any existing configs
-#mkdir -p .config-backup && \
-#config checkout 2>&1 | egrep "\s+\." | awk {'print $1'} | \
-#xargs -I{} mv {} .config-backup/{}
+mkdir -p .config-backup && \
+config checkout 2>&1 | egrep "\s+\." | awk {'print $1'} | \
+xargs -I{} mv {} .config-backup/{}
 
 # Checkout
-#config checkout
+config checkout
 
 # Set to not show untracked files
-#config config --local status.showUntrackedFiles no
+config config --local status.showUntrackedFiles no
 
 # Set system preferences
 echo
