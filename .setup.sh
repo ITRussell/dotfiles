@@ -38,9 +38,13 @@ config checkout
 # Set to not show untracked files
 config config --local status.showUntrackedFiles no
 
+# Set system preferences
+dconf load / < dconf-settings.ini
+
 # Packages
 sudo apt update
 sudo apt install alacritty -y
+curl -fsSL https://starship.rs/install.sh | bash
 sudo apt install compton -y
 sudo apt install redshift -y
 sudo apt install cmatrix -y
