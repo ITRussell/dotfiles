@@ -26,3 +26,9 @@ function cenv
     python3 -m venv ~/WorkBench/pyenvs/(basename $PWD)-env
     source ~/WorkBench/pyenvs/(basename $PWD)-env/bin/activate.fish
 end
+
+function update_configs 
+    cp ~/.local/share/fish/fish_history ~/.local/share/fish/backup_fish
+    config status
+    config add -u
+

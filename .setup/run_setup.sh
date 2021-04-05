@@ -51,12 +51,7 @@ config config --local status.showUntrackedFiles no
 # Set system preferences
 echo
 echo "Setting system preferences (GNOME)"
-crontab ~/.config/crontabs
-sudo systemctl start cron
-sudo service start cron
-sudo update-rc.d cron defaults
 dconf load / < ~/.config/dconf-settings.ini
-
 # Packages
 echo
 echo "Installing software..."
@@ -77,6 +72,8 @@ sudo apt install sublime-text -y &>> setup.log
 echo
 echo "Setting up tools..."
 # Tools
+
+cp ~/.local/share/fish/backup_fish ~/.local/share/fish/fish_history
 python3 -m venv ~/WorkBench/pyenvs/analysis-env &>> setup.log  
 source ~/WorkBench/pyenvs/analysis-env/bin/activate &>> setup.log  
 pip install jupyter &>> setup.log  

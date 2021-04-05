@@ -750,8 +750,6 @@
   when: 1617227126
 - cmd: mv 'VirtualBox VMs'/ VMs
   when: 1617227126
-- cmd: cd VMs/
-  when: 1617227126
 - cmd: mkdir -p ~/.local/share/fonts
   when: 1617227126
 - cmd: cd ~/.local/share/fonts && curl -fLo "Fira Code Regular Nerd Font Complete.otf" https://github.com/ryanoasis/nerd-fonts/blob/master/patched-fonts/FiraCode/Regular/complete/Fira%20Code%20Regular%20Nerd%20Font%20Complete.otf
@@ -1162,20 +1160,12 @@
   when: 1617238131
   paths:
     - .bash_aliases
-- cmd: cd .config/fish/
-  when: 1617238138
-  paths:
-    - .config/fish/
 - cmd: cat config.fish
   when: 1617238193
   paths:
     - config.fish
 - cmd: which
   when: 1617238255
-- cmd: vi config.fish
-  when: 1617238294
-  paths:
-    - config.fish
 - cmd: vi .bashrc
   when: 1617238319
 - cmd: cd pyenvs/
@@ -1602,10 +1592,6 @@
   when: 1617396275
 - cmd: config add ~/.config/alacritty/
   when: 1617396281
-- cmd: cd sublime-text-3/
-  when: 1617396299
-  paths:
-    - sublime-text-3/
 - cmd: cd Cache
   when: 1617396302
   paths:
@@ -1618,10 +1604,6 @@
     - python3.3/
 - cmd: config add ~/.config/sublime-text-3/Local/
   when: 1617396392
-- cmd: cd Lib/
-  when: 1617396394
-  paths:
-    - Lib/
 - cmd: cd Packages/
   when: 1617396399
   paths:
@@ -1848,8 +1830,6 @@
   when: 1617406060
 - cmd: ./Apps/tutanota &
   when: 1617406077
-- cmd: ranger
-  when: 1617406729
 - cmd: cd Bitwarden/
   when: 1617406817
   paths:
@@ -2224,8 +2204,6 @@
   when: 1617468086
   paths:
     - weather.lua
-- cmd: :q
-  when: 1617468113
 - cmd: vi .config/alacritty/alacritty.yml
   when: 1617471171
 - cmd: which fish
@@ -2234,8 +2212,6 @@
   when: 1617471482
   paths:
     - .config/fish/config.fish
-- cmd: ls -a
-  when: 1617471526
 - cmd: config commit -m "Switching back to GNOME"
   when: 1617471560
 - cmd: sudo apt install qtile
@@ -2358,8 +2334,6 @@
   when: 1617473198
   paths:
     - applications/
-- cmd: cd ~/.config/
-  when: 1617473298
 - cmd: cd goa-1.0/
   when: 1617473306
   paths:
@@ -2511,8 +2485,6 @@
   when: 1617491311
 - cmd: sudo apt remove i3* && sudo apt autoremove
   when: 1617491616
-- cmd: cd .config/
-  when: 1617491632
 - cmd: sudo rm -r i3*
   when: 1617491648
 - cmd: cp -r Backups/awesome/ ~/.config/awesome/
@@ -2573,24 +2545,16 @@
     - tmp
 - cmd: touch test.py
   when: 1617497189
-- cmd: cd ..
-  when: 1617498104
 - cmd: cd sandbox/
   when: 1617498107
   paths:
     - sandbox/
 - cmd: cd test/
   when: 1617498109
-- cmd: bash
-  when: 1617498119
 - cmd: vi test.py
   when: 1617498529
   paths:
     - test.py
-- cmd: gith
-  when: 1617498657
-- cmd: cd Portfolio/
-  when: 1617498661
 - cmd: git checkout master
   when: 1617498691
 - cmd: git config pull.rebase false
@@ -2615,90 +2579,411 @@
   when: 1617498878
 - cmd: git push origin main
   when: 1617498884
-- cmd: cd .local/share/fish/
-  when: 1617498908
-  paths:
-    - .local/share/fish/
-- cmd: ncdu
-  when: 1617498910
 - cmd: config add ~/.local/share/fish/
   when: 1617498950
 - cmd: config reset
   when: 1617499010
 - cmd: config add -A
   when: 1617499025
-- cmd: vi
-  when: 1617596220
 - cmd: config commit -m "Added transparency toggle to vim"
   when: 1617596388
 - cmd: config add ~/.setup.sh
   when: 1617596415
-- cmd: vi ~/.setup.sh
-  when: 1617596478
-- cmd: config commit -m "Updated setup script"
-  when: 1617596561
-- cmd: config push origin main
-  when: 1617596574
-- cmd: ls
-  when: 1617596630
-- cmd: cd
-  when: 1617596656
-- cmd: vi .setup.sh
-  when: 1617596659
-  paths:
-    - .setup.sh
-- cmd: config add -u
-  when: 1617597084
-- cmd: config status
-  when: 1617597089
 - cmd: config commit -m "Updated setup script"
   when: 1617597096
-- cmd: config push origin main
-  when: 1617597100
-- cmd: vi
-  when: 1617597268
-- cmd: config status
-  when: 1617597432
-- cmd: config add -u
-  when: 1617597437
 - cmd: config add ~/.local/share/fish/fish_history
   when: 1617625733
-- cmd: crontab -l
-  when: 1617625864
-- cmd: crontab -e
-  when: 1617625876
-- cmd: crontab -l
-  when: 1617626130
-- cmd: cd .local/share/fish/
-  when: 1617626139
-  paths:
-    - .local/share/fish/
-- cmd: ls
-  when: 1617626140
-- cmd: cd
-  when: 1617626170
-- cmd: ls
-  when: 1617626171
-- cmd: crontab -e
-  when: 1617626183
 - cmd: cd .local/share/fish/
   when: 1617626221
   paths:
     - .local/share/fish/
-- cmd: ls
-  when: 1617626222
 - cmd: touch backup_fish
   when: 1617626236
-- cmd: ls
-  when: 1617626237
-- cmd: cat backup_fish
-  when: 1617626286
-  paths:
-    - backup_fish
-- cmd: crontab -e
-  when: 1617626358
 - cmd: cp fish_history backup_fish
   when: 1617626385
   paths:
     - fish_history
     - backup_fish
+- cmd: cat backup_fish
+  when: 1617626388
+  paths:
+    - backup_fish
+- cmd: ncdu
+  when: 1617626392
+- cmd: config add ~/.local/share/fish/backup_fish
+  when: 1617626412
+- cmd: config rm --cached ~/.local/share/fish/fish_history
+  when: 1617626456
+- cmd: config rm -f --cached ~/.local/share/fish/fish_history
+  when: 1617626464
+- cmd: config commit -m "Added fish history backup to avoid pull problems"
+  when: 1617626510
+- cmd: crontab -l > ~/.config/crontabs
+  when: 1617626725
+- cmd: cd ~/.config/
+  when: 1617626730
+- cmd: config add ~/.config/crontabs
+  when: 1617626790
+- cmd: config commit -m "Added crontabs"
+  when: 1617626818
+- cmd: touch test
+  when: 1617626847
+- cmd: vi test
+  when: 1617626882
+  paths:
+    - test
+- cmd: cat test | crontab -e
+  when: 1617626945
+  paths:
+    - test
+- cmd: cat crontabs | crontab -e
+  when: 1617626993
+  paths:
+    - crontabs
+- cmd: cat crontabs > crontab -e
+  when: 1617627068
+  paths:
+    - crontabs
+- cmd: cat crontabs >> crontab -e
+  when: 1617627092
+  paths:
+    - crontabs
+- cmd: crontab -e
+  when: 1617627108
+- cmd: vi crontabs
+  when: 1617627180
+  paths:
+    - crontabs
+- cmd: cat crontabs
+  when: 1617627192
+  paths:
+    - crontabs
+- cmd: rm crontab
+  when: 1617627202
+  paths:
+    - crontab
+- cmd: crontab crontabs
+  when: 1617627215
+  paths:
+    - crontabs
+- cmd: rm test
+  when: 1617629574
+  paths:
+    - test
+- cmd: touch packages.list
+  when: 1617629877
+- cmd: vi packages.list
+  when: 1617629880
+  paths:
+    - packages.list
+- cmd: ranger
+  when: 1617630401
+- cmd: sudo DEBIAN_FRONTEND=noninteractive apt-get install -qq ranger < /dev/null > /dev/null
+  when: 1617630442
+- cmd: apt-get install -qq -o=Dpkg::Use-Pty=0 ranger
+  when: 1617630513
+- cmd: sudo apt-get install -qq -o=Dpkg::Use-Pty=0 ranger
+  when: 1617630521
+- cmd: sudo apt-get install -qq -y ranger
+  when: 1617630897
+- cmd: sudo apt install pv
+  when: 1617630984
+- cmd: sudo apt-get remove --purge ranger
+  when: 1617630996
+- cmd: man pv
+  when: 1617631003
+- cmd: touch spinner.sh
+  when: 1617631233
+- cmd: chmod +x spinner.sh
+  when: 1617631249
+  paths:
+    - spinner.sh
+- cmd: ./spinner.sh
+  when: 1617631277
+- cmd: vi spinner.sh
+  when: 1617631406
+  paths:
+    - spinner.sh
+- cmd: vi ~/.setup.sh
+  when: 1617631469
+- cmd: touch test.sh
+  when: 1617631799
+- cmd: chmod +x test.sh
+  when: 1617631840
+  paths:
+    - test.sh
+- cmd: sudo apt remove --purge ranger
+  when: 1617631865
+- cmd: sudo apt install browsh
+  when: 1617631958
+- cmd: sudo apt install Browsh
+  when: 1617631966
+- cmd: sudo apt install lolcat
+  when: 1617632020
+- cmd: vi testpack
+  when: 1617632037
+- cmd: vi test.sh
+  when: 1617632053
+  paths:
+    - test.sh
+- cmd: mv testpack testpack.list
+  when: 1617632072
+  paths:
+    - testpack
+- cmd: sudo apt update >> test.log
+  when: 1617633656
+- cmd: sudo apt update > test.log
+  when: 1617633681
+- cmd: sudo apt update >> test.log > /dev/null
+  when: 1617633733
+- cmd: cat test.log
+  when: 1617633761
+  paths:
+    - test.log
+- cmd: sudo apt update >> test.log &> /dev/null
+  when: 1617633770
+- cmd: man xclip
+  when: 1617635187
+- cmd: xclip -o
+  when: 1617635202
+- cmd: xclip -o > test.sh | chmod +x
+  when: 1617635251
+- cmd: xclip -o > test.sh & chmod +x test.sh & sh test.sh
+  when: 1617635304
+  paths:
+    - test.sh
+    - test.sh
+- cmd: xclip -o > test.sh && chmod +x test.sh && sh test.sh
+  when: 1617635317
+  paths:
+    - test.sh
+    - test.sh
+- cmd: sh test.sh
+  when: 1617635345
+  paths:
+    - test.sh
+- cmd: sh spinner.sh
+  when: 1617635413
+  paths:
+    - spinner.sh
+- cmd: vi
+  when: 1617635435
+- cmd: sudo apt echo "one \\\nheappy"
+  when: 1617636536
+- cmd: echo "one \\\nheappy"
+  when: 1617636544
+- cmd: cd VMs/
+  when: 1617636682
+- cmd: gith
+  when: 1617638271
+- cmd: cd Portfolio/
+  when: 1617638273
+- cmd: git config --list
+  when: 1617638279
+- cmd: cd ./.setup.sh
+  when: 1617639549
+  paths:
+    - ./.setup.sh
+- cmd: vi ../.setup.sh
+  when: 1617639579
+  paths:
+    - ../.setup.sh
+- cmd: ./.setup.sh
+  when: 1617640118
+- cmd: vi .setup.sh
+  when: 1617640149
+  paths:
+    - .setup.sh
+- cmd: vi ~/.setup/run_setup.sh
+  when: 1617645185
+- cmd: ./run_setup.sh
+  when: 1617645233
+- cmd: cat setup.log
+  when: 1617645327
+  paths:
+    - setup.log
+- cmd: :q
+  when: 1617645337
+- cmd: bash
+  when: 1617645388
+- cmd: config rm --cached ~/.setup.sh
+  when: 1617647315
+- cmd: config add ../setup/
+  when: 1617647342
+- cmd: config add ../.setup/
+  when: 1617647354
+- cmd: ls -a
+  when: 1617647365
+- cmd: rm .setup.sh
+  when: 1617647376
+  paths:
+    - .setup.sh
+- cmd: config add .setup/
+  when: 1617647388
+  paths:
+    - .setup/
+- cmd: config staus
+  when: 1617647390
+- cmd: config stauts
+  when: 1617647414
+- cmd: cat .local/share/fish/backup_fish
+  when: 1617647476
+  paths:
+    - .local/share/fish/backup_fish
+- cmd: sudo systemctl start crond
+  when: 1617647519
+- cmd: sudo systemctl start cron
+  when: 1617647522
+- cmd: sudo service cron start
+  when: 1617647546
+- cmd: sudo update-rc.d cron defaults
+  when: 1617647582
+- cmd: sudo systemctl enable cron
+  when: 1617647593
+- cmd: ~/.setup/
+  when: 1617647634
+- cmd: cd .setup/
+  when: 1617647640
+  paths:
+    - .setup/
+- cmd: vi run_setup.sh
+  when: 1617647643
+  paths:
+    - run_setup.sh
+- cmd: config commit -m "Updated setup script removed outputs"
+  when: 1617647869
+- cmd: cd ~/.comfig
+  when: 1617648559
+- cmd: cd ~/.config
+  when: 1617648563
+- cmd: cd sublime-text-3/
+  when: 1617648566
+  paths:
+    - sublime-text-3/
+- cmd: cd Lib/
+  when: 1617648569
+  paths:
+    - Lib/
+- cmd: cd Local/
+  when: 1617648574
+  paths:
+    - Local/
+- cmd: config rm --cached ~/.config/sublime-text-3/Local/License.sublime_license
+  when: 1617648598
+- cmd: config commit -m "Removed sublime key"
+  when: 1617648621
+- cmd: config log
+  when: 1617648656
+- cmd: gedit
+  when: 1617648746
+- cmd: vi .setup/run_setup.sh
+  when: 1617651875
+  paths:
+    - .setup/run_setup.sh
+- cmd: config commit -m "Uncommented git"
+  when: 1617652170
+- cmd: cd .config/
+  when: 1617652677
+- cmd: config add .config/crontabs
+  when: 1617652691
+  paths:
+    - .config/crontabs
+- cmd: vim ~/.setup/run_setup.sh
+  when: 1617652710
+- cmd: config add -u
+  when: 1617652847
+- cmd: config commit -m "Typo in git clone command"
+  when: 1617652859
+- cmd: config push origin main
+  when: 1617652863
+- cmd: config status
+  when: 1617652872
+- cmd: cd ../.local/share/fish/
+  when: 1617652898
+  paths:
+    - ../.local/share/fish/
+- cmd: vi backup_fish
+  when: 1617652903
+  paths:
+    - backup_fish
+- cmd: cd ..
+  when: 1617652947
+- cmd: cd ~/.setup/
+  when: 1617652956
+- cmd: cd
+  when: 1617652971
+- cmd: cd .config/fish/
+  when: 1617652979
+  paths:
+    - .config/fish/
+- cmd: vi config.fish
+  when: 1617652984
+  paths:
+    - config.fish
+- cmd: crontab -l
+  when: 1617653144
+- cmd: ls
+  when: 1617654332
+- cmd: mkdir fish_functions
+  when: 1617654371
+- cmd: ls
+  when: 1617654372
+- cmd: cd fish_functions/
+  when: 1617654380
+  paths:
+    - fish_functions/
+- cmd: ls
+  when: 1617654380
+- cmd: touch update_config
+  when: 1617654523
+- cmd: ls
+  when: 1617654526
+- cmd: mv update_config update_config.fish
+  when: 1617654548
+  paths:
+    - update_config
+- cmd: ls
+  when: 1617654549
+- cmd: cd ..
+  when: 1617654580
+  paths:
+    - ..
+- cmd: ls
+  when: 1617654580
+- cmd: mv fish_functions/ functions
+  when: 1617654586
+  paths:
+    - fish_functions/
+- cmd: ls
+  when: 1617654587
+- cmd: $fish_function_path
+  when: 1617654653
+- cmd: ls
+  when: 1617654711
+- cmd: cd functions/
+  when: 1617654713
+  paths:
+    - functions/
+- cmd: ls
+  when: 1617654714
+- cmd: vi update_config.fish
+  when: 1617654717
+  paths:
+    - update_config.fish
+- cmd: ls
+  when: 1617654791
+- cmd: cd
+  when: 1617654795
+- cmd: ls
+  when: 1617654796
+- cmd: config add .config/fish/functions/
+  when: 1617654810
+  paths:
+    - .config/fish/functions/
+- cmd: config status
+  when: 1617654815
+- cmd: cp .local/share/fish/fish_history .local/share/fish/backup_fish
+  when: 1617654847
+  paths:
+    - .local/share/fish/fish_history
+    - .local/share/fish/backup_fish
