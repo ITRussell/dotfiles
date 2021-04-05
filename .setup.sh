@@ -26,6 +26,8 @@ sudo apt install redshift -y
 sudo apt install cmatrix -y
 sudo apt install nitrogen -y
 sudo apt install trash-cli -y
+mkdir ~/.local/share/nvim
+touch ~/.viminfo
 sudo apt install neofetch -y
 sudo apt install htop -y
 sudo apt install fzf -y
