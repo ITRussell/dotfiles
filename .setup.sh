@@ -18,6 +18,26 @@ GITEMAIL="IanThomasR@gmail.com";
 git config --global user.email "${GITEMAIL}"
 git config --list
 
+# And that your source repository ignores the folder where you'll clone it, so that you don't create weird recursion problems:
+echo ".cfg" >> .gitignore
+
+# Clone dot files repo
+git clone --bare <git-repo-url> $HOME/.cfg
+
+# Define the alias in the current shell scope:
+alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
+
+# backup any existing configs
+mkdir -p .config-backup && \
+config checkout 2>&1 | egrep "\s+\." | awk {'print $1'} | \
+xargs -I{} mv {} .config-backup/{}
+
+# Checkout
+config checkout
+
+# Set to not show untracked files
+config config --local status.showUntrackedFiles no
+
 # Packages
 sudo apt update
 sudo apt install alacritty -y
