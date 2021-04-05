@@ -46,3 +46,5 @@ nnoremap <Leader>O O<Esc>^Da
 map <C-n> :NERDTreeToggle<CR>
 
 tnoremap jj <C-\><C-n>
+
+nnoremap <Leader>v :call Toggle_transparent_background()<CR>  
