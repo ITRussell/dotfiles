@@ -45,7 +45,6 @@ xargs -I{} mv {} .config-backup/{}
 
 # Checkout
 config checkout
-
 # Set to not show untracked files
 config config --local status.showUntrackedFiles no
 
