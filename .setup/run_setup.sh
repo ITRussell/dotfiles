@@ -29,6 +29,8 @@ git config --global user.name "${GITUSER}"
 GITEMAIL="IanThomasR@gmail.com";
 git config --global user.email "${GITEMAIL}"
 
+alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
+
 # And that your source repository ignores the folder where you'll clone it, so that you don't create weird recursion problems:
 echo ".cfg" >> .gitignore
 
