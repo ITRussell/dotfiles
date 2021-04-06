@@ -3038,3 +3038,15 @@
     - .local/share/fish/backup_fish
 - cmd: update
   when: 1617709684
+- cmd: config add .local/share/fish/backup_fish
+  when: 1617709881
+  paths:
+    - .local/share/fish/backup_fish
+- cmd: config add .config/sublime-text-3/Local/License.sublime_license
+  when: 1617709998
+  paths:
+    - .config/sublime-text-3/Local/License.sublime_license
+- cmd: config commit -m "Added more things"
+  when: 1617710017
+- cmd: update
+  when: 1617710030
