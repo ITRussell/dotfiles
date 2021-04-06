@@ -2931,8 +2931,6 @@
   when: 1617656265
 - cmd: config commit -m "Fixing script"
   when: 1617656274
-- cmd: config push origin main
-  when: 1617656277
 - cmd: vi .config/fish/config.fish
   when: 1617704954
   paths:
@@ -2970,53 +2968,21 @@
   when: 1617705876
 - cmd: cd
   when: 1617706840
-- cmd: cd .config/fish/
-  when: 1617706857
-  paths:
-    - .config/fish/
 - cmd: update_config
   when: 1617707063
-- cmd: vi config.fish
-  when: 1617707120
-  paths:
-    - config.fish
-- cmd: update_configs
-  when: 1617707212
-- cmd: :wq
-  when: 1617707218
-- cmd: update_configs
-  when: 1617707225
-- cmd: cd .config/fish/
-  when: 1617707254
-  paths:
-    - .config/fish/
-- cmd: vi config.fish
-  when: 1617707257
-  paths:
-    - config.fish
-- cmd: update_configs
-  when: 1617707296
 - cmd: :wq
   when: 1617707298
 - cmd: update_configs
-  when: 1617707302
-- cmd: cd .config/fish/
-  when: 1617707326
-  paths:
-    - .config/fish/
-- cmd: vi config.fish
-  when: 1617707329
-  paths:
-    - config.fish
-- cmd: update_configs
-  when: 1617707354
-- cmd: cd .config/fish/
-  when: 1617707391
-  paths:
-    - .config/fish/
-- cmd: vi config.fish
-  when: 1617707394
-  paths:
-    - config.fish
-- cmd: update_configs
   when: 1617707420
+- cmd: cd .config/fish/
+  when: 1617707458
+  paths:
+    - .config/fish/
+- cmd: config push origin main
+  when: 1617707482
+- cmd: vi config.fish
+  when: 1617707498
+  paths:
+    - config.fish
+- cmd: update
+  when: 1617708044

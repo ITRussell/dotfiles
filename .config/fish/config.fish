@@ -8,6 +8,8 @@ alias gith='cd ~/WorkBench/GitHub'
 alias dat='cd ~/WorkBench/sandbox/analysis && source ~/WorkBench/pyenvs/analysis-env/bin/activate && touch tmp.ipynb && code tmp.ipynb'
 alias san='cd ~/WorkBench/sandbox'
 alias python='python3'
+alias update='update_configs'
+alias sync='sync_configs'
 #alias youtube-dl='python3 $(which youtube-dl)'
 alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 
@@ -33,4 +35,17 @@ function update_configs
     config status
     read -l -P 'Enter commit message: ' message
     config commit -m "$message"
+    config push origin main
+end
+
+function sync_configs
+    echo "WARNING: THIS WILL OVERWRITE YOUR CURRENT SETTINGS"
+    read -l -P 'ARE YOU SURE YOU WANT TO CONTINUE? [y/N]' confirm
+    switch $confirm
+        case Y y
+            config fetch
+            config reset --hard
+        case '' N n
+            echo "ABORTING"
+    end
 end
