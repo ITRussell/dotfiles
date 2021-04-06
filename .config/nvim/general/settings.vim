@@ -44,7 +44,7 @@ cmap w!! w !sudo tee %
 let t:is_transparent = 0                                                                        
 function! Toggle_transparent_background()                                                       
   if t:is_transparent == 0                                                                      
-    hi Normal guibg=#111111 ctermbg=black                                                       
+    hi Normal guibg=#282c34 ctermbg=black                                                       
     let t:is_transparent = 1                                                                    
   else                                                                                          
     hi Normal guibg=NONE ctermbg=NONE                                                           

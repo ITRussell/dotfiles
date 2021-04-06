@@ -212,8 +212,6 @@
   when: 1617227126
 - cmd: mkdir general
   when: 1617227126
-- cmd: vi settings.vim
-  when: 1617227126
 - cmd: mkdir keys && vi keys/mappings.vim
   when: 1617227126
 - cmd: pip3 install pynvim
@@ -245,8 +243,6 @@
 - cmd: sudo apt install silversearcher-ag
   when: 1617227126
 - cmd: sudo apt install fd-find
-  when: 1617227126
-- cmd: cd general/
   when: 1617227126
 - cmd: vi search.vim
   when: 1617227126
@@ -2208,10 +2204,6 @@
   when: 1617471171
 - cmd: which fish
   when: 1617471374
-- cmd: vi .config/fish/config.fish
-  when: 1617471482
-  paths:
-    - .config/fish/config.fish
 - cmd: config commit -m "Switching back to GNOME"
   when: 1617471560
 - cmd: sudo apt install qtile
@@ -2531,8 +2523,6 @@
   when: 1617496203
   paths:
     - i3.desktop
-- cmd: cd .config/nvim
-  when: 1617496902
 - cmd: cd plug-config/
   when: 1617496910
 - cmd: cd vim-plug/
@@ -2766,8 +2756,6 @@
   when: 1617635413
   paths:
     - spinner.sh
-- cmd: vi
-  when: 1617635435
 - cmd: sudo apt echo "one \\\nheappy"
   when: 1617636536
 - cmd: echo "one \\\nheappy"
@@ -2822,8 +2810,6 @@
   when: 1617647388
   paths:
     - .setup/
-- cmd: config staus
-  when: 1617647390
 - cmd: config stauts
   when: 1617647414
 - cmd: cat .local/share/fish/backup_fish
@@ -2842,14 +2828,6 @@
   when: 1617647593
 - cmd: ~/.setup/
   when: 1617647634
-- cmd: cd .setup/
-  when: 1617647640
-  paths:
-    - .setup/
-- cmd: vi run_setup.sh
-  when: 1617647643
-  paths:
-    - run_setup.sh
 - cmd: config commit -m "Updated setup script removed outputs"
   when: 1617647869
 - cmd: cd ~/.comfig
@@ -2876,10 +2854,6 @@
   when: 1617648656
 - cmd: gedit
   when: 1617648746
-- cmd: vi .setup/run_setup.sh
-  when: 1617651875
-  paths:
-    - .setup/run_setup.sh
 - cmd: config commit -m "Uncommented git"
   when: 1617652170
 - cmd: cd .config/
@@ -2890,14 +2864,8 @@
     - .config/crontabs
 - cmd: vim ~/.setup/run_setup.sh
   when: 1617652710
-- cmd: config add -u
-  when: 1617652847
 - cmd: config commit -m "Typo in git clone command"
   when: 1617652859
-- cmd: config push origin main
-  when: 1617652863
-- cmd: config status
-  when: 1617652872
 - cmd: cd ../.local/share/fish/
   when: 1617652898
   paths:
@@ -2906,84 +2874,149 @@
   when: 1617652903
   paths:
     - backup_fish
-- cmd: cd ..
-  when: 1617652947
 - cmd: cd ~/.setup/
   when: 1617652956
-- cmd: cd
-  when: 1617652971
-- cmd: cd .config/fish/
-  when: 1617652979
-  paths:
-    - .config/fish/
-- cmd: vi config.fish
-  when: 1617652984
-  paths:
-    - config.fish
 - cmd: crontab -l
   when: 1617653144
-- cmd: ls
-  when: 1617654332
 - cmd: mkdir fish_functions
   when: 1617654371
-- cmd: ls
-  when: 1617654372
 - cmd: cd fish_functions/
   when: 1617654380
   paths:
     - fish_functions/
-- cmd: ls
-  when: 1617654380
 - cmd: touch update_config
   when: 1617654523
-- cmd: ls
-  when: 1617654526
 - cmd: mv update_config update_config.fish
   when: 1617654548
   paths:
     - update_config
-- cmd: ls
-  when: 1617654549
-- cmd: cd ..
-  when: 1617654580
-  paths:
-    - ..
-- cmd: ls
-  when: 1617654580
 - cmd: mv fish_functions/ functions
   when: 1617654586
   paths:
     - fish_functions/
-- cmd: ls
-  when: 1617654587
 - cmd: $fish_function_path
   when: 1617654653
-- cmd: ls
-  when: 1617654711
 - cmd: cd functions/
   when: 1617654713
   paths:
     - functions/
-- cmd: ls
-  when: 1617654714
 - cmd: vi update_config.fish
   when: 1617654717
   paths:
     - update_config.fish
-- cmd: ls
-  when: 1617654791
-- cmd: cd
-  when: 1617654795
-- cmd: ls
-  when: 1617654796
 - cmd: config add .config/fish/functions/
   when: 1617654810
   paths:
     - .config/fish/functions/
-- cmd: config status
-  when: 1617654815
 - cmd: cp .local/share/fish/fish_history .local/share/fish/backup_fish
   when: 1617654847
   paths:
     - .local/share/fish/fish_history
     - .local/share/fish/backup_fish
+- cmd: config commit -m "Added fish history cp"
+  when: 1617654978
+- cmd: vi .setup/run_setup.sh
+  when: 1617655536
+  paths:
+    - .setup/run_setup.sh
+- cmd: config add .config/packages.list
+  when: 1617656253
+  paths:
+    - .config/packages.list
+- cmd: config add -u
+  when: 1617656260
+- cmd: config staus
+  when: 1617656263
+- cmd: config status
+  when: 1617656265
+- cmd: config commit -m "Fixing script"
+  when: 1617656274
+- cmd: config push origin main
+  when: 1617656277
+- cmd: vi .config/fish/config.fish
+  when: 1617704954
+  paths:
+    - .config/fish/config.fish
+- cmd: cd .setup/
+  when: 1617704978
+  paths:
+    - .setup/
+- cmd: vi run_setup.sh
+  when: 1617704982
+  paths:
+    - run_setup.sh
+- cmd: cd ..
+  when: 1617705362
+- cmd: rm setup.log spinner.sh test.log test.sh
+  when: 1617705374
+  paths:
+    - setup.log
+    - spinner.sh
+    - test.log
+    - test.sh
+- cmd: sudo rm -r newMachine/
+  when: 1617705384
+  paths:
+    - newMachine/
+- cmd: cd .config/nvim
+  when: 1617705415
+- cmd: cd general/
+  when: 1617705421
+- cmd: ls
+  when: 1617705422
+- cmd: vi settings.vim
+  when: 1617705845
+- cmd: vi
+  when: 1617705876
+- cmd: cd
+  when: 1617706840
+- cmd: cd .config/fish/
+  when: 1617706857
+  paths:
+    - .config/fish/
+- cmd: update_config
+  when: 1617707063
+- cmd: vi config.fish
+  when: 1617707120
+  paths:
+    - config.fish
+- cmd: update_configs
+  when: 1617707212
+- cmd: :wq
+  when: 1617707218
+- cmd: update_configs
+  when: 1617707225
+- cmd: cd .config/fish/
+  when: 1617707254
+  paths:
+    - .config/fish/
+- cmd: vi config.fish
+  when: 1617707257
+  paths:
+    - config.fish
+- cmd: update_configs
+  when: 1617707296
+- cmd: :wq
+  when: 1617707298
+- cmd: update_configs
+  when: 1617707302
+- cmd: cd .config/fish/
+  when: 1617707326
+  paths:
+    - .config/fish/
+- cmd: vi config.fish
+  when: 1617707329
+  paths:
+    - config.fish
+- cmd: update_configs
+  when: 1617707354
+- cmd: cd .config/fish/
+  when: 1617707391
+  paths:
+    - .config/fish/
+- cmd: vi config.fish
+  when: 1617707394
+  paths:
+    - config.fish
+- cmd: update_configs
+  when: 1617707420

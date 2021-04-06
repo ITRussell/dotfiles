@@ -29,6 +29,8 @@ end
 
 function update_configs 
     cp ~/.local/share/fish/fish_history ~/.local/share/fish/backup_fish
-    config status
     config add -u
-
+    config status
+    read -l -P 'Enter commit message: ' message
+    config commit -m "$message"
+end

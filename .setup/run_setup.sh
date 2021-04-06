@@ -29,7 +29,7 @@ git config --global user.name "${GITUSER}"
 GITEMAIL="IanThomasR@gmail.com";
 git config --global user.email "${GITEMAIL}"
 
-alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
+echo "alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'" >> $HOME/.bashrc
 
 # And that your source repository ignores the folder where you'll clone it, so that you don't create weird recursion problems:
 echo ".cfg" >> .gitignore
@@ -75,7 +75,10 @@ echo
 echo "Setting up tools..."
 # Tools
 
+# Sync fish history
 cp ~/.local/share/fish/backup_fish ~/.local/share/fish/fish_history
+
+# Setup python
 python3 -m venv ~/WorkBench/pyenvs/analysis-env &>> setup.log  
 source ~/WorkBench/pyenvs/analysis-env/bin/activate &>> setup.log  
 pip install jupyter &>> setup.log  
@@ -89,6 +92,7 @@ deactivate
 
 echo
 echo "Installing VSCode extensions..."
+
 # VS Code
 code 
 sudo killall code
