@@ -2986,3 +2986,27 @@
     - config.fish
 - cmd: update
   when: 1617708044
+- cmd: sync
+  when: 1617708068
+- cmd: ls
+  when: 1617708178
+- cmd: cd .local/share/fish/
+  when: 1617708186
+  paths:
+    - .local/share/fish/
+- cmd: ls
+  when: 1617708199
+- cmd: gpg -c backup_fish
+  when: 1617708206
+  paths:
+    - backup_fish
+- cmd: config staus
+  when: 1617708226
+- cmd: config status
+  when: 1617708229
+- cmd: vi backup_fish
+  when: 1617708235
+  paths:
+    - backup_fish
+- cmd: update
+  when: 1617708252
