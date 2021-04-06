@@ -1,0 +1,3040 @@
+- cmd: git clone https://github.com/itrussell/newMachine.git
+  when: 1617227126
+- cmd: git commit -m "Added subl settings"
+  when: 1617227126
+- cmd: sudo apt remove brave-browser
+  when: 1617227126
+- cmd: sudo apt purge brave-browser
+  when: 1617227126
+- cmd: rm -rf ~/.config/BraveSoftware
+  when: 1617227126
+- cmd: rm -rf ~/.cache/BraveSoftware
+  when: 1617227126
+- cmd: sudo apt remove brave
+  when: 1617227126
+- cmd: sudo apt remove brave-bin
+  when: 1617227126
+- cmd: firefox --version
+  when: 1617227126
+- cmd: sudo apt install firefox
+  when: 1617227126
+- cmd: subl setup.sh
+  when: 1617227126
+- cmd: subl extras.sh
+  when: 1617227126
+- cmd: git commit -m "more changes"
+  when: 1617227126
+- cmd: sudo apt install gnome-tweaks
+  when: 1617227126
+- cmd: chmod +x Bitwarden-1.24.6-x86_64.AppImage
+  when: 1617227126
+- cmd: ./Bitwarden-1.24.6-x86_64.AppImage
+  when: 1617227126
+- cmd: ./extras.sh
+  when: 1617227126
+- cmd: snap connect firefox:u2f-devices
+  when: 1617227126
+- cmd: firejail
+  when: 1617227126
+- cmd: sudo apt install firejail
+  when: 1617227126
+- cmd: firejail --ignore=private-dev firefox
+  when: 1617227126
+- cmd: sudo apt remove firejail
+  when: 1617227126
+- cmd: cat  /etc/udev/rules.d/90-yubikey.rules
+  when: 1617227126
+- cmd: cd  /etc/udev/rules.d/
+  when: 1617227126
+- cmd: touch 90-yubikey.rules
+  when: 1617227126
+- cmd: sudo touch 90-yubikey.rules
+  when: 1617227126
+- cmd: sudo subl 90-yubikey.rules
+  when: 1617227126
+- cmd: cd ~
+  when: 1617227126
+- cmd: dconf watch /
+  when: 1617227126
+- cmd: dat
+  when: 1617227126
+- cmd: rm tmp.ipynb
+  when: 1617227126
+- cmd: git clone https://github.com/itrussell/Data-Challenges.git
+  when: 1617227126
+- cmd: cd Bob-Ross/
+  when: 1617227126
+- cmd: jupyter lab
+  when: 1617227126
+- cmd: chmod +x setup.sh
+  when: 1617227126
+- cmd: cat setup.sh
+  when: 1617227126
+- cmd: ./ setup.sh
+  when: 1617227126
+- cmd: ./setup.sh
+  when: 1617227126
+- cmd: git commit -m "organized"
+  when: 1617227126
+- cmd: cd Data-Challenges/Bob-Ross/
+  when: 1617227126
+- cmd: code explore.ipynb
+  when: 1617227126
+- cmd: pip install altair
+  when: 1617227126
+- cmd: pip install matplotlib
+  when: 1617227126
+- cmd: git commit -m "Added python visualizations"
+  when: 1617227126
+- cmd: rm -r scripts/
+  when: 1617227126
+- cmd: mkdir setup_scripts
+  when: 1617227126
+- cmd: mv dirsetup.sh setup_scripts/
+  when: 1617227126
+- cmd: mv bashsetup.sh setup_scripts/
+  when: 1617227126
+- cmd: mv desktopsetup.sh setup_scripts/
+  when: 1617227126
+- cmd: mv pysetup.sh setup_scripts/
+  when: 1617227126
+- cmd: mv extras.sh setup_scripts/
+  when: 1617227126
+- cmd: mv editorsetup.sh setup_scripts/
+  when: 1617227126
+- cmd: mkdir other_scripts
+  when: 1617227126
+- cmd: touch other_scripts/tmp
+  when: 1617227126
+- cmd: python3
+  when: 1617227126
+- cmd: pip install Flask
+  when: 1617227126
+- cmd: code
+  when: 1617227126
+- cmd: git add explore.ipynb -U
+  when: 1617227126
+- cmd: git add explore.ipynb
+  when: 1617227126
+- cmd: pip freeze > requirements.txt
+  when: 1617227126
+- cmd: git add requirements.txt
+  when: 1617227126
+- cmd: git commit -m "Items similarity"
+  when: 1617227126
+- cmd: git add remote -U https://github.com/ITRussell/Data-Challenges.git
+  when: 1617227126
+- cmd: cat painting001.png
+  when: 1617227126
+- cmd: cat painting313.png
+  when: 1617227126
+- cmd: pip install PIL
+  when: 1617227126
+- cmd: pip install Pillow
+  when: 1617227126
+- cmd: code Bob-Ross/
+  when: 1617227126
+- cmd: cd Data-Challenges/
+  when: 1617227126
+- cmd: source /home/ian/WorkBench/pyenvs/analysis-env/bin/activate
+  when: 1617227126
+- cmd: export FLASK_APP=myPortfolio.py
+  when: 1617227126
+- cmd: touch myPortfolio.py
+  when: 1617227126
+- cmd: code myPortfolio.py
+  when: 1617227126
+- cmd: cp ../Data-Challenges/.gitignore ./
+  when: 1617227126
+- cmd: cat .gitignore
+  when: 1617227126
+- cmd: mkdir flaskr
+  when: 1617227126
+- cmd: touch __init__.py
+  when: 1617227126
+- cmd: vim __init__.py
+  when: 1617227126
+- cmd: sudo apt install neovim
+  when: 1617227126
+- cmd: nvim __init__.py
+  when: 1617227126
+- cmd: nvim myPortfolio.py
+  when: 1617227126
+- cmd: rm myPortfolio.py
+  when: 1617227126
+- cmd: cd __pycache__/
+  when: 1617227126
+- cmd: rm -r __pycache__/
+  when: 1617227126
+- cmd: nvim
+  when: 1617227126
+- cmd: home && cd/newMachine
+  when: 1617227126
+- cmd: nvim bashsetup.sh
+  when: 1617227126
+- cmd: sudo apt install fuck
+  when: 1617227126
+- cmd: sudo apt install thefuck
+  when: 1617227126
+- cmd: git stays
+  when: 1617227126
+- cmd: sudo apt remove thefuck
+  when: 1617227126
+- cmd: sudo apt install python3-dev python3-pip python3-setuptools
+  when: 1617227126
+- cmd: cd flaskr/
+  when: 1617227126
+- cmd: git stas
+  when: 1617227126
+- cmd: thefuck
+  when: 1617227126
+- cmd: fuck
+  when: 1617227126
+- cmd: nvim .bashrc
+  when: 1617227126
+- cmd: sudo apt install ranger
+  when: 1617227126
+- cmd: sudo apt install nodejs
+  when: 1617227126
+- cmd: sudo apt install npm
+  when: 1617227126
+- cmd: mkdir nvim
+  when: 1617227126
+- cmd: touch init.vim
+  when: 1617227126
+- cmd: nvim init.vim
+  when: 1617227126
+- cmd: lls
+  when: 1617227126
+- cmd: mkdir vim-plug
+  when: 1617227126
+- cmd: touch plugins.vim
+  when: 1617227126
+- cmd: mkdir general
+  when: 1617227126
+- cmd: mkdir keys && vi keys/mappings.vim
+  when: 1617227126
+- cmd: pip3 install pynvim
+  when: 1617227126
+- cmd: npm i -g neovim
+  when: 1617227126
+- cmd: npm i -g neovimnpm i -g neovim
+  when: 1617227126
+- cmd: sudo npm i -g neovimnpm i -g neovim
+  when: 1617227126
+- cmd: sudo npm i -g neovim
+  when: 1617227126
+- cmd: mkdir themes
+  when: 1617227126
+- cmd: vi onedark.vim
+  when: 1617227126
+- cmd: npm i -g yarn
+  when: 1617227126
+- cmd: sudo npm i -g yarn
+  when: 1617227126
+- cmd: mkdir plug-config
+  when: 1617227126
+- cmd: sudo apt install fzf
+  when: 1617227126
+- cmd: sudo apt install ripgrep
+  when: 1617227126
+- cmd: sudo apt install universal-ctags
+  when: 1617227126
+- cmd: sudo apt install silversearcher-ag
+  when: 1617227126
+- cmd: sudo apt install fd-find
+  when: 1617227126
+- cmd: vi search.vim
+  when: 1617227126
+- cmd: cd ../plug-config/
+  when: 1617227126
+- cmd: vi start.vim
+  when: 1617227126
+- cmd: vi vim-plug/plugins.vim
+  when: 1617227126
+- cmd: touch themes/airline.vim
+  when: 1617227126
+- cmd: vi themes/airline.vim
+  when: 1617227126
+- cmd: vi t
+  when: 1617227126
+- cmd: cd keys/
+  when: 1617227126
+- cmd: vi mappings.vim
+  when: 1617227126
+- cmd: lsd
+  when: 1617227126
+- cmd: vi keys/mappings.vim
+  when: 1617227126
+- cmd: mkdir scripts
+  when: 1617227126
+- cmd: touch scripts/xlsPlacer.js
+  when: 1617227126
+- cmd: touch scripts/test.csv
+  when: 1617227126
+- cmd: firefox &
+  when: 1617227126
+- cmd: touch setup_scripts/vim_setup.sh
+  when: 1617227126
+- cmd: youtubedl
+  when: 1617227126
+- cmd: youtbe-dl
+  when: 1617227126
+- cmd: man youtube-dl
+  when: 1617227126
+- cmd: sudo curl -L https://yt-dl.org/downloads/latest/youtube-dl -o /usr/local/bin/youtube-dl
+  when: 1617227126
+- cmd: sudo chmod a+rx /usr/local/bin/youtube-dl
+  when: 1617227126
+- cmd: which python
+  when: 1617227126
+- cmd: youtube-dl
+  when: 1617227126
+- cmd: youtube-dl https://www.youtube.com/watch?v=8UGwKZZdzO0
+  when: 1617227126
+- cmd: vlc
+  when: 1617227126
+- cmd: youtube-dl https://www.youtube.com/watch?v=LxhBJBsauuA
+  when: 1617227126
+- cmd: youtube-dl https://www.youtube.com/watch?v=ZKuy26ih8Ik
+  when: 1617227126
+- cmd: youtube-dl -f 22 https://www.youtube.com/watch?v=ZKuy26ih8Ik
+  when: 1617227126
+- cmd: youtube-dl -f 136 https://www.youtube.com/watch?v=ZKuy26ih8Ik
+  when: 1617227126
+- cmd: youtube-dl -f best https://www.youtube.com/watch?v=ZKuy26ih8Ik
+  when: 1617227126
+- cmd: youtube-dl -f 137 https://www.youtube.com/watch?v=ZKuy26ih8Ik
+  when: 1617227126
+- cmd: rm 'WGI 2014 - Dartmouth High School - In The Lot-ZKuy26ih8Ik.mp4'
+  when: 1617227126
+- cmd: youtube-dl -f 137+141 https://www.youtube.com/watch?v=ZKuy26ih8Ik
+  when: 1617227126
+- cmd: sudo apt install ffmpeg
+  when: 1617227126
+- cmd: youtube-dl -f 137+140 https://www.youtube.com/watch?v=ZKuy26ih8Ik
+  when: 1617227126
+- cmd: rm 'Dartmouth High School 2014-LxhBJBsauuA.mp4'
+  when: 1617227126
+- cmd: youtube-dl -f 137+140 https://www.youtube.com/watch?v=LxhBJBsauuA
+  when: 1617227126
+- cmd: cd dev/
+  when: 1617227126
+- cmd: cd etc/
+  when: 1617227126
+- cmd: cd modprobe.d/
+  when: 1617227126
+- cmd: touch bluetooth.conf
+  when: 1617227126
+- cmd: sudo touch bluetooth.conf
+  when: 1617227126
+- cmd: sudo vi bluetooth.conf
+  when: 1617227126
+- cmd: sudo apt install xpad
+  when: 1617227126
+- cmd: sudo apt install xboxdrv
+  when: 1617227126
+- cmd: sudo systemctl enable xboxdrv.service
+  when: 1617227126
+- cmd: sudo apt remove xpad
+  when: 1617227126
+- cmd: sudo apt purge xpad
+  when: 1617227126
+- cmd: sudo xboxdrv --detach-kernel-driver
+  when: 1617227126
+- cmd: which xpad
+  when: 1617227126
+- cmd: sudo apt remove xboxdrv
+  when: 1617227126
+- cmd: cd launcher
+  when: 1617227126
+- cmd: sudo apt remove minecraft-launcher
+  when: 1617227126
+- cmd: sudo apt remove gdebi
+  when: 1617227126
+- cmd: sudo gdebi remove minecraft-launcher
+  when: 1617227126
+- cmd: sudo apt -f install
+  when: 1617227126
+- cmd: sudo apt --purge remove minecraft-launcher
+  when: 1617227126
+- cmd: wget  ~/Minecraft.deb
+  when: 1617227126
+- cmd: wget https://launcher.mojang.com/download/Minecraft.deb
+  when: 1617227126
+- cmd: sudo apt install gdebi-core
+  when: 1617227126
+- cmd: sudo gdebi ~/Minecraft.deb
+  when: 1617227126
+- cmd: cd .config/nvim/
+  when: 1617227126
+- cmd: vi coc.vim
+  when: 1617227126
+- cmd: pip install flask
+  when: 1617227126
+- cmd: cd po
+  when: 1617227126
+- cmd: sudo apt install jedi
+  when: 1617227126
+- cmd: pip install jedi
+  when: 1617227126
+- cmd: pip install flake8
+  when: 1617227126
+- cmd: pip install autopep8
+  when: 1617227126
+- cmd: python
+  when: 1617227126
+- cmd: cd Portfolio/ && senv
+  when: 1617227126
+- cmd: rm flaskr/
+  when: 1617227126
+- cmd: rm -r flaskr/
+  when: 1617227126
+- cmd: rm index.html
+  when: 1617227126
+- cmd: rm style.css
+  when: 1617227126
+- cmd: ls -l
+  when: 1617227126
+- cmd: export FLASK_APP=main.py
+  when: 1617227126
+- cmd: export FLASK_DEBUG=1
+  when: 1617227126
+- cmd: mkdir templates
+  when: 1617227126
+- cmd: cd templates/
+  when: 1617227126
+- cmd: touch home.html
+  when: 1617227126
+- cmd: touch about.html
+  when: 1617227126
+- cmd: flask run
+  when: 1617227126
+- cmd: touch templates/base.html
+  when: 1617227126
+- cmd: cd WorkBench/
+  when: 1617227126
+- cmd: cd GitHub/
+  when: 1617227126
+- cmd: mkdir static
+  when: 1617227126
+- cmd: touch style.css
+  when: 1617227126
+- cmd: mkdir resources
+  when: 1617227126
+- cmd: git remote add origin https://github.com/ITRussell/Portfolio.git
+  when: 1617227126
+- cmd: git branch -M main
+  when: 1617227126
+- cmd: git push --set-upstream origin master
+  when: 1617227126
+- cmd: git add .gitignore
+  when: 1617227126
+- cmd: git commit -m "First commit"
+  when: 1617227126
+- cmd: git add extras.sh
+  when: 1617227126
+- cmd: git commit -m "Updates for vim"
+  when: 1617227126
+- cmd: git push -f origin master
+  when: 1617227126
+- cmd: ci vim_setup.sh
+  when: 1617227126
+- cmd: vi vim_setup.sh
+  when: 1617227126
+- cmd: cp ~/.config/nvim/ ./
+  when: 1617227126
+- cmd: cp -r ~/.config/nvim/ ./
+  when: 1617227126
+- cmd: rm autoload/
+  when: 1617227126
+- cmd: rm -r autoload/
+  when: 1617227126
+- cmd: sudo rm -r autoload/
+  when: 1617227126
+- cmd: git add status
+  when: 1617227126
+- cmd: git stauts
+  when: 1617227126
+- cmd: git commit -m "added configs for neovim"
+  when: 1617227126
+- cmd: cp .bashrc newMachine/
+  when: 1617227126
+- cmd: git add .bashrc
+  when: 1617227126
+- cmd: git commit -m "updated bashrc"
+  when: 1617227126
+- cmd: sudo rm -r .git
+  when: 1617227126
+- cmd: git init
+  when: 1617227126
+- cmd: git commit -m "First"
+  when: 1617227126
+- cmd: git remote add https://github.com/itrussell/Portfolio.git
+  when: 1617227126
+- cmd: git remote add origin https://github.com/itrussell/Portfolio.git
+  when: 1617227126
+- cmd: git push origin master
+  when: 1617227126
+- cmd: cat packages.el
+  when: 1617227126
+- cmd: vi packages.el
+  when: 1617227126
+- cmd: vi config.el
+  when: 1617227126
+- cmd: git clone --depth 1 https://github.com/hlissner/doom-emacs ~/.emacs.d
+  when: 1617227126
+- cmd: cd .emacs.d/m
+  when: 1617227126
+- cmd: ./doom install
+  when: 1617227126
+- cmd: sudo add-apt-repository ppa:kelleyk/emacs
+  when: 1617227126
+- cmd: sudo apt install emacs27
+  when: 1617227126
+- cmd: sudo apt install emacs26
+  when: 1617227126
+- cmd: sudo apt install emacs
+  when: 1617227126
+- cmd: emacs --version
+  when: 1617227126
+- cmd: ~/.emacs.d/bin/doom install
+  when: 1617227126
+- cmd: sudo apt install rigrep
+  when: 1617227126
+- cmd: sudo apt-get install git rigrep
+  when: 1617227126
+- cmd: sudo apt-get install git ripgrep
+  when: 1617227126
+- cmd: sudo apt-get install fd-find
+  when: 1617227126
+- cmd: cd bin
+  when: 1617227126
+- cmd: vi init.el
+  when: 1617227126
+- cmd: .emacs.d/
+  when: 1617227126
+- cmd: doom sync
+  when: 1617227126
+- cmd: doom.cmd doom sync
+  when: 1617227126
+- cmd: bin/ddom
+  when: 1617227126
+- cmd: bin/doom
+  when: 1617227126
+- cmd: doom
+  when: 1617227126
+- cmd: doom install
+  when: 1617227126
+- cmd: cd ,,
+  when: 1617227126
+- cmd: bin/doom sync
+  when: 1617227126
+- cmd: sudo apt install simplenote
+  when: 1617227126
+- cmd: cd .doom.d/
+  when: 1617227126
+- cmd: cd .emacs.d/
+  when: 1617227126
+- cmd: .emacs.d/bin/doom sync
+  when: 1617227126
+- cmd: emacs
+  when: 1617227126
+- cmd: dpkg -i ./Simplenote-linux-2.7.1-amd64.deb
+  when: 1617227126
+- cmd: sudo dpkg -i ./Simplenote-linux-2.7.1-amd64.deb
+  when: 1617227126
+- cmd: cd .vim
+  when: 1617227126
+- cmd: sudo rm .emacs.d/
+  when: 1617227126
+- cmd: sudo -r rm .emacs.d/
+  when: 1617227126
+- cmd: sudo rm -r .emacs.d/
+  when: 1617227126
+- cmd: sudo rm -r .doom.d/
+  when: 1617227126
+- cmd: vi init.vim
+  when: 1617227126
+- cmd: ci colors/
+  when: 1617227126
+- cmd: cd colors/
+  when: 1617227126
+- cmd: vi SpaceVim.vim
+  when: 1617227126
+- cmd: rm new
+  when: 1617227126
+- cmd: rm newfile
+  when: 1617227126
+- cmd: VimProcInstall
+  when: 1617227126
+- cmd: cd .SpaceVim.d/
+  when: 1617227126
+- cmd: cd plugins
+  when: 1617227126
+- cmd: git clone https://spacevim.org/install.sh | bash
+  when: 1617227126
+- cmd: git clone https://spacevim.org/install.sh
+  when: 1617227126
+- cmd: git clone curl -sLf https://spacevim.org/install.sh | bash
+  when: 1617227126
+- cmd: curl -sLf https://spacevim.org/install.sh | bash
+  when: 1617227126
+- cmd: sudo rm -r .SpaceVim
+  when: 1617227126
+- cmd: rm -r .SpaceVim.d/
+  when: 1617227126
+- cmd: cd Ne
+  when: 1617227126
+- cmd: vi bashsetup.sh
+  when: 1617227126
+- cmd: rm -r nvim
+  when: 1617227126
+- cmd: cd setup_scripts/
+  when: 1617227126
+- cmd: ./bashsetup.sh
+  when: 1617227126
+- cmd: cp -r nvim/ ~/.config/
+  when: 1617227126
+- cmd: cd autoload/
+  when: 1617227126
+- cmd: cd SpaceVim/
+  when: 1617227126
+- cmd: cd core/
+  when: 1617227126
+- cmd: cd layers/
+  when: 1617227126
+- cmd: make core.vim
+  when: 1617227126
+- cmd: vi core.vim
+  when: 1617227126
+- cmd: cd bundle/
+  when: 1617227126
+- cmd: cd vimproc.vim/
+  when: 1617227126
+- cmd: sl
+  when: 1617227126
+- cmd: d ..
+  when: 1617227126
+- cmd: cd .SpaceVim.d
+  when: 1617227126
+- cmd: vi init.toml
+  when: 1617227126
+- cmd: cd .SpaceVim
+  when: 1617227126
+- cmd: vi vimrc
+  when: 1617227126
+- cmd: cd config/
+  when: 1617227126
+- cmd: vi main.vim
+  when: 1617227126
+- cmd: git branch --set-upstream-to=origin/master
+  when: 1617227126
+- cmd: vim
+  when: 1617227126
+- cmd: env
+  when: 1617227126
+- cmd: git fetch
+  when: 1617227126
+- cmd: san
+  when: 1617227126
+- cmd: touch index.html
+  when: 1617227126
+- cmd: nvim readme.json
+  when: 1617227126
+- cmd: nvim index.html
+  when: 1617227126
+- cmd: firefox index.html
+  when: 1617227126
+- cmd: sudo apt install atom
+  when: 1617227126
+- cmd: cd newMachine/
+  when: 1617227126
+- cmd: cd configs/
+  when: 1617227126
+- cmd: sudo apt install x11-utils
+  when: 1617227126
+- cmd: sudo apt remove --purge gnome-shell-extension-pop-shell
+  when: 1617227126
+- cmd: sudo apt install gnome-shell-extension-pop-shell
+  when: 1617227126
+- cmd: cd unite@hardpixel.eu/
+  when: 1617227126
+- cmd: cd cd share/
+  when: 1617227126
+- cmd: sls
+  when: 1617227126
+- cmd: cat notifications
+  when: 1617227126
+- cmd: lw
+  when: 1617227126
+- cmd: cd pixel-saver@deadalnix.me/
+  when: 1617227126
+- cmd: xprop
+  when: 1617227126
+- cmd: cd ian
+  when: 1617227126
+- cmd: cd .cache/
+  when: 1617227126
+- cmd: cd sys/
+  when: 1617227126
+- cmd: cd sys
+  when: 1617227126
+- cmd: cd kernel/
+  when: 1617227126
+- cmd: cd security/
+  when: 1617227126
+- cmd: cd integrity/
+  when: 1617227126
+- cmd: cd evm/
+  when: 1617227126
+- cmd: cat evm
+  when: 1617227126
+- cmd: sudo apt install gnome-shell-extensions
+  when: 1617227126
+- cmd: sudo logout
+  when: 1617227126
+- cmd: sudo apt remove awesome
+  when: 1617227126
+- cmd: suod apt purge awesome
+  when: 1617227126
+- cmd: sudo apt purge awesome
+  when: 1617227126
+- cmd: sudo apt install Alacritty
+  when: 1617227126
+- cmd: sudo apt install alacritty
+  when: 1617227126
+- cmd: :qa
+  when: 1617227126
+- cmd: mkdir alacritty
+  when: 1617227126
+- cmd: touch alacritty.yml
+  when: 1617227126
+- cmd: rm alacritty.yml
+  when: 1617227126
+- cmd: locate
+  when: 1617227126
+- cmd: sudo apt install locate
+  when: 1617227126
+- cmd: locate alacritty.yml
+  when: 1617227126
+- cmd: locate ala
+  when: 1617227126
+- cmd: sudo apt remove --purge locate
+  when: 1617227126
+- cmd: cd usr/share/doc/alacritty/
+  when: 1617227126
+- cmd: rm .config/alacritty/alacritty.yml
+  when: 1617227126
+- cmd: j
+  when: 1617227126
+- cmd: sudo apt remove --pur
+  when: 1617227126
+- cmd: sudo apt remove --purge compton
+  when: 1617227126
+- cmd: LS
+  when: 1617227126
+- cmd: VI
+  when: 1617227126
+- cmd: mv 'Dartmouth 2013-8UGwKZZdzO0.mp4' Videos/
+  when: 1617227126
+- cmd: mv 'Dartmouth High School 2014-LxhBJBsauuA.mp4' Videos/
+  when: 1617227126
+- cmd: mv 'WGI 2014 - Dartmouth High School - In The Lot-ZKuy26ih8Ik.mp4' Videos/
+  when: 1617227126
+- cmd: rm -r Minecraft.deb
+  when: 1617227126
+- cmd: mv 'VirtualBox VMs'/ VMs
+  when: 1617227126
+- cmd: mkdir -p ~/.local/share/fonts
+  when: 1617227126
+- cmd: cd ~/.local/share/fonts && curl -fLo "Fira Code Regular Nerd Font Complete.otf" https://github.com/ryanoasis/nerd-fonts/blob/master/patched-fonts/FiraCode/Regular/complete/Fira%20Code%20Regular%20Nerd%20Font%20Complete.otf
+  when: 1617227126
+- cmd: curl -fsSL https://starship.rs/install.sh | bash
+  when: 1617227126
+- cmd: rm -r fonts/
+  when: 1617227126
+- cmd: cd Do
+  when: 1617227126
+- cmd: mkdir .local/share/fonts
+  when: 1617227126
+- cmd: mv ~/Downloads/'Hack Regular Nerd Font Complete.ttf' ./
+  when: 1617227126
+- cmd: /
+  when: 1617227126
+- cmd: cd usr/
+  when: 1617227126
+- cmd: cd cmap/
+  when: 1617227126
+- cmd: cd cMap/
+  when: 1617227126
+- cmd: cd truetype/
+  when: 1617227126
+- cmd: cd dejavu/
+  when: 1617227126
+- cmd: cd ubuntu/
+  when: 1617227126
+- cmd: cd droid/
+  when: 1617227126
+- cmd: cp /usr/share/fonts
+  when: 1617227126
+- cmd: cp 'Hack Regular Nerd Font Complete.ttf' /usr/share/fonts
+  when: 1617227126
+- cmd: mv 'Hack Regular Nerd Font Complete.ttf' Hack
+  when: 1617227126
+- cmd: rm Hack
+  when: 1617227126
+- cmd: unzip Hack-v3.003-ttf.zip
+  when: 1617227126
+- cmd: mv Hack-Regular.ttf /usr/share/fonts
+  when: 1617227126
+- cmd: sudo mv Hack-Regular.ttf /usr/share/fonts
+  when: 1617227126
+- cmd: fc-cache -f -v
+  when: 1617227126
+- cmd: cd static/
+  when: 1617227126
+- cmd: fc-list | grep "Hack"
+  when: 1617227126
+- cmd: cd ../../
+  when: 1617227126
+- cmd: cd alacritty/
+  when: 1617227126
+- cmd: cd usr/share/
+  when: 1617227126
+- cmd: mv Hack-Regular.ttf ~/.local/share/fonts/
+  when: 1617227126
+- cmd: sudo mv Hack-Regular.ttf ~/.local/share/fonts/
+  when: 1617227126
+- cmd: cd locale/
+  when: 1617227126
+- cmd: vi application_state
+  when: 1617227126
+- cmd: mkdir NerdFonts
+  when: 1617227126
+- cmd: mv ~/Downloads/Hack-v3.003-ttf ./
+  when: 1617227126
+- cmd: mv ~/Downloads/Hack-v3.003-ttf(1) ./
+  when: 1617227126
+- cmd: mv ~/Downloads/ttf/ ./
+  when: 1617227126
+- cmd: cd ttf/
+  when: 1617227126
+- cmd: mv Hack-BoldItalic.ttf ../NerdFonts/
+  when: 1617227126
+- cmd: mv Hack-Italic.ttf ../NerdFonts/
+  when: 1617227126
+- cmd: mv Hack-Bold.ttf ../NerdFonts/
+  when: 1617227126
+- cmd: rm ttf/
+  when: 1617227126
+- cmd: rm -r ttf/
+  when: 1617227126
+- cmd: srm Hack-Regular.ttf
+  when: 1617227126
+- cmd: rm Hack-Regular.ttf
+  when: 1617227126
+- cmd: du
+  when: 1617227126
+- cmd: sudo apt install ncdu
+  when: 1617227126
+- cmd: mkdir .home
+  when: 1617227126
+- cmd: cat .bashrc
+  when: 1617227126
+- cmd: cat .bash_aliases
+  when: 1617227126
+- cmd: cd nvim
+  when: 1617227126
+- cmd: cd Templates/
+  when: 1617227126
+- cmd: git add .config/
+  when: 1617227126
+- cmd: home add .config/
+  when: 1617227126
+- cmd: home add *
+  when: 1617227126
+- cmd: cat config.cson
+  when: 1617227126
+- cmd: touch starship.toml
+  when: 1617227126
+- cmd: home commit -m "Initial Tracks"
+  when: 1617227126
+- cmd: touch .setup.sh
+  when: 1617227126
+- cmd: mv .setup.sh ~
+  when: 1617227126
+- cmd: ls -la
+  when: 1617227126
+- cmd: chmod +x .setup.sh
+  when: 1617227126
+- cmd: home commit -m "Added setup script"
+  when: 1617227126
+- cmd: home init
+  when: 1617227126
+- cmd: git switch -c main master
+  when: 1617227126
+- cmd: home switch -c main master
+  when: 1617227126
+- cmd: home switch -c main
+  when: 1617227126
+- cmd: home remote add origin git@github.com:https://github.com/ITRussell/Home.git
+  when: 1617227126
+- cmd: home remote add origin https//github.com/ITRussell/Home.git
+  when: 1617227126
+- cmd: git push
+  when: 1617227126
+- cmd: home push
+  when: 1617227126
+- cmd: git remote rm fatal: protocol 'git@github.com:https' is not supported
+  when: 1617227126
+- cmd: git remote rm git@github.com:https//github.com/ITRussell/Home.git
+  when: 1617227126
+- cmd: home remote rm git@github.com:https//github.com/ITRussell/Home.git
+  when: 1617227126
+- cmd: home remote rm https//github.com/ITRussell/Home.git
+  when: 1617227126
+- cmd: vi .gitconfig
+  when: 1617227126
+- cmd: home remote | xargs -n1 git remote remove
+  when: 1617227126
+- cmd: home remote | xargs -n1 home remote remove
+  when: 1617227126
+- cmd: home push origin
+  when: 1617227126
+- cmd: home remote remove origin
+  when: 1617227126
+- cmd: home remote add origin https://github.com/ITRussell/Home.git
+  when: 1617227126
+- cmd: home remote -v
+  when: 1617227126
+- cmd: sudo apt install awesome
+  when: 1617227126
+- cmd: mkdir awesome
+  when: 1617227126
+- cmd: find / -name rc.lua
+  when: 1617227126
+- cmd: sudo find / -name rc.lua
+  when: 1617227126
+- cmd: cp /etc/xdg/awesome/rc.lus ./
+  when: 1617227126
+- cmd: cp /etc/xdg/awesome/rc.lua ./
+  when: 1617227126
+- cmd: sudo apt install nitrogen compton
+  when: 1617227126
+- cmd: vi bg-saved.cfg
+  when: 1617227126
+- cmd: cd ../awesome/
+  when: 1617227126
+- cmd: cd fonts/
+  when: 1617227126
+- cmd: sudo apt install i3
+  when: 1617227126
+- cmd: sudo apt install compton
+  when: 1617227126
+- cmd: sudo apt install i3 i3status dmenu i3lock xbacklight feh
+  when: 1617227126
+- cmd: sudo ls /usr/share/backgrounds/
+  when: 1617227126
+- cmd: pwd
+  when: 1617227126
+- cmd: feh --bg-scale --zoom fill /usr/share/backgrounds/pop/nasa-45068.jpg
+  when: 1617227126
+- cmd: feh --bg-scale --zoom fill /usr/share/backgrounds/pop/ahmadreza-sajadi-10140-edit.jpg
+  when: 1617227126
+- cmd: sudo ls /usr/share/backgrounds/pop
+  when: 1617227126
+- cmd: feh --bg-scale --zoom fill /usr/share/backgrounds/pop/kate-hazen-fractal-mountains.png
+  when: 1617227126
+- cmd: feh --bg-scale --zoom fill /usr/share/backgrounds/pop/benjamin-voros-250200.jpg
+  when: 1617227126
+- cmd: sudo apt install i3-wm dunst i3lock i3status suckless-tools
+  when: 1617227126
+- cmd: sudo apt install xsel
+  when: 1617227126
+- cmd: man dmenu
+  when: 1617227126
+- cmd: dmenu -b
+  when: 1617227126
+- cmd: git clone https://github.com/addy-dclxvi/i3-starterpack.git
+  when: 1617227126
+- cmd: cat README.md
+  when: 1617227126
+- cmd: cp i3-starterpack/ ~/.config/i3/
+  when: 1617227126
+- cmd: cp -r i3-starterpack/ ~/.config/i3/
+  when: 1617227126
+- cmd: cd .config/i3
+  when: 1617227126
+- cmd: vi README.md
+  when: 1617227126
+- cmd: rm -r i3-starterpack/
+  when: 1617227126
+- cmd: cp compton.conf ~/.config/
+  when: 1617227126
+- cmd: cp ../compton.conf ~/.config/
+  when: 1617227126
+- cmd: cd dunst
+  when: 1617227126
+- cmd: cd dunst/
+  when: 1617227126
+- cmd: vi dunstrc
+  when: 1617227126
+- cmd: cp i3/config ~/.config/i3/
+  when: 1617227126
+- cmd: cd ~/.config/i3/
+  when: 1617227126
+- cmd: cd i3-starterpack/
+  when: 1617227126
+- cmd: cp -r dunst/ ~/.config/
+  when: 1617227126
+- cmd: cp i3 ~/.config/
+  when: 1617227126
+- cmd: cp -r i3status/ ~/.config/
+  when: 1617227126
+- cmd: sudo apt insall Rofi
+  when: 1617227126
+- cmd: sudo apt install Rofi
+  when: 1617227126
+- cmd: sudo apt install rofi
+  when: 1617227126
+- cmd: mv compton.conf ..
+  when: 1617227126
+- cmd: vi compton.conf
+  when: 1617227126
+- cmd: mv compton.conf .config/
+  when: 1617227126
+- cmd: vi .config/compton.conf
+  when: 1617227126
+- cmd: unzip dotfiles-master-.config-i3.zip
+  when: 1617227126
+- cmd: cd dotfiles-master-.config-i3/
+  when: 1617227126
+- cmd: cp -r i3 ~/.config/
+  when: 1617227126
+- cmd: cd ~/.config/i3
+  when: 1617227126
+- cmd: rm i3-starterpack/
+  when: 1617227126
+- cmd: cd con
+  when: 1617227126
+- cmd: rm config
+  when: 1617227126
+- cmd: exit
+  when: 1617227126
+- cmd: firefox
+  when: 1617227126
+- cmd: cd Downloads/
+  when: 1617227126
+- cmd: tar -zxvf awesome-configs-3.4.14.tar.xz
+  when: 1617227126
+- cmd: rm -r r*
+  when: 1617227126
+- cmd: rm compton.conf
+  when: 1617227126
+- cmd: sudo rm -r i3-starterpack/
+  when: 1617227126
+- cmd: git clone https://gitlab.com/dwt1/dotfiles.git
+  when: 1617227126
+- cmd: cp -r awesome/ ~/.config/
+  when: 1617227126
+- cmd: sudo apt install nitrogen
+  when: 1617227126
+- cmd: touch config.fish
+  when: 1617227369
+- cmd: cd branches/
+  when: 1617227492
+  paths:
+    - branches/
+- cmd: z
+  when: 1617227535
+- cmd: help
+  when: 1617228176
+- cmd: vi alacritty/alacritty.yml
+  when: 1617228527
+  paths:
+    - alacritty/alacritty.yml
+- cmd: vi .config/awesome/rc.lua
+  when: 1617228571
+  paths:
+    - .config/awesome/rc.lua
+- cmd: cd gtk-
+  when: 1617228792
+- cmd: cd neofetch/
+  when: 1617228851
+  paths:
+    - neofetch/
+- cmd: vi desktop.lua
+  when: 1617228884
+  paths:
+    - desktop.lua
+- cmd: vi helpers.lua
+  when: 1617228943
+  paths:
+    - helpers.lua
+- cmd: killall alacritty
+  when: 1617229092
+- cmd: vi .config/awesome/
+  when: 1617229101
+  paths:
+    - .config/awesome/
+- cmd: nit
+  when: 1617229307
+- cmd: nitr
+  when: 1617229309
+- cmd: top
+  when: 1617229941
+- cmd: cd WorkBench/GitHub/Portfolio/
+  when: 1617235936
+  paths:
+    - WorkBench/GitHub/Portfolio/
+- cmd: sudo apt install redshift
+  when: 1617236016
+- cmd: cd /etc/X11/
+  when: 1617236914
+  paths:
+    - /etc/X11/
+- cmd: cd app-defaults/
+  when: 1617236930
+  paths:
+    - app-defaults/
+- cmd: find / -name 70-synaptics
+  when: 1617236955
+  paths:
+    - /
+- cmd: sudo find / -name 70-synaptics
+  when: 1617236968
+  paths:
+    - /
+- cmd: xinput set-prop 10 278 1
+  when: 1617237049
+- cmd: xinput --list-props "Elan Touchpad"
+  when: 1617237111
+- cmd: sudo cd /usr/share/X11/xorg.conf.d/
+  when: 1617237342
+  paths:
+    - /usr/share/X11/xorg.conf.d/
+- cmd: sudo cd /usr/share/X11/
+  when: 1617237353
+  paths:
+    - /usr/share/X11/
+- cmd: cd /usr/share/X11/
+  when: 1617237362
+  paths:
+    - /usr/share/X11/
+- cmd: cd xorg.conf.d/
+  when: 1617237367
+  paths:
+    - xorg.conf.d/
+- cmd: vi 40-libinput.conf
+  when: 1617237382
+  paths:
+    - 40-libinput.conf
+- cmd: sudo vi 40-libinput.conf
+  when: 1617237434
+  paths:
+    - 40-libinput.conf
+- cmd: shutdown -c
+  when: 1617237597
+- cmd: jasdlfj
+  when: 1617237651
+- cmd: ajf
+  when: 1617237652
+- cmd: afjadf
+  when: 1617237653
+- cmd: cat fish_variables
+  when: 1617237821
+  paths:
+    - fish_variables
+- cmd: cs
+  when: 1617237875
+- cmd: vi .bash_aliases
+  when: 1617238070
+  paths:
+    - .bash_aliases
+- cmd: cat .bash_aliases >> .config/fish/config.fish
+  when: 1617238131
+  paths:
+    - .bash_aliases
+- cmd: cat config.fish
+  when: 1617238193
+  paths:
+    - config.fish
+- cmd: which
+  when: 1617238255
+- cmd: vi .bashrc
+  when: 1617238319
+- cmd: cd pyenvs/
+  when: 1617239331
+  paths:
+    - pyenvs/
+- cmd: rm home/
+  when: 1617239340
+  paths:
+    - home/
+- cmd: las
+  when: 1617239345
+- cmd: rm -r home/
+  when: 1617239353
+  paths:
+    - home/
+- cmd: source pyenvs/analysis-env/bin/activate
+  when: 1617239530
+  paths:
+    - pyenvs/analysis-env/bin/activate
+- cmd: set venv pyenvs/analysis-env/bin/activate
+  when: 1617239546
+  paths:
+    - pyenvs/analysis-env/bin/activate
+- cmd: . pyenvs/analysis-env/bin/activate
+  when: 1617239881
+  paths:
+    - pyenvs/analysis-env/bin/activate
+- cmd: find ./ activate.fish
+  when: 1617239976
+  paths:
+    - ./
+- cmd: cd pyenvs/analysis-env/bin
+  when: 1617239991
+  paths:
+    - pyenvs/analysis-env/bin
+- cmd: . pyenvs/analysis-env/bin/activate.fish
+  when: 1617240003
+- cmd: senv_a
+  when: 1617240053
+- cmd: mkdir test
+  when: 1617240176
+- cmd: cenv
+  when: 1617240460
+- cmd: rm -r ./
+  when: 1617240496
+  paths:
+    - ./
+- cmd: rm -r test/
+  when: 1617240503
+  paths:
+    - test/
+- cmd: rm -r ../pyenvs/test-env/
+  when: 1617240513
+  paths:
+    - ../pyenvs/test-env/
+- cmd: senv
+  when: 1617240524
+- cmd: python main.py
+  when: 1617240530
+- cmd: deactivate
+  when: 1617240567
+- cmd: home commit -m "Added fish config"
+  when: 1617240722
+- cmd: cd dotfiles/
+  when: 1617241769
+- cmd: mkdir Backups
+  when: 1617241870
+- cmd: firefox&
+  when: 1617241993
+- cmd: rofi
+  when: 1617242365
+- cmd: rofi -show
+  when: 1617242370
+- cmd: dmenu
+  when: 1617242383
+- cmd: sudo apt install dmenu
+  when: 1617242407
+- cmd: rofi firefox
+  when: 1617242557
+- cmd: rofi run firefox
+  when: 1617242565
+- cmd: sudo reboot
+  when: 1617242853
+- cmd: redshift -l 41:-71
+  when: 1617242914
+- cmd: man redshift
+  when: 1617242962
+- cmd: redshift -b DAY:NIGHT
+  when: 1617243012
+- cmd: redshift -b .6
+  when: 1617243031
+- cmd: redshift -l 41:-71 -m vidmode
+  when: 1617243111
+- cmd: cd ../lain/
+  when: 1617243364
+  paths:
+    - ../lain/
+- cmd: cd contrib/
+  when: 1617243435
+  paths:
+    - contrib/
+- cmd: cd wiki/
+  when: 1617243443
+  paths:
+    - wiki/
+- cmd: ls widget/
+  when: 1617243525
+  paths:
+    - widget/
+- cmd: cd widget/contrib/
+  when: 1617243562
+  paths:
+    - widget/contrib/
+- cmd: cd util/
+  when: 1617243579
+  paths:
+    - util/
+- cmd: cd ../wiki/
+  when: 1617243610
+  paths:
+    - ../wiki/
+- cmd: ls cal
+  when: 1617243665
+  paths:
+    - cal
+- cmd: ls cal/black/
+  when: 1617243675
+  paths:
+    - cal/black/
+- cmd: cd..
+  when: 1617243677
+- cmd: cd cal/
+  when: 1617243753
+  paths:
+    - cal/
+- cmd: cd white/
+  when: 1617243756
+  paths:
+    - white/
+- cmd: ls default/
+  when: 1617243771
+  paths:
+    - default/
+- cmd: ls zenburn/
+  when: 1617243779
+  paths:
+    - zenburn/
+- cmd: cd openweathermap/
+  when: 1617243848
+  paths:
+    - openweathermap/
+- cmd: cd cd ..
+  when: 1617243924
+  paths:
+    - ..
+- cmd: cd multicolor/
+  when: 1617243955
+  paths:
+    - multicolor/
+- cmd: cd icons/
+  when: 1617243958
+  paths:
+    - icons/
+- cmd: cat compton-toggle.sh
+  when: 1617244035
+  paths:
+    - compton-toggle.sh
+- cmd: git commit -m "Added awesome config"
+  when: 1617244282
+- cmd: home commit -m "Added awesome config"
+  when: 1617244293
+- cmd: home push -u -f origin main
+  when: 1617244307
+- cmd: ls gnome-s
+  when: 1617244423
+- cmd: ls gnome-settings-daemon/
+  when: 1617244429
+  paths:
+    - gnome-settings-daemon/
+- cmd: sudo cp -r /usr/share/backgrounds/pop/ ./
+  when: 1617244481
+  paths:
+    - /usr/share/backgrounds/pop/
+    - ./
+- cmd: cat fish_history
+  when: 1617244500
+  paths:
+    - fish_history
+- cmd: cd generated_completions/
+  when: 1617244766
+  paths:
+    - generated_completions/
+- cmd: ls generated_completions/
+  when: 1617244785
+  paths:
+    - generated_completions/
+- cmd: home commit -m "Added fish completetions"
+  when: 1617244914
+- cmd: cd layout/
+  when: 1617245021
+  paths:
+    - layout/
+- cmd: home commit -m "Updated gitignore"
+  when: 1617245509
+- cmd: ls freedesktop/
+  when: 1617245661
+  paths:
+    - freedesktop/
+- cmd: ls lain/
+  when: 1617245669
+  paths:
+    - lain/
+- cmd: ls layou
+  when: 1617245692
+- cmd: ls layout
+  when: 1617245694
+- cmd: ls lain/layout/
+  when: 1617245702
+  paths:
+    - lain/layout/
+- cmd: cd .config/awesome/lain/
+  when: 1617245775
+  paths:
+    - .config/awesome/lain/
+- cmd: cd lai
+  when: 1617245811
+- cmd: cd lain
+  when: 1617245813
+  paths:
+    - lain
+- cmd: home add -A
+  when: 1617245843
+- cmd: home staus
+  when: 1617245846
+- cmd: home commit -m "Fixed awesome folders"
+  when: 1617245863
+- cmd: sudo apt update && apt upgrade -y
+  when: 1617245988
+- cmd: sudo shutdown
+  when: 1617246022
+- cmd: cd .local/share/fonts/
+  when: 1617278196
+- cmd: fc-cache
+  when: 1617278548
+- cmd: home add -U
+  when: 1617278952
+- cmd: cd .home/
+  when: 1617279012
+  paths:
+    - .home/
+- cmd: cat description
+  when: 1617279022
+  paths:
+    - description
+- cmd: vi description
+  when: 1617279027
+  paths:
+    - description
+- cmd: cd hooks/
+  when: 1617279036
+  paths:
+    - hooks/
+- cmd: gith Portfolio/
+  when: 1617279101
+  paths:
+    - Portfolio/
+- cmd: cp .config/alacritty/alacritty.yml Backups/
+  when: 1617279310
+  paths:
+    - .config/alacritty/alacritty.yml
+    - Backups/
+- cmd: cp dotfiles/.config/alacritty/alacritty.yml .config/alacritty/
+  when: 1617279335
+  paths:
+    - dotfiles/.config/alacritty/alacritty.yml
+    - .config/alacritty/
+- cmd: cd .config/alacritty/
+  when: 1617279372
+- cmd: vi alacritty.yml
+  when: 1617279374
+- cmd: la
+  when: 1617279471
+- cmd: compton
+  when: 1617279793
+- cmd: cd .config/a
+  when: 1617279836
+- cmd: vi scripts/compton-toggle.sh
+  when: 1617279847
+  paths:
+    - scripts/compton-toggle.sh
+- cmd: cd ~/dotfiles/
+  when: 1617279874
+- cmd: cd picom/
+  when: 1617279926
+  paths:
+    - picom/
+- cmd: vi picom.conf
+  when: 1617279933
+  paths:
+    - picom.conf
+- cmd: cd .config/awesome/
+  when: 1617280130
+- cmd: cd scripts/
+  when: 1617280133
+  paths:
+    - scripts/
+- cmd: man compton
+  when: 1617280149
+- cmd: vi compton-toggle.sh
+  when: 1617280172
+  paths:
+    - compton-toggle.sh
+- cmd: ./compton-toggle.sh
+  when: 1617280202
+- cmd: cd .config/awesome/scripts/
+  when: 1617280557
+  paths:
+    - .config/awesome/scripts/
+- cmd: vi dot
+  when: 1617281472
+- cmd: vi dotfiles/
+  when: 1617281483
+  paths:
+    - dotfiles/
+- cmd: vi dotfiles/.config/
+  when: 1617281493
+  paths:
+    - dotfiles/.config/
+- cmd: man neofetch
+  when: 1617281744
+- cmd: vi .config/alacritty/
+  when: 1617281801
+  paths:
+    - .config/alacritty/
+- cmd: flatpak --help
+  when: 1617282123
+- cmd: flatpak list
+  when: 1617282137
+- cmd: sudo apt install pfetch
+  when: 1617393958
+- cmd: cd .minecraft/
+  when: 1617394041
+- cmd: cd launcher/
+  when: 1617394043
+- cmd: cd -a
+  when: 1617394047
+- cmd: home add -u
+  when: 1617394075
+- cmd: home commit -m "Updated configs"
+  when: 1617394092
+- cmd: home push origin main
+  when: 1617394101
+- cmd: sudo apt install tmux
+  when: 1617394372
+- cmd: dpkg -i ./Minecraft.deb
+  when: 1617395464
+  paths:
+    - ./Minecraft.deb
+- cmd: sudo dpkg -i ./Minecraft.deb
+  when: 1617395469
+- cmd: minecraft-launcher
+  when: 1617395486
+- cmd: rm Minecraft.deb
+  when: 1617395836
+  paths:
+    - Minecraft.deb
+- cmd: cp -r .config/ Backups/
+  when: 1617395863
+  paths:
+    - .config/
+    - Backups/
+- cmd: sudo rm -r .home/
+  when: 1617395889
+  paths:
+    - .home/
+- cmd: home status
+  when: 1617395896
+- cmd: git init --bare $HOME/.cfg
+  when: 1617396003
+- cmd: config
+  when: 1617396019
+- cmd: config config --local status.showUntrackedFiles no
+  when: 1617396042
+- cmd: config add .bashrc
+  when: 1617396078
+  paths:
+    - .bashrc
+- cmd: config add .bash_aliases
+  when: 1617396089
+  paths:
+    - .bash_aliases
+- cmd: config add .config/fish/
+  when: 1617396107
+  paths:
+    - .config/fish/
+- cmd: config add .config/nvim/
+  when: 1617396138
+  paths:
+    - .config/nvim/
+- cmd: git rm --cached .config/nvim/autoload/
+  when: 1617396158
+  paths:
+    - .config/nvim/autoload/
+- cmd: config rm --cached .config/nvim/autoload/
+  when: 1617396166
+  paths:
+    - .config/nvim/autoload/
+- cmd: rm .gitignore
+  when: 1617396177
+  paths:
+    - .gitignore
+- cmd: config add .config/awesome/
+  when: 1617396232
+  paths:
+    - .config/awesome/
+- cmd: config add alacrity/
+  when: 1617396251
+- cmd: config add ~/.config/alacrity/
+  when: 1617396260
+- cmd: config add .config/alacrity/
+  when: 1617396268
+- cmd: config add .config/alacritty/
+  when: 1617396275
+- cmd: config add ~/.config/alacritty/
+  when: 1617396281
+- cmd: cd Cache
+  when: 1617396302
+  paths:
+    - Cache
+- cmd: cd In
+  when: 1617396312
+- cmd: cd python3.3/
+  when: 1617396331
+  paths:
+    - python3.3/
+- cmd: config add ~/.config/sublime-text-3/Local/
+  when: 1617396392
+- cmd: cd Packages/
+  when: 1617396399
+  paths:
+    - Packages/
+- cmd: cat Preferences.sublime-settings
+  when: 1617396409
+  paths:
+    - Preferences.sublime-settings
+- cmd: config add ~/.config/sublime-text-3/Packages/User/
+  when: 1617396452
+- cmd: mv dotfiles/ dt_config
+  when: 1617396754
+  paths:
+    - dotfiles/
+- cmd: config remote add origin https://github.com/ITRussell/dotfiles.git
+  when: 1617396787
+- cmd: config branch -M master
+  when: 1617396798
+- cmd: config rm --cached .config/sublime-text-3/Local/Session.sublime_session
+  when: 1617396966
+  paths:
+    - .config/sublime-text-3/Local/Session.sublime_session
+- cmd: config commit -m "First commit"
+  when: 1617397017
+- cmd: config branch -M main
+  when: 1617397033
+- cmd: cd .vscode/
+  when: 1617397199
+  paths:
+    - .vscode/
+- cmd: cat argv.json
+  when: 1617397210
+  paths:
+    - argv.json
+- cmd: cd ms-python.python-2021.2.625869727/pythonFiles/lib/python/
+  when: 1617397223
+  paths:
+    - ms-python.python-2021.2.625869727/pythonFiles/lib/python/
+- cmd: cd jedi/
+  when: 1617397228
+  paths:
+    - jedi/
+- cmd: cd third_party/
+  when: 1617397230
+  paths:
+    - third_party/
+- cmd: vi .config/nvim
+  when: 1617397986
+  paths:
+    - .config/nvim
+- cmd: config push -u origin main
+  when: 1617398228
+- cmd: cd .cfg
+  when: 1617398331
+  paths:
+    - .cfg
+- cmd: cat config
+  when: 1617398339
+  paths:
+    - config
+- cmd: cat .gitconfig
+  when: 1617398345
+- cmd: cd .ssh/
+  when: 1617398371
+  paths:
+    - .ssh/
+- cmd: ssh-keygen -t ed25519 -C "IanThomasR@gmail.com"
+  when: 1617398862
+- cmd: eval "(ssh-agent -s)"
+  when: 1617398917
+- cmd: config commit -m "Updated nvim"
+  when: 1617399571
+- cmd: git remote rm https://github.com/ITRussell/dotfiles.git
+  when: 1617400859
+- cmd: config remote rm https://github.com/ITRussell/dotfiles.git
+  when: 1617400868
+- cmd: config remote rm origin https://github.com/ITRussell/dotfiles.git
+  when: 1617400885
+- cmd: git remote -v
+  when: 1617400893
+- cmd: config remote -v
+  when: 1617400898
+- cmd: git remote remove origin
+  when: 1617400936
+- cmd: config remote remove origin
+  when: 1617400944
+- cmd: config remote add origin git@github.com:ITRussell/dotfiles.git
+  when: 1617400980
+- cmd: cat .setup.sh
+  when: 1617401089
+  paths:
+    - .setup.sh
+- cmd: config add .setup.sh
+  when: 1617401208
+  paths:
+    - .setup.sh
+- cmd: config commit -m "Added setup script"
+  when: 1617401229
+- cmd: find / .firefox
+  when: 1617401285
+  paths:
+    - /
+- cmd: find ~/ .firefox
+  when: 1617401307
+- cmd: cat installs.ini
+  when: 1617401333
+  paths:
+    - installs.ini
+- cmd: cat profiles.ini
+  when: 1617401341
+  paths:
+    - profiles.ini
+- cmd: cd extensions/
+  when: 1617401362
+- cmd: cat times.json
+  when: 1617401475
+  paths:
+    - times.json
+- cmd: cd firefox-mpris/
+  when: 1617401744
+  paths:
+    - firefox-mpris/
+- cmd: home
+  when: 1617401760
+- cmd: cd .local/share/fonts
+  when: 1617403806
+- cmd: cp .config/starship.toml ./Backups/
+  when: 1617403874
+  paths:
+    - .config/starship.toml
+    - ./Backups/
+- cmd: cd Backups/
+  when: 1617403878
+  paths:
+    - Backups/
+- cmd: cp dt_config/.config/starship.toml ./.config/starship.toml
+  when: 1617403907
+  paths:
+    - dt_config/.config/starship.toml
+    - ./.config/starship.toml
+- cmd: echo ""
+  when: 1617403957
+- cmd: cd ian/
+  when: 1617404012
+- cmd: mkdir WebDock
+  when: 1617404031
+- cmd: cd WebDock/
+  when: 1617404037
+  paths:
+    - WebDock/
+- cmd: git clone https://github.com/abishekvashok/cmatrix.git
+  when: 1617404062
+- cmd: cd cmatrix/
+  when: 1617404084
+  paths:
+    - cmatrix/
+- cmd: configure
+  when: 1617404103
+- cmd: autoreconf
+  when: 1617404111
+- cmd: sudo apt install autoreconf
+  when: 1617404119
+- cmd: sudo apt install autoconf
+  when: 1617404132
+- cmd: autoconf -i
+  when: 1617404147
+- cmd: ./configure
+  when: 1617404154
+- cmd: make
+  when: 1617404158
+- cmd: make install
+  when: 1617404162
+- cmd: sudo rm -r cmatrix/
+  when: 1617404209
+  paths:
+    - cmatrix/
+- cmd: sudo apt install cmatrix
+  when: 1617404219
+- cmd: git pull -f
+  when: 1617404294
+- cmd: git reset --hard
+  when: 1617404308
+- cmd: cat LICENSE
+  when: 1617404335
+  paths:
+    - LICENSE
+- cmd: cat README.org
+  when: 1617404354
+  paths:
+    - README.org
+- cmd: vi .vimrc
+  when: 1617404368
+  paths:
+    - .vimrc
+- cmd: cd nvim/
+  when: 1617404627
+- cmd: touch .config/redshift.conf
+  when: 1617405255
+- cmd: config add .config/redshift.conf
+  when: 1617405335
+  paths:
+    - .config/redshift.conf
+- cmd: config commit -m "Added redshift"
+  when: 1617405363
+- cmd: chmod +x tutanota-desktop-linux.AppImage
+  when: 1617405565
+- cmd: ./tutanota-desktop-linux.AppImage
+  when: 1617405570
+- cmd: cd Apps/
+  when: 1617405669
+  paths:
+    - Apps/
+- cmd: mv tutanota-desktop-linux.AppImage tutanota
+  when: 1617405680
+  paths:
+    - tutanota-desktop-linux.AppImage
+- cmd: ./tutanota
+  when: 1617405684
+- cmd: redshift & disown
+  when: 1617405843
+- cmd: killall redshift
+  when: 1617405997
+- cmd: -e
+  when: 1617406060
+- cmd: ./Apps/tutanota &
+  when: 1617406077
+- cmd: cd Bitwarden/
+  when: 1617406817
+  paths:
+    - Bitwarden/
+- cmd: cat data.json
+  when: 1617406826
+  paths:
+    - data.json
+- cmd: cd C
+  when: 1617406867
+- cmd: cd databases/
+  when: 1617406875
+  paths:
+    - databases/
+- cmd: cd blob_storage/
+  when: 1617406890
+  paths:
+    - blob_storage/
+- cmd: cd 18236055-aed6-42cc-b614-4727366808f0/
+  when: 1617406893
+  paths:
+    - 18236055-aed6-42cc-b614-4727366808f0/
+- cmd: cat Cookies
+  when: 1617406976
+  paths:
+    - Cookies
+- cmd: cd Code/
+  when: 1617406984
+  paths:
+    - Code/
+- cmd: rm -r i3
+  when: 1617407018
+- cmd: sudo rm -r i3
+  when: 1617407032
+  paths:
+    - i3
+- cmd: cd Code
+  when: 1617407057
+  paths:
+    - Code
+- cmd: cd User/
+  when: 1617407065
+  paths:
+    - User/
+- cmd: cat settings.json
+  when: 1617407074
+  paths:
+    - settings.json
+- cmd: cd snippets/
+  when: 1617407087
+  paths:
+    - snippets/
+- cmd: cd workspaceStorage/
+  when: 1617407093
+  paths:
+    - workspaceStorage/
+- cmd: cd 2411601f26c7fef31b7eff01bbe5584f/
+  when: 1617407097
+  paths:
+    - 2411601f26c7fef31b7eff01bbe5584f/
+- cmd: cd Atom/
+  when: 1617407111
+  paths:
+    - Atom/
+- cmd: subl
+  when: 1617407118
+- cmd: config commit -m "Update"
+  when: 1617407349
+- cmd: config push
+  when: 1617407356
+- cmd: wifi
+  when: 1617414796
+- cmd: nmcli
+  when: 1617414842
+- cmd: killall mc-launcher
+  when: 1617416027
+- cmd: kill 4582
+  when: 1617416048
+- cmd: nmcli wifi
+  when: 1617416374
+- cmd: nmcli radio
+  when: 1617416381
+- cmd: nmcli radio wifi
+  when: 1617416395
+- cmd: nmcli connection
+  when: 1617416416
+- cmd: nmcli device wifi rescan
+  when: 1617416538
+- cmd: nmcli device wifi connect Linksys04464-plus password snowball
+  when: 1617416598
+- cmd: nmcli device wifi list
+  when: 1617416638
+- cmd: nmcli device
+  when: 1617416652
+- cmd: cd fish/
+  when: 1617417541
+  paths:
+    - fish/
+- cmd: config add .local/share/fish/
+  when: 1617417586
+- cmd: config commit -m "Added fish history"
+  when: 1617417629
+- cmd: config rm --cached ~/.local/share/fish/generated_completions/
+  when: 1617418141
+- cmd: config rm -r --cached ~/.local/share/fish/generated_completions/
+  when: 1617418152
+- cmd: config commit -m "Removed autocompletions dir"
+  when: 1617418183
+- cmd: sudo apt install blueman
+  when: 1617418508
+- cmd: killall blueman
+  when: 1617418668
+- cmd: cd .config/awesome/themes/
+  when: 1617418704
+  paths:
+    - .config/awesome/themes/
+- cmd: vi temp.lua
+  when: 1617418817
+  paths:
+    - temp.lua
+- cmd: cd /sys/class/thermal/thermal_zone0/
+  when: 1617418878
+  paths:
+    - /sys/class/thermal/thermal_zone0/
+- cmd: cat temp
+  when: 1617418889
+  paths:
+    - temp
+- cmd: cat emul_temp
+  when: 1617418899
+  paths:
+    - emul_temp
+- cmd: sudo cat emul_temp
+  when: 1617418934
+  paths:
+    - emul_temp
+- cmd: htop
+  when: 1617419082
+- cmd: echo "" > .config/starship.toml
+  when: 1617421840
+- cmd: fc-cache -fv
+  when: 1617421859
+- cmd: cd extension
+  when: 1617422122
+- cmd: cd 'unite@hardpixel.eu/'
+  when: 1617422135
+  paths:
+    - unite@hardpixel.eu/
+- cmd: cat settings-gtk3.ui
+  when: 1617422154
+  paths:
+    - settings-gtk3.ui
+- cmd: vi settings-gtk4.ui
+  when: 1617422259
+  paths:
+    - settings-gtk4.ui
+- cmd: cat buttons.js
+  when: 1617422311
+  paths:
+    - buttons.js
+- cmd: cd dash-to-dock@micxgx.gmail.com/
+  when: 1617422324
+- cmd: vi Settings.ui
+  when: 1617422338
+  paths:
+    - Settings.ui
+- cmd: cat application_state
+  when: 1617422406
+  paths:
+    - application_state
+- cmd: cd extension-updates/
+  when: 1617422429
+  paths:
+    - extension-updates/
+- cmd: cd flatpak/
+  when: 1617422485
+  paths:
+    - flatpak/
+- cmd: cd app
+  when: 1617422516
+  paths:
+    - app
+- cmd: cd com.mojang.Minecraft/
+  when: 1617422522
+  paths:
+    - com.mojang.Minecraft/
+- cmd: cd x86_64/
+  when: 1617422527
+  paths:
+    - x86_64/
+- cmd: sl -a
+  when: 1617422530
+- cmd: ;s
+  when: 1617422541
+- cmd: config add ~/.local/share/Fonts/
+  when: 1617422568
+- cmd: cd .local/share/
+  when: 1617422602
+- cmd: config add .local/share/fonts
+  when: 1617422618
+- cmd: config add ~/.local/share/fonts
+  when: 1617422624
+- cmd: cd fonts
+  when: 1617422642
+- cmd: cd NerdFonts/
+  when: 1617422646
+  paths:
+    - NerdFonts/
+- cmd: cat .uuid
+  when: 1617422655
+  paths:
+    - .uuid
+- cmd: config rm --cached ~/.local/share/fonts/nerdFonts/.uuid
+  when: 1617422708
+- cmd: config rm --cached ~/.local/share/fonts/NerdFonts/.uuid
+  when: 1617422718
+- cmd: config rm --cached ~/.local/share/fonts/.uuid
+  when: 1617422724
+- cmd: config commit -m "Added fonts"
+  when: 1617422760
+- cmd: cd lib/
+  when: 1617422781
+  paths:
+    - lib/
+- cmd: cd bin/
+  when: 1617422785
+- cmd: cd .jupyter/
+  when: 1617422802
+  paths:
+    - .jupyter/
+- cmd: cd lab/
+  when: 1617422804
+  paths:
+    - lab/
+- cmd: cd workspaces/
+  when: 1617422806
+  paths:
+    - workspaces/
+- cmd: cd .atom/
+  when: 1617422822
+- cmd: vi config.cson
+  when: 1617422834
+  paths:
+    - config.cson
+- cmd: config add ~/.atom/config.cson
+  when: 1617422863
+- cmd: cd .mozilla/
+  when: 1617422902
+  paths:
+    - .mozilla/
+- cmd: cd firefox/
+  when: 1617422905
+  paths:
+    - firefox/
+- cmd: cd wn7mdbin.default-release/
+  when: 1617422910
+  paths:
+    - wn7mdbin.default-release/
+- cmd: cd storage/
+  when: 1617422922
+  paths:
+    - storage/
+- cmd: cd default/
+  when: 1617422925
+  paths:
+    - default/
+- cmd: cd permanent/
+  when: 1617422940
+  paths:
+    - permanent/
+- cmd: cd temporary/
+  when: 1617422946
+  paths:
+    - temporary/
+- cmd: vi bookmarks.html
+  when: 1617422963
+  paths:
+    - bookmarks.html
+- cmd: cd bookmarkbackups/
+  when: 1617423000
+  paths:
+    - bookmarkbackups/
+- cmd: cd reqrmjt7.default/
+  when: 1617423028
+  paths:
+    - reqrmjt7.default/
+- cmd: config commit -m "Updated setup script and added more configs"
+  when: 1617423631
+- cmd: cd ../gtk-3.0/
+  when: 1617459685
+  paths:
+    - ../gtk-3.0/
+- cmd: cd pop-shell/
+  when: 1617459754
+  paths:
+    - pop-shell/
+- cmd: vi config.json
+  when: 1617459760
+  paths:
+    - config.json
+- cmd: cd gnome-settings-daemon/
+  when: 1617459806
+- cmd: cd gnome-shell/
+  when: 1617459815
+- cmd: cd extensions
+  when: 1617459820
+- cmd: cd 'dash-to-dock@micxgx.gmail.com/'
+  when: 1617459825
+  paths:
+    - dash-to-dock@micxgx.gmail.com/
+- cmd: cmatrix
+  when: 1617460797
+- cmd: xrandr
+  when: 1617461570
+- cmd: nitrogen
+  when: 1617466479
+- cmd: cd freedesktop/
+  when: 1617466802
+  paths:
+    - freedesktop/
+- cmd: vi menu.lua
+  when: 1617466874
+  paths:
+    - menu.lua
+- cmd: l
+  when: 1617466902
+- cmd: vi init.lua
+  when: 1617466910
+  paths:
+    - init.lua
+- cmd: s
+  when: 1617466923
+- cmd: cd powerarrow
+  when: 1617466926
+  paths:
+    - powerarrow
+- cmd: vi theme.lua
+  when: 1617466934
+  paths:
+    - theme.lua
+- cmd: pgrep redshift
+  when: 1617467135
+- cmd: pgrep redshift | xargs -n1 kill -9
+  when: 1617467704
+- cmd: redshift
+  when: 1617467720
+- cmd: xrandr --output LVDS-1 --brightness
+  when: 1617467872
+- cmd: xrandr --output LVDS-1 --brightness 0.75
+  when: 1617467877
+- cmd: xrandr -q | grep " connected"
+  when: 1617467952
+- cmd: xrandr --output eDP-1 --brightness 0.8
+  when: 1617468005
+- cmd: xrandr --output eDP-1 --brightness 0.2
+  when: 1617468010
+- cmd: xrandr --output eDP-1 --brightness 1
+  when: 1617468014
+- cmd: xrandr --output eDP-1 --brightness 1.3
+  when: 1617468017
+- cmd: xrandr --output eDP-1 --brightness 1.2
+  when: 1617468023
+- cmd: cd lain/
+  when: 1617468060
+  paths:
+    - lain/
+- cmd: cd widget/
+  when: 1617468074
+  paths:
+    - widget/
+- cmd: vi weather.lua
+  when: 1617468086
+  paths:
+    - weather.lua
+- cmd: vi .config/alacritty/alacritty.yml
+  when: 1617471171
+- cmd: which fish
+  when: 1617471374
+- cmd: config commit -m "Switching back to GNOME"
+  when: 1617471560
+- cmd: sudo apt install qtile
+  when: 1617471752
+- cmd: sudo apt-get install qtile
+  when: 1617471799
+- cmd: pip3 install xcffib
+  when: 1617471987
+- cmd: pip3 install --no-cache-dir cariocffi
+  when: 1617472011
+- cmd: pip3 remove xcffib
+  when: 1617472027
+- cmd: pip3 rm xcffib
+  when: 1617472033
+- cmd: pip3 uninstall xcffib
+  when: 1617472042
+- cmd: cd bspwm/
+  when: 1617472121
+  paths:
+    - bspwm/
+- cmd: vi bspwmrc
+  when: 1617472128
+  paths:
+    - bspwmrc
+- cmd: cd qutebrowser/
+  when: 1617472297
+  paths:
+    - qutebrowser/
+- cmd: cd nitrogen/
+  when: 1617472375
+- cmd: vi nitrogen.cfg
+  when: 1617472396
+- cmd: cd dt_config/
+  when: 1617472434
+  paths:
+    - dt_config/
+- cmd: cd i3/
+  when: 1617472445
+  paths:
+    - i3/
+- cmd: cd rofi/
+  when: 1617472614
+  paths:
+    - rofi/
+- cmd: vi config
+  when: 1617472617
+- cmd: c d..
+  when: 1617472642
+- cmd: mv rofi/ ~/.config/
+  when: 1617472653
+  paths:
+    - rofi/
+- cmd: mv ~/.config/rofi/ ./
+  when: 1617472669
+  paths:
+    - ./
+- cmd: cp rofi/ ~/.config/
+  when: 1617472683
+  paths:
+    - rofi/
+- cmd: cp -r rofi/ ~/.config/
+  when: 1617472688
+  paths:
+    - rofi/
+- cmd: rofi -show run
+  when: 1617472697
+- cmd: cd cef_user_data/
+  when: 1617472722
+- cmd: cd Dictionaries/
+  when: 1617472725
+- cmd: cd configstore/
+  when: 1617472732
+  paths:
+    - configstore/
+- cmd: cd autostart/
+  when: 1617472740
+  paths:
+    - autostart/
+- cmd: cd ranger/
+  when: 1617472751
+  paths:
+    - ranger/
+- cmd: cd ~/dt_config/
+  when: 1617472756
+- cmd: rm -r dt_config/
+  when: 1617472788
+  paths:
+    - dt_config/
+- cmd: sudo rm -r dt_config/
+  when: 1617472794
+  paths:
+    - dt_config/
+- cmd: cd awesome/
+  when: 1617472948
+- cmd: vi rc.lua
+  when: 1617472956
+- cmd: cd themes/
+  when: 1617472992
+- cmd: sudo rm -r multicolor/
+  when: 1617473003
+  paths:
+    - multicolor/
+- cmd: sudo rm -r powerarrow-blue/
+  when: 1617473010
+  paths:
+    - powerarrow-blue/
+- cmd: config rm -r --cahced ~/.config/awesome/themes/powerarrow-blue
+  when: 1617473042
+- cmd: config rm --cahced ~/.config/awesome/themes/powerarrow-blue
+  when: 1617473048
+- cmd: config rm -r --cached ~/.config/awesome/themes/powerarrow-blue
+  when: 1617473059
+- cmd: config rm -r --cached ~/.config/awesome/themes/multicolor
+  when: 1617473069
+- cmd: config commit -m "Tidying"
+  when: 1617473093
+- cmd: cd .local/
+  when: 1617473192
+- cmd: cd applications/
+  when: 1617473198
+  paths:
+    - applications/
+- cmd: cd goa-1.0/
+  when: 1617473306
+  paths:
+    - goa-1.0/
+- cmd: cd gtk-2.0/
+  when: 1617473314
+  paths:
+    - gtk-2.0/
+- cmd: vi gtkfilechooser.ini
+  when: 1617473321
+  paths:
+    - gtkfilechooser.ini
+- cmd: cd gtk-3.0/
+  when: 1617473334
+  paths:
+    - gtk-3.0/
+- cmd: vi bookmarks
+  when: 1617473341
+  paths:
+    - bookmarks
+- cmd: vi gtk.css
+  when: 1617473349
+  paths:
+    - gtk.css
+- cmd: cd gtk-4.0/
+  when: 1617473369
+  paths:
+    - gtk-4.0/
+- cmd: cd gnome-control-center/
+  when: 1617473380
+  paths:
+    - gnome-control-center/
+- cmd: cd backgrounds/
+  when: 1617473383
+  paths:
+    - backgrounds/
+- cmd: vi user
+  when: 1617473414
+  paths:
+    - user
+- cmd: cd gnome-session/
+  when: 1617473424
+  paths:
+    - gnome-session/
+- cmd: cd saved-session/
+  when: 1617473426
+  paths:
+    - saved-session/
+- cmd: ls goa-1.0/
+  when: 1617473564
+  paths:
+    - goa-1.0/
+- cmd: ls -a goa-1.0/
+  when: 1617473569
+  paths:
+    - goa-1.0/
+- cmd: ls -a gtk-2
+  when: 1617473576
+- cmd: cd ~/.local/
+  when: 1617473588
+- cmd: cd share/
+  when: 1617473593
+- cmd: man dconf
+  when: 1617476715
+- cmd: dconf / > dconf-settings.ini
+  when: 1617477027
+  paths:
+    - /
+- cmd: dconf dump / > dconf-settings.ini
+  when: 1617477042
+  paths:
+    - /
+- cmd: vi dconf-settings.ini
+  when: 1617477049
+  paths:
+    - dconf-settings.ini
+- cmd: mv dconf-settings.ini ~/.config/
+  when: 1617477277
+  paths:
+    - dconf-settings.ini
+- cmd: cd dconf/
+  when: 1617477358
+  paths:
+    - dconf/
+- cmd: config add ~/.config/dconf-settings.ini
+  when: 1617477382
+- cmd: config commit -m "Added dconf for GNOME"
+  when: 1617477431
+- cmd: neofetch
+  when: 1617488748
+- cmd: mkdir i3
+  when: 1617488847
+- cmd: cd i
+  when: 1617488875
+- cmd: cd i3
+  when: 1617488877
+- cmd: wget https://raw.githubusercontent.com/ChristianChiarulli/dotfiles/master/.config/i3/config
+  when: 1617488889
+- cmd: sudo apt list
+  when: 1617489881
+- cmd: apt list --installed
+  when: 1617489926
+- cmd: apt list -a i3*
+  when: 1617490005
+- cmd: sudo apt remove --purge i3
+  when: 1617490026
+- cmd: sudo apt autoremove
+  when: 1617490041
+- cmd: apt update
+  when: 1617490059
+- cmd: sudo apt update
+  when: 1617490066
+- cmd: apt list -a i3
+  when: 1617490071
+- cmd: sudo apt remove i3
+  when: 1617490085
+- cmd: apt list --installed | less
+  when: 1617490129
+- cmd: apt list --installed | grep -i i3
+  when: 1617490158
+- cmd: apt list --installed | grep -i awesome
+  when: 1617490187
+- cmd: cp -r .config/awesome/ Backups/
+  when: 1617490305
+  paths:
+    - .config/awesome/
+    - Backups/
+- cmd: git clone https://github.com/worron/awesome-config.git ~/.config/awesome --recursive
+  when: 1617490334
+- cmd: cd $HOME/.config && git clone https://github.com/pw4ever/awesome-wm-config.git awesome
+  when: 1617490717
+- cmd: sudo rm -r .config/awesome/
+  when: 1617490784
+  paths:
+    - .config/awesome/
+- cmd: sudo rm -r ~/.config/awesome/
+  when: 1617490797
+- cmd: mv ~/Backups/awesome/ ~/.config/
+  when: 1617490818
+- cmd: cp -r awesome/ ~/Backups/
+  when: 1617491259
+  paths:
+    - awesome/
+- cmd: rm -r awesome/
+  when: 1617491270
+  paths:
+    - awesome/
+- cmd: git clone https://github.com/tony/awesome-config.git ~/.config/awesome && cd ~/.config/awesome && git submodule init && git submodule update && less ~/.config/awesome/README.md
+  when: 1617491311
+- cmd: sudo apt remove i3* && sudo apt autoremove
+  when: 1617491616
+- cmd: sudo rm -r i3*
+  when: 1617491648
+- cmd: cp -r Backups/awesome/ ~/.config/awesome/
+  when: 1617493398
+  paths:
+    - Backups/awesome/
+- cmd: config restore
+  when: 1617493428
+- cmd: config pull
+  when: 1617493434
+- cmd: config pull origin main
+  when: 1617493446
+- cmd: git add -u
+  when: 1617493467
+- cmd: config restore ~/.config/awesome
+  when: 1617493515
+- cmd: config add .config/dconf-settings.ini
+  when: 1617493568
+  paths:
+    - .config/dconf-settings.ini
+- cmd: config commit -m "Fish history"
+  when: 1617493652
+- cmd: tmux
+  when: 1617493909
+- cmd: dconf dump / > ~/.config/dconf-settings.ini
+  when: 1617495048
+  paths:
+    - /
+- cmd: config commit -m "Updates"
+  when: 1617495148
+- cmd: sudo apt remove --purge blueman
+  when: 1617496149
+- cmd: cd /
+  when: 1617496171
+- cmd: cd usr/share/xsessions/
+  when: 1617496185
+  paths:
+    - usr/share/xsessions/
+- cmd: sudo rm i3-with-shmlog.desktop
+  when: 1617496198
+  paths:
+    - i3-with-shmlog.desktop
+- cmd: sudo rm i3.desktop
+  when: 1617496203
+  paths:
+    - i3.desktop
+- cmd: cd plug-config/
+  when: 1617496910
+- cmd: cd vim-plug/
+  when: 1617496913
+- cmd: vi plugins.vim
+  when: 1617497173
+- cmd: cd tmp
+  when: 1617497185
+  paths:
+    - tmp
+- cmd: touch test.py
+  when: 1617497189
+- cmd: cd sandbox/
+  when: 1617498107
+  paths:
+    - sandbox/
+- cmd: cd test/
+  when: 1617498109
+- cmd: vi test.py
+  when: 1617498529
+  paths:
+    - test.py
+- cmd: git checkout master
+  when: 1617498691
+- cmd: git config pull.rebase false
+  when: 1617498729
+- cmd: git pull
+  when: 1617498732
+- cmd: git add -a
+  when: 1617498752
+- cmd: git add *
+  when: 1617498757
+- cmd: git reset
+  when: 1617498794
+- cmd: git staus
+  when: 1617498797
+- cmd: vi .gitignore
+  when: 1617498810
+- cmd: git add -A
+  when: 1617498854
+- cmd: git status
+  when: 1617498856
+- cmd: git commit -m "Ignoring vim config"
+  when: 1617498878
+- cmd: git push origin main
+  when: 1617498884
+- cmd: config add ~/.local/share/fish/
+  when: 1617498950
+- cmd: config reset
+  when: 1617499010
+- cmd: config add -A
+  when: 1617499025
+- cmd: config commit -m "Added transparency toggle to vim"
+  when: 1617596388
+- cmd: config add ~/.setup.sh
+  when: 1617596415
+- cmd: config commit -m "Updated setup script"
+  when: 1617597096
+- cmd: config add ~/.local/share/fish/fish_history
+  when: 1617625733
+- cmd: touch backup_fish
+  when: 1617626236
+- cmd: cp fish_history backup_fish
+  when: 1617626385
+  paths:
+    - fish_history
+    - backup_fish
+- cmd: cat backup_fish
+  when: 1617626388
+  paths:
+    - backup_fish
+- cmd: ncdu
+  when: 1617626392
+- cmd: config add ~/.local/share/fish/backup_fish
+  when: 1617626412
+- cmd: config rm --cached ~/.local/share/fish/fish_history
+  when: 1617626456
+- cmd: config rm -f --cached ~/.local/share/fish/fish_history
+  when: 1617626464
+- cmd: config commit -m "Added fish history backup to avoid pull problems"
+  when: 1617626510
+- cmd: crontab -l > ~/.config/crontabs
+  when: 1617626725
+- cmd: cd ~/.config/
+  when: 1617626730
+- cmd: config add ~/.config/crontabs
+  when: 1617626790
+- cmd: config commit -m "Added crontabs"
+  when: 1617626818
+- cmd: touch test
+  when: 1617626847
+- cmd: vi test
+  when: 1617626882
+  paths:
+    - test
+- cmd: cat test | crontab -e
+  when: 1617626945
+  paths:
+    - test
+- cmd: cat crontabs | crontab -e
+  when: 1617626993
+  paths:
+    - crontabs
+- cmd: cat crontabs > crontab -e
+  when: 1617627068
+  paths:
+    - crontabs
+- cmd: cat crontabs >> crontab -e
+  when: 1617627092
+  paths:
+    - crontabs
+- cmd: crontab -e
+  when: 1617627108
+- cmd: vi crontabs
+  when: 1617627180
+  paths:
+    - crontabs
+- cmd: cat crontabs
+  when: 1617627192
+  paths:
+    - crontabs
+- cmd: rm crontab
+  when: 1617627202
+  paths:
+    - crontab
+- cmd: crontab crontabs
+  when: 1617627215
+  paths:
+    - crontabs
+- cmd: rm test
+  when: 1617629574
+  paths:
+    - test
+- cmd: touch packages.list
+  when: 1617629877
+- cmd: vi packages.list
+  when: 1617629880
+  paths:
+    - packages.list
+- cmd: ranger
+  when: 1617630401
+- cmd: sudo DEBIAN_FRONTEND=noninteractive apt-get install -qq ranger < /dev/null > /dev/null
+  when: 1617630442
+- cmd: apt-get install -qq -o=Dpkg::Use-Pty=0 ranger
+  when: 1617630513
+- cmd: sudo apt-get install -qq -o=Dpkg::Use-Pty=0 ranger
+  when: 1617630521
+- cmd: sudo apt-get install -qq -y ranger
+  when: 1617630897
+- cmd: sudo apt install pv
+  when: 1617630984
+- cmd: sudo apt-get remove --purge ranger
+  when: 1617630996
+- cmd: man pv
+  when: 1617631003
+- cmd: touch spinner.sh
+  when: 1617631233
+- cmd: chmod +x spinner.sh
+  when: 1617631249
+  paths:
+    - spinner.sh
+- cmd: ./spinner.sh
+  when: 1617631277
+- cmd: vi spinner.sh
+  when: 1617631406
+  paths:
+    - spinner.sh
+- cmd: vi ~/.setup.sh
+  when: 1617631469
+- cmd: touch test.sh
+  when: 1617631799
+- cmd: chmod +x test.sh
+  when: 1617631840
+  paths:
+    - test.sh
+- cmd: sudo apt remove --purge ranger
+  when: 1617631865
+- cmd: sudo apt install browsh
+  when: 1617631958
+- cmd: sudo apt install Browsh
+  when: 1617631966
+- cmd: sudo apt install lolcat
+  when: 1617632020
+- cmd: vi testpack
+  when: 1617632037
+- cmd: vi test.sh
+  when: 1617632053
+  paths:
+    - test.sh
+- cmd: mv testpack testpack.list
+  when: 1617632072
+  paths:
+    - testpack
+- cmd: sudo apt update >> test.log
+  when: 1617633656
+- cmd: sudo apt update > test.log
+  when: 1617633681
+- cmd: sudo apt update >> test.log > /dev/null
+  when: 1617633733
+- cmd: cat test.log
+  when: 1617633761
+  paths:
+    - test.log
+- cmd: sudo apt update >> test.log &> /dev/null
+  when: 1617633770
+- cmd: man xclip
+  when: 1617635187
+- cmd: xclip -o
+  when: 1617635202
+- cmd: xclip -o > test.sh | chmod +x
+  when: 1617635251
+- cmd: xclip -o > test.sh & chmod +x test.sh & sh test.sh
+  when: 1617635304
+  paths:
+    - test.sh
+    - test.sh
+- cmd: xclip -o > test.sh && chmod +x test.sh && sh test.sh
+  when: 1617635317
+  paths:
+    - test.sh
+    - test.sh
+- cmd: sh test.sh
+  when: 1617635345
+  paths:
+    - test.sh
+- cmd: sh spinner.sh
+  when: 1617635413
+  paths:
+    - spinner.sh
+- cmd: sudo apt echo "one \\\nheappy"
+  when: 1617636536
+- cmd: echo "one \\\nheappy"
+  when: 1617636544
+- cmd: cd VMs/
+  when: 1617636682
+- cmd: gith
+  when: 1617638271
+- cmd: cd Portfolio/
+  when: 1617638273
+- cmd: git config --list
+  when: 1617638279
+- cmd: cd ./.setup.sh
+  when: 1617639549
+  paths:
+    - ./.setup.sh
+- cmd: vi ../.setup.sh
+  when: 1617639579
+  paths:
+    - ../.setup.sh
+- cmd: ./.setup.sh
+  when: 1617640118
+- cmd: vi .setup.sh
+  when: 1617640149
+  paths:
+    - .setup.sh
+- cmd: vi ~/.setup/run_setup.sh
+  when: 1617645185
+- cmd: ./run_setup.sh
+  when: 1617645233
+- cmd: cat setup.log
+  when: 1617645327
+  paths:
+    - setup.log
+- cmd: :q
+  when: 1617645337
+- cmd: bash
+  when: 1617645388
+- cmd: config rm --cached ~/.setup.sh
+  when: 1617647315
+- cmd: config add ../setup/
+  when: 1617647342
+- cmd: config add ../.setup/
+  when: 1617647354
+- cmd: ls -a
+  when: 1617647365
+- cmd: rm .setup.sh
+  when: 1617647376
+  paths:
+    - .setup.sh
+- cmd: config add .setup/
+  when: 1617647388
+  paths:
+    - .setup/
+- cmd: config stauts
+  when: 1617647414
+- cmd: cat .local/share/fish/backup_fish
+  when: 1617647476
+  paths:
+    - .local/share/fish/backup_fish
+- cmd: sudo systemctl start crond
+  when: 1617647519
+- cmd: sudo systemctl start cron
+  when: 1617647522
+- cmd: sudo service cron start
+  when: 1617647546
+- cmd: sudo update-rc.d cron defaults
+  when: 1617647582
+- cmd: sudo systemctl enable cron
+  when: 1617647593
+- cmd: ~/.setup/
+  when: 1617647634
+- cmd: config commit -m "Updated setup script removed outputs"
+  when: 1617647869
+- cmd: cd ~/.comfig
+  when: 1617648559
+- cmd: cd ~/.config
+  when: 1617648563
+- cmd: cd sublime-text-3/
+  when: 1617648566
+  paths:
+    - sublime-text-3/
+- cmd: cd Lib/
+  when: 1617648569
+  paths:
+    - Lib/
+- cmd: cd Local/
+  when: 1617648574
+  paths:
+    - Local/
+- cmd: config rm --cached ~/.config/sublime-text-3/Local/License.sublime_license
+  when: 1617648598
+- cmd: config commit -m "Removed sublime key"
+  when: 1617648621
+- cmd: config log
+  when: 1617648656
+- cmd: gedit
+  when: 1617648746
+- cmd: config commit -m "Uncommented git"
+  when: 1617652170
+- cmd: cd .config/
+  when: 1617652677
+- cmd: config add .config/crontabs
+  when: 1617652691
+  paths:
+    - .config/crontabs
+- cmd: vim ~/.setup/run_setup.sh
+  when: 1617652710
+- cmd: config commit -m "Typo in git clone command"
+  when: 1617652859
+- cmd: cd ../.local/share/fish/
+  when: 1617652898
+  paths:
+    - ../.local/share/fish/
+- cmd: cd ~/.setup/
+  when: 1617652956
+- cmd: crontab -l
+  when: 1617653144
+- cmd: mkdir fish_functions
+  when: 1617654371
+- cmd: cd fish_functions/
+  when: 1617654380
+  paths:
+    - fish_functions/
+- cmd: touch update_config
+  when: 1617654523
+- cmd: mv update_config update_config.fish
+  when: 1617654548
+  paths:
+    - update_config
+- cmd: mv fish_functions/ functions
+  when: 1617654586
+  paths:
+    - fish_functions/
+- cmd: $fish_function_path
+  when: 1617654653
+- cmd: cd functions/
+  when: 1617654713
+  paths:
+    - functions/
+- cmd: vi update_config.fish
+  when: 1617654717
+  paths:
+    - update_config.fish
+- cmd: config add .config/fish/functions/
+  when: 1617654810
+  paths:
+    - .config/fish/functions/
+- cmd: cp .local/share/fish/fish_history .local/share/fish/backup_fish
+  when: 1617654847
+  paths:
+    - .local/share/fish/fish_history
+    - .local/share/fish/backup_fish
+- cmd: config commit -m "Added fish history cp"
+  when: 1617654978
+- cmd: vi .setup/run_setup.sh
+  when: 1617655536
+  paths:
+    - .setup/run_setup.sh
+- cmd: config add .config/packages.list
+  when: 1617656253
+  paths:
+    - .config/packages.list
+- cmd: config add -u
+  when: 1617656260
+- cmd: config commit -m "Fixing script"
+  when: 1617656274
+- cmd: vi .config/fish/config.fish
+  when: 1617704954
+  paths:
+    - .config/fish/config.fish
+- cmd: cd .setup/
+  when: 1617704978
+  paths:
+    - .setup/
+- cmd: vi run_setup.sh
+  when: 1617704982
+  paths:
+    - run_setup.sh
+- cmd: cd ..
+  when: 1617705362
+- cmd: rm setup.log spinner.sh test.log test.sh
+  when: 1617705374
+  paths:
+    - setup.log
+    - spinner.sh
+    - test.log
+    - test.sh
+- cmd: sudo rm -r newMachine/
+  when: 1617705384
+  paths:
+    - newMachine/
+- cmd: cd .config/nvim
+  when: 1617705415
+- cmd: cd general/
+  when: 1617705421
+- cmd: vi settings.vim
+  when: 1617705845
+- cmd: vi
+  when: 1617705876
+- cmd: update_config
+  when: 1617707063
+- cmd: :wq
+  when: 1617707298
+- cmd: update_configs
+  when: 1617707420
+- cmd: config push origin main
+  when: 1617707482
+- cmd: vi config.fish
+  when: 1617707498
+  paths:
+    - config.fish
+- cmd: sync
+  when: 1617708068
+- cmd: cd .local/share/fish/
+  when: 1617708186
+  paths:
+    - .local/share/fish/
+- cmd: config staus
+  when: 1617708226
+- cmd: config status
+  when: 1617708229
+- cmd: update
+  when: 1617708252
+- cmd: gpg -d backup_fish
+  when: 1617708394
+  paths:
+    - backup_fish
+- cmd: gpg -c backup_fish
+  when: 1617708409
+  paths:
+    - backup_fish
+- cmd: gpg -d backup_fish.gpg
+  when: 1617708646
+  paths:
+    - backup_fish.gpg
+- cmd: vi backup_fish.gpg
+  when: 1617708661
+  paths:
+    - backup_fish.gpg
+- cmd: vi backup_fish
+  when: 1617708680
+  paths:
+    - backup_fish
+- cmd: rm backup_fish.gpg
+  when: 1617708808
+  paths:
+    - backup_fish.gpg
+- cmd: cd
+  when: 1617708812
+- cmd: ls
+  when: 1617709004
+- cmd: wget https://github.com/ITRussell/Portfolio/blob/main/main.py
+  when: 1617709012
+- cmd: wget https://raw.githubusercontent.com/ITRussell/Portfolio/main/main.py?token=AHVHZII4PD5GFAY4UQ57SJLANREBO
+  when: 1617709035
+- cmd: cd .config/fish/
+  when: 1617709208
+  paths:
+    - .config/fish/
+- cmd: ls
+  when: 1617709209
+- cmd: cd
+  when: 1617709226
+- cmd: cd .local/share/fish/
+  when: 1617709231
+  paths:
+    - .local/share/fish/
+- cmd: ls
+  when: 1617709232
+- cmd: cd
+  when: 1617709324
+- cmd: config rm --cachched .local/share/fish/backup_fish
+  when: 1617709667
+  paths:
+    - .local/share/fish/backup_fish
+- cmd: config rm --cachhed .local/share/fish/backup_fish
+  when: 1617709674
+  paths:
+    - .local/share/fish/backup_fish
+- cmd: config rm --cached .local/share/fish/backup_fish
+  when: 1617709680
+  paths:
+    - .local/share/fish/backup_fish
+- cmd: update
+  when: 1617709684
