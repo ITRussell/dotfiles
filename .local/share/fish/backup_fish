@@ -412,13 +412,7 @@
   when: 1617227126
 - cmd: touch templates/base.html
   when: 1617227126
-- cmd: cd WorkBench/
-  when: 1617227126
-- cmd: cd GitHub/
-  when: 1617227126
 - cmd: mkdir static
-  when: 1617227126
-- cmd: touch style.css
   when: 1617227126
 - cmd: mkdir resources
   when: 1617227126
@@ -465,8 +459,6 @@
 - cmd: git commit -m "updated bashrc"
   when: 1617227126
 - cmd: sudo rm -r .git
-  when: 1617227126
-- cmd: git init
   when: 1617227126
 - cmd: git commit -m "First"
   when: 1617227126
@@ -638,13 +630,9 @@
   when: 1617227126
 - cmd: san
   when: 1617227126
-- cmd: touch index.html
-  when: 1617227126
 - cmd: nvim readme.json
   when: 1617227126
 - cmd: nvim index.html
-  when: 1617227126
-- cmd: firefox index.html
   when: 1617227126
 - cmd: sudo apt install atom
   when: 1617227126
@@ -1403,8 +1391,6 @@
   when: 1617245988
 - cmd: sudo shutdown
   when: 1617246022
-- cmd: cd .local/share/fonts/
-  when: 1617278196
 - cmd: fc-cache
   when: 1617278548
 - cmd: home add -U
@@ -1966,8 +1952,6 @@
   when: 1617419082
 - cmd: echo "" > .config/starship.toml
   when: 1617421840
-- cmd: fc-cache -fv
-  when: 1617421859
 - cmd: cd extension
   when: 1617422122
 - cmd: cd 'unite@hardpixel.eu/'
@@ -2030,10 +2014,6 @@
   when: 1617422624
 - cmd: cd fonts
   when: 1617422642
-- cmd: cd NerdFonts/
-  when: 1617422646
-  paths:
-    - NerdFonts/
 - cmd: cat .uuid
   when: 1617422655
   paths:
@@ -2758,10 +2738,6 @@
   when: 1617636544
 - cmd: cd VMs/
   when: 1617636682
-- cmd: gith
-  when: 1617638271
-- cmd: cd Portfolio/
-  when: 1617638273
 - cmd: git config --list
   when: 1617638279
 - cmd: cd ./.setup.sh
@@ -2796,8 +2772,6 @@
   when: 1617647342
 - cmd: config add ../.setup/
   when: 1617647354
-- cmd: ls -a
-  when: 1617647365
 - cmd: rm .setup.sh
   when: 1617647376
   paths:
@@ -2931,8 +2905,6 @@
   when: 1617704982
   paths:
     - run_setup.sh
-- cmd: cd ..
-  when: 1617705362
 - cmd: rm setup.log spinner.sh test.log test.sh
   when: 1617705374
   paths:
@@ -2950,8 +2922,6 @@
   when: 1617705421
 - cmd: vi settings.vim
   when: 1617705845
-- cmd: vi
-  when: 1617705876
 - cmd: update_config
   when: 1617707063
 - cmd: :wq
@@ -2966,16 +2936,10 @@
     - config.fish
 - cmd: sync
   when: 1617708068
-- cmd: cd .local/share/fish/
-  when: 1617708186
-  paths:
-    - .local/share/fish/
 - cmd: config staus
   when: 1617708226
 - cmd: config status
   when: 1617708229
-- cmd: update
-  when: 1617708252
 - cmd: gpg -d backup_fish
   when: 1617708394
   paths:
@@ -3000,10 +2964,6 @@
   when: 1617708808
   paths:
     - backup_fish.gpg
-- cmd: cd
-  when: 1617708812
-- cmd: ls
-  when: 1617709004
 - cmd: wget https://github.com/ITRussell/Portfolio/blob/main/main.py
   when: 1617709012
 - cmd: wget https://raw.githubusercontent.com/ITRussell/Portfolio/main/main.py?token=AHVHZII4PD5GFAY4UQ57SJLANREBO
@@ -3012,16 +2972,10 @@
   when: 1617709208
   paths:
     - .config/fish/
-- cmd: ls
-  when: 1617709209
-- cmd: cd
-  when: 1617709226
 - cmd: cd .local/share/fish/
   when: 1617709231
   paths:
     - .local/share/fish/
-- cmd: ls
-  when: 1617709232
 - cmd: cd
   when: 1617709324
 - cmd: config rm --cachched .local/share/fish/backup_fish
@@ -3036,8 +2990,6 @@
   when: 1617709680
   paths:
     - .local/share/fish/backup_fish
-- cmd: update
-  when: 1617709684
 - cmd: config add .local/share/fish/backup_fish
   when: 1617709881
   paths:
@@ -3050,3 +3002,87 @@
   when: 1617710017
 - cmd: update
   when: 1617710030
+- cmd: cd WorkBench/
+  when: 1617742630
+- cmd: cd GitHub/
+  when: 1617742635
+- cmd: cd Portfolio/
+  when: 1617742646
+- cmd: mkdir ITRussell
+  when: 1617742745
+- cmd: git init
+  when: 1617742786
+- cmd: touch index.html
+  when: 1617742796
+- cmd: touch style.css
+  when: 1617742818
+- cmd: touch assets
+  when: 1617742835
+- cmd: rm assets
+  when: 1617742873
+  paths:
+    - assets
+- cmd: mkdir assests
+  when: 1617742880
+- cmd: mv assests/ resources
+  when: 1617742914
+  paths:
+    - assests/
+- cmd: cd resources/
+  when: 1617742919
+  paths:
+    - resources/
+- cmd: cd ..
+  when: 1617742921
+- cmd: firefox index.html
+  when: 1617744099
+- cmd: ls a
+  when: 1617746178
+- cmd: ls -a
+  when: 1617746182
+- cmd: cd .local/share/fonts/
+  when: 1617746232
+- cmd: cd NerdFonts/
+  when: 1617746236
+  paths:
+    - NerdFonts/
+- cmd: cp ~/Downloads/Hack-v3.003-ttf
+  when: 1617746300
+- cmd: cp ~/Downloads/Hack-v3.003-ttf/ttf/Hack-Regular.ttf ./
+  when: 1617746314
+  paths:
+    - ./
+- cmd: fc-cache -fv
+  when: 1617746322
+- cmd: gith
+  when: 1617746354
+- cmd: cd ITRussell/
+  when: 1617746361
+  paths:
+    - ITRussell/
+- cmd: vi
+  when: 1617746645
+- cmd: ls
+  when: 1617747140
+- cmd: cd
+  when: 1617747144
+- cmd: config status
+  when: 1617747146
+- cmd: config add .local/share/fonts/NerdFonts/
+  when: 1617747172
+  paths:
+    - .local/share/fonts/NerdFonts/
+- cmd: config status
+  when: 1617747175
+- cmd: config rm .local/share/fonts/NerdFonts/.uuid
+  when: 1617747213
+  paths:
+    - .local/share/fonts/NerdFonts/.uuid
+- cmd: config rm --cached .local/share/fonts/NerdFonts/.uuid
+  when: 1617747225
+  paths:
+    - .local/share/fonts/NerdFonts/.uuid
+- cmd: config status
+  when: 1617747228
+- cmd: update
+  when: 1617747233
