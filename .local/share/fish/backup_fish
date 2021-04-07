@@ -1232,8 +1232,6 @@
   when: 1617242557
 - cmd: rofi run firefox
   when: 1617242565
-- cmd: sudo reboot
-  when: 1617242853
 - cmd: redshift -l 41:-71
   when: 1617242914
 - cmd: man redshift
@@ -1766,8 +1764,6 @@
   when: 1617404219
 - cmd: git pull -f
   when: 1617404294
-- cmd: git reset --hard
-  when: 1617404308
 - cmd: cat LICENSE
   when: 1617404335
   paths:
@@ -2742,16 +2738,12 @@
     - .setup.sh
 - cmd: vi ~/.setup/run_setup.sh
   when: 1617645185
-- cmd: ./run_setup.sh
-  when: 1617645233
 - cmd: cat setup.log
   when: 1617645327
   paths:
     - setup.log
 - cmd: :q
   when: 1617645337
-- cmd: bash
-  when: 1617645388
 - cmd: config rm --cached ~/.setup.sh
   when: 1617647315
 - cmd: config add ../setup/
@@ -2879,14 +2871,6 @@
   when: 1617704954
   paths:
     - .config/fish/config.fish
-- cmd: cd .setup/
-  when: 1617704978
-  paths:
-    - .setup/
-- cmd: vi run_setup.sh
-  when: 1617704982
-  paths:
-    - run_setup.sh
 - cmd: rm setup.log spinner.sh test.log test.sh
   when: 1617705374
   paths:
@@ -3040,10 +3024,6 @@
   when: 1617747225
   paths:
     - .local/share/fonts/NerdFonts/.uuid
-- cmd: vi
-  when: 1617748083
-- cmd: gith
-  when: 1617749387
 - cmd: sudo rm -r Portfolio/
   when: 1617749396
   paths:
@@ -3078,8 +3058,6 @@
   when: 1617749843
 - cmd: git push origin main
   when: 1617749849
-- cmd: config status
-  when: 1617749960
 - cmd: cd .config/fish/
   when: 1617801226
   paths:
@@ -3092,12 +3070,6 @@
   when: 1617801246
   paths:
     - packages.list
-- cmd: vi .setup/run_setup.sh
-  when: 1617801267
-  paths:
-    - .setup/run_setup.sh
-- cmd: update
-  when: 1617801662
 - cmd: lsa
   when: 1617802754
 - cmd: vi setup.log
@@ -3114,38 +3086,18 @@
   when: 1617802929
   paths:
     - dconf-settings.ini
-- cmd: ls
-  when: 1617803613
 - cmd: rm setup.sh
   when: 1617803634
   paths:
     - setup.sh
-- cmd: ls
-  when: 1617803635
-- cmd: config status
-  when: 1617803640
 - cmd: cd .setup/
   when: 1617803644
   paths:
     - .setup/
-- cmd: ls
-  when: 1617803645
-- cmd: vi run_setup.sh
-  when: 1617803650
-  paths:
-    - run_setup.sh
-- cmd: ls
-  when: 1617803870
 - cmd: ./run_setup.sh
   when: 1617803873
 - cmd: Lls
   when: 1617803911
-- cmd: ls
-  when: 1617803912
-- cmd: vi run_setup.sh
-  when: 1617803917
-  paths:
-    - run_setup.sh
 - cmd: git reset --hard
   when: 1617803940
 - cmd: config reset --hard
@@ -3160,7 +3112,78 @@
     - run_setup.sh
 - cmd: bash
   when: 1617804047
-- cmd: config status
-  when: 1617804260
 - cmd: update
   when: 1617804266
+- cmd: subl .setup/run_setup.sh
+  when: 1617805284
+  paths:
+    - .setup/run_setup.sh
+- cmd: echo y | curl -fsSL https://starship.rs/install.sh | bash
+  when: 1617805453
+- cmd: curl -fsSL https://starship.rs/install.sh | yes | bash
+  when: 1617805548
+- cmd: curl -fsSL https://starship.rs/install.sh | bash | yes
+  when: 1617805569
+- cmd: yes | curl -fsSL https://starship.rs/install.sh | bash
+  when: 1617805575
+- cmd: man yes
+  when: 1617805586
+- cmd: config status
+  when: 1617805662
+- cmd: vi
+  when: 1617805680
+- cmd: vi .setup/run_setup.sh
+  when: 1617805707
+  paths:
+    - .setup/run_setup.sh
+- cmd: sudo reboot
+  when: 1617805727
+- cmd: rm setup.log setup.sh
+  when: 1617805803
+  paths:
+    - setup.log
+    - setup.sh
+- cmd: jls
+  when: 1617806395
+- cmd: gith
+  when: 1617806402
+- cmd: ls
+  when: 1617806403
+- cmd: ks
+  when: 1617806406
+- cmd: ls
+  when: 1617806408
+- cmd: curl "https://api.github.com/$CNTX/$NAME/repos?page=$PAGE&per_page=100" |\n  grep -e 'git_url*' |\n  cut -d \\" -f 4 |\n  xargs -L1 git clone\\
+  when: 1617806641
+- cmd: curl -s https://$GITHUB_AT:@api.github.com/orgs/itrussell/repos?per_page=200
+  when: 1617806851
+- cmd: curl -i https://github.com/api/v3/itrussell/repos
+  when: 1617806981
+- cmd: curl -i https://api.github.com/api/v3/itrussell/repos
+  when: 1617807014
+- cmd: curl -i https://api.github.com/api/v3/
+  when: 1617807022
+- cmd: curl -i https://api.github.com/
+  when: 1617807026
+- cmd: curl -i https://api.github.com/itrussell
+  when: 1617807034
+- cmd: curl -i https://api.github.com/ITRussell
+  when: 1617807041
+- cmd: curl -i https://api.github.com/users/ITRussell
+  when: 1617807067
+- cmd: curl -i https://api.github.com/users/ITRussell/repos
+  when: 1617807086
+- cmd: curl -i https://api.github.com/users/ITRussell/repos | grep -e 'git_url*' | cut -d \\" -f 4 | xargs -L1 git clone
+  when: 1617807799
+- cmd: ls
+  when: 1617807820
+- cmd: cd
+  when: 1617807837
+- cmd: vi .setup/run_setup.sh
+  when: 1617807844
+  paths:
+    - .setup/run_setup.sh
+- cmd: config status
+  when: 1617808039
+- cmd: update
+  when: 1617808051
