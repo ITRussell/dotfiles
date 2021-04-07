@@ -134,8 +134,6 @@
   when: 1617227126
 - cmd: code Bob-Ross/
   when: 1617227126
-- cmd: cd Data-Challenges/
-  when: 1617227126
 - cmd: source /home/ian/WorkBench/pyenvs/analysis-env/bin/activate
   when: 1617227126
 - cmd: export FLASK_APP=myPortfolio.py
@@ -465,8 +463,6 @@
 - cmd: git remote add https://github.com/itrussell/Portfolio.git
   when: 1617227126
 - cmd: git remote add origin https://github.com/itrussell/Portfolio.git
-  when: 1617227126
-- cmd: git push origin master
   when: 1617227126
 - cmd: cat packages.el
   when: 1617227126
@@ -1662,8 +1658,6 @@
   when: 1617400868
 - cmd: config remote rm origin https://github.com/ITRussell/dotfiles.git
   when: 1617400885
-- cmd: git remote -v
-  when: 1617400893
 - cmd: config remote -v
   when: 1617400898
 - cmd: git remote remove origin
@@ -2531,8 +2525,6 @@
   when: 1617498794
 - cmd: git staus
   when: 1617498797
-- cmd: vi .gitignore
-  when: 1617498810
 - cmd: git commit -m "Ignoring vim config"
   when: 1617498878
 - cmd: config add ~/.local/share/fish/
@@ -2990,8 +2982,6 @@
   when: 1617744099
 - cmd: ls a
   when: 1617746178
-- cmd: ls -a
-  when: 1617746182
 - cmd: cd .local/share/fonts/
   when: 1617746232
 - cmd: cd NerdFonts/
@@ -3006,12 +2996,6 @@
     - ./
 - cmd: fc-cache -fv
   when: 1617746322
-- cmd: cd ITRussell/
-  when: 1617746361
-  paths:
-    - ITRussell/
-- cmd: cd
-  when: 1617747144
 - cmd: config add .local/share/fonts/NerdFonts/
   when: 1617747172
   paths:
@@ -3046,18 +3030,12 @@
   when: 1617749683
   paths:
     - ITRussell.github.io/
-- cmd: git add -A
-  when: 1617749782
-- cmd: git status
-  when: 1617749787
 - cmd: git commit -m "First commit!"
   when: 1617749804
 - cmd: git remote add origin git@github.com:ITRussell/ITRussell.github.io.git
   when: 1617749827
 - cmd: git branch -m main
   when: 1617749843
-- cmd: git push origin main
-  when: 1617749849
 - cmd: cd .config/fish/
   when: 1617801226
   paths:
@@ -3080,8 +3058,6 @@
   when: 1617802920
   paths:
     - .config/dconf/
-- cmd: cd ..
-  when: 1617802921
 - cmd: vi dconf-settings.ini
   when: 1617802929
   paths:
@@ -3112,8 +3088,6 @@
     - run_setup.sh
 - cmd: bash
   when: 1617804047
-- cmd: update
-  when: 1617804266
 - cmd: subl .setup/run_setup.sh
   when: 1617805284
   paths:
@@ -3128,14 +3102,8 @@
   when: 1617805575
 - cmd: man yes
   when: 1617805586
-- cmd: config status
-  when: 1617805662
 - cmd: vi
   when: 1617805680
-- cmd: vi .setup/run_setup.sh
-  when: 1617805707
-  paths:
-    - .setup/run_setup.sh
 - cmd: sudo reboot
   when: 1617805727
 - cmd: rm setup.log setup.sh
@@ -3145,14 +3113,8 @@
     - setup.sh
 - cmd: jls
   when: 1617806395
-- cmd: gith
-  when: 1617806402
-- cmd: ls
-  when: 1617806403
 - cmd: ks
   when: 1617806406
-- cmd: ls
-  when: 1617806408
 - cmd: curl "https://api.github.com/$CNTX/$NAME/repos?page=$PAGE&per_page=100" |\n  grep -e 'git_url*' |\n  cut -d \\" -f 4 |\n  xargs -L1 git clone\\
   when: 1617806641
 - cmd: curl -s https://$GITHUB_AT:@api.github.com/orgs/itrussell/repos?per_page=200
@@ -3171,12 +3133,8 @@
   when: 1617807041
 - cmd: curl -i https://api.github.com/users/ITRussell
   when: 1617807067
-- cmd: curl -i https://api.github.com/users/ITRussell/repos
-  when: 1617807086
 - cmd: curl -i https://api.github.com/users/ITRussell/repos | grep -e 'git_url*' | cut -d \\" -f 4 | xargs -L1 git clone
   when: 1617807799
-- cmd: ls
-  when: 1617807820
 - cmd: cd
   when: 1617807837
 - cmd: vi .setup/run_setup.sh
@@ -3187,3 +3145,117 @@
   when: 1617808039
 - cmd: update
   when: 1617808051
+- cmd: gith
+  when: 1617808075
+- cmd: cd ITRussell/
+  when: 1617808089
+  paths:
+    - ITRussell/
+- cmd: rm -r ITRussell/
+  when: 1617808102
+  paths:
+    - ITRussell/
+- cmd: sudo rm -r ITRussell/
+  when: 1617808108
+  paths:
+    - ITRussell/
+- cmd: cd itrussell.github.io/
+  when: 1617808117
+  paths:
+    - itrussell.github.io/
+- cmd: cd Data-Challenges/
+  when: 1617808124
+- cmd: cd Courses/
+  when: 1617808135
+  paths:
+    - Courses/
+- cmd: vi practice.py
+  when: 1617808224
+  paths:
+    - practice.py
+- cmd: python3 practice.py
+  when: 1617808313
+  paths:
+    - practice.py
+- cmd: rm -r tmp/
+  when: 1617808340
+  paths:
+    - tmp/
+- cmd: ls -a
+  when: 1617808392
+- cmd: vi .gitignore
+  when: 1617808405
+- cmd: git rm --cached tmp
+  when: 1617808540
+- cmd: git rm --cached /tmp
+  when: 1617808545
+  paths:
+    - /tmp
+- cmd: git push origin main
+  when: 1617808555
+- cmd: git remote -v
+  when: 1617808592
+- cmd: curl -i https://api.github.com/users/ITRussell/repos
+  when: 1617808741
+- cmd: git remot set-url origin master https://github.com/ITRussell/Courses.git
+  when: 1617809256
+- cmd: git remote set-url origin master https://github.com/ITRussell/Courses.git
+  when: 1617809261
+- cmd: git remote set-url origin https://github.com/ITRussell/Courses.git
+  when: 1617809475
+- cmd: git status
+  when: 1617809649
+- cmd: git add -A
+  when: 1617809653
+- cmd: git commit -m "Updated editior"
+  when: 1617809664
+- cmd: git push origin master
+  when: 1617809672
+- cmd: ls
+  when: 1617809791
+- cmd: cd ..
+  when: 1617809795
+- cmd: ls
+  when: 1617809796
+- cmd: rm -r *
+  when: 1617809809
+- cmd: sudo rm -r *
+  when: 1617809815
+- cmd: ls
+  when: 1617809820
+- cmd: curl -i https://api.github.com/users/ITRussell/repos
+  when: 1617810056
+- cmd: curl -i https://api.github.com/users/ITRussell/repos | grep -e 'html_url*' | cut -d \\" -f 4 | xargs -L1 git clone
+  when: 1617810130
+- cmd: ls
+  when: 1617810157
+- cmd: rm -r *
+  when: 1617810161
+- cmd: cd Courses/
+  when: 1617810166
+  paths:
+    - Courses/
+- cmd: ls
+  when: 1617810167
+- cmd: cd ..
+  when: 1617810168
+  paths:
+    - ..
+- cmd: ls
+  when: 1617810174
+- cmd: sudo rm -r *
+  when: 1617810181
+- cmd: ls
+  when: 1617810183
+- cmd: curl -i https://api.github.com/users/ITRussell/repos | grep -e 'clone_url*' | cut -d \\" -f 4 | xargs -L1 git clone
+  when: 1617810206
+- cmd: ls
+  when: 1617810233
+- cmd: cd
+  when: 1617810238
+- cmd: vi .setup/run_setup.sh
+  when: 1617810243
+  paths:
+    - .setup/run_setup.sh
+- cmd: update
+  when: 1617810287

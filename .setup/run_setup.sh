@@ -56,7 +56,7 @@ echo "Cloning my repos..."
 
 # Cloning my projects
 cd ~/WorkBench/GitHub/
-curl -i https://api.github.com/users/ITRussell/repos | grep -e 'git_url*' | cut -d \" -f 4 | xargs -L1 git clone
+curl -i https://api.github.com/users/ITRussell/repos | grep -e 'clone_url*' | cut -d \" -f 4 | xargs -L1 git clone &>> setup.log
 cd 
 
 # Packages
