@@ -29,7 +29,6 @@ git config --global user.name "${GITUSER}"
 GITEMAIL="IanThomasR@gmail.com";
 git config --global user.email "${GITEMAIL}"
 
-echo "alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'" >> $HOME/.bashrc
 
 # And that your source repository ignores the folder where you'll clone it, so that you don't create weird recursion problems:
 echo ".cfg" >> .gitignore
@@ -57,7 +56,7 @@ dconf load / < ~/.config/dconf-settings.ini
 # Packages
 echo
 echo "Installing software..."
-
+curl -fsSL https://starship.rs/install.sh | bash
 xargs -a ~/.config/packages.list sudo apt install -y -qq &>> setup.log  
 sudo npm i -g yarn &>> setup.log  
 sudo apt-get install fuse libfuse2 git python3-pip ack-grep -y &>> setup.log 

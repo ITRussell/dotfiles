@@ -2938,8 +2938,6 @@
   when: 1617708068
 - cmd: config staus
   when: 1617708226
-- cmd: config status
-  when: 1617708229
 - cmd: gpg -d backup_fish
   when: 1617708394
   paths:
@@ -2976,8 +2974,6 @@
   when: 1617709231
   paths:
     - .local/share/fish/
-- cmd: cd
-  when: 1617709324
 - cmd: config rm --cachched .local/share/fish/backup_fish
   when: 1617709667
   paths:
@@ -3000,14 +2996,10 @@
     - .config/sublime-text-3/Local/License.sublime_license
 - cmd: config commit -m "Added more things"
   when: 1617710017
-- cmd: update
-  when: 1617710030
 - cmd: cd WorkBench/
   when: 1617742630
 - cmd: cd GitHub/
   when: 1617742635
-- cmd: cd Portfolio/
-  when: 1617742646
 - cmd: mkdir ITRussell
   when: 1617742745
 - cmd: git init
@@ -3032,8 +3024,6 @@
   when: 1617742919
   paths:
     - resources/
-- cmd: cd ..
-  when: 1617742921
 - cmd: firefox index.html
   when: 1617744099
 - cmd: ls a
@@ -3054,26 +3044,16 @@
     - ./
 - cmd: fc-cache -fv
   when: 1617746322
-- cmd: gith
-  when: 1617746354
 - cmd: cd ITRussell/
   when: 1617746361
   paths:
     - ITRussell/
-- cmd: vi
-  when: 1617746645
-- cmd: ls
-  when: 1617747140
 - cmd: cd
   when: 1617747144
-- cmd: config status
-  when: 1617747146
 - cmd: config add .local/share/fonts/NerdFonts/
   when: 1617747172
   paths:
     - .local/share/fonts/NerdFonts/
-- cmd: config status
-  when: 1617747175
 - cmd: config rm .local/share/fonts/NerdFonts/.uuid
   when: 1617747213
   paths:
@@ -3086,3 +3066,95 @@
   when: 1617747228
 - cmd: update
   when: 1617747233
+- cmd: vi
+  when: 1617748083
+- cmd: gith
+  when: 1617749387
+- cmd: sudo rm -r Portfolio/
+  when: 1617749396
+  paths:
+    - Portfolio/
+- cmd: mv Portfolio/ old_Portfolio
+  when: 1617749448
+  paths:
+    - Portfolio/
+- cmd: mv ITRussell/ Portfolio/
+  when: 1617749467
+  paths:
+    - ITRussell/
+- cmd: cd Portfolio/
+  when: 1617749661
+- cmd: cd ..
+  when: 1617749663
+- cmd: mv Portfolio/ ITRussell.github.io
+  when: 1617749676
+  paths:
+    - Portfolio/
+- cmd: cd ITRussell.github.io/
+  when: 1617749683
+  paths:
+    - ITRussell.github.io/
+- cmd: ls
+  when: 1617749684
+- cmd: git status
+  when: 1617749763
+- cmd: ls
+  when: 1617749779
+- cmd: git add -A
+  when: 1617749782
+- cmd: git status
+  when: 1617749787
+- cmd: git commit -m "First commit!"
+  when: 1617749804
+- cmd: git remote add origin git@github.com:ITRussell/ITRussell.github.io.git
+  when: 1617749827
+- cmd: git branch -m main
+  when: 1617749843
+- cmd: ls
+  when: 1617749846
+- cmd: git push origin main
+  when: 1617749849
+- cmd: ls
+  when: 1617749937
+- cmd: update
+  when: 1617749947
+- cmd: ls
+  when: 1617749954
+- cmd: config status
+  when: 1617749960
+- cmd: ls
+  when: 1617749966
+- cmd: ls
+  when: 1617801223
+- cmd: cd .config/fish/
+  when: 1617801226
+  paths:
+    - .config/fish/
+- cmd: ls
+  when: 1617801227
+- cmd: cd ..
+  when: 1617801230
+  paths:
+    - ..
+- cmd: ls
+  when: 1617801230
+- cmd: rm test.sh
+  when: 1617801242
+  paths:
+    - test.sh
+- cmd: ls
+  when: 1617801243
+- cmd: vi packages.list
+  when: 1617801246
+  paths:
+    - packages.list
+- cmd: cd ..
+  when: 1617801258
+  paths:
+    - ..
+- cmd: vi .setup/run_setup.sh
+  when: 1617801267
+  paths:
+    - .setup/run_setup.sh
+- cmd: update
+  when: 1617801662
