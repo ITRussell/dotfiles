@@ -32,5 +32,5 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'vim-airline/vim-airline-themes'
 
     " Scratch pad
-    Plug 'metakirby5/codi.vim' 
+    Plug 'metakirby5/codi.vim'
 call plug#end()
