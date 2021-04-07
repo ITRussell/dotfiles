@@ -36,18 +36,15 @@ echo ".cfg" >> .gitignore
 # Clone dot files repo
 git clone --bare https://github.com/itrussell/dotfiles.git $HOME/.cfg
 
-# Define the alias in the current shell scope:
-alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
-
 # backup any existing configs
 mkdir -p .config-backup && \
-config checkout 2>&1 | egrep "\s+\." | awk {'print $1'} | \
+/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME checkout 2>&1 | egrep "\s+\." | awk {'print $1'} | \
 xargs -I{} mv {} .config-backup/{}
 
 # Checkout
-config checkout
+/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME checkout
 # Set to not show untracked files
-config config --local status.showUntrackedFiles no
+/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME config --local status.showUntrackedFiles no
 
 # Set system preferences
 echo

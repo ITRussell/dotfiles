@@ -2378,10 +2378,6 @@
   when: 1617477042
   paths:
     - /
-- cmd: vi dconf-settings.ini
-  when: 1617477049
-  paths:
-    - dconf-settings.ini
 - cmd: mv dconf-settings.ini ~/.config/
   when: 1617477277
   paths:
@@ -2541,14 +2537,8 @@
   when: 1617498797
 - cmd: vi .gitignore
   when: 1617498810
-- cmd: git add -A
-  when: 1617498854
-- cmd: git status
-  when: 1617498856
 - cmd: git commit -m "Ignoring vim config"
   when: 1617498878
-- cmd: git push origin main
-  when: 1617498884
 - cmd: config add ~/.local/share/fish/
   when: 1617498950
 - cmd: config reset
@@ -2638,10 +2628,6 @@
     - test
 - cmd: touch packages.list
   when: 1617629877
-- cmd: vi packages.list
-  when: 1617629880
-  paths:
-    - packages.list
 - cmd: ranger
   when: 1617630401
 - cmd: sudo DEBIAN_FRONTEND=noninteractive apt-get install -qq ranger < /dev/null > /dev/null
@@ -2881,10 +2867,6 @@
     - .local/share/fish/backup_fish
 - cmd: config commit -m "Added fish history cp"
   when: 1617654978
-- cmd: vi .setup/run_setup.sh
-  when: 1617655536
-  paths:
-    - .setup/run_setup.sh
 - cmd: config add .config/packages.list
   when: 1617656253
   paths:
@@ -2966,10 +2948,6 @@
   when: 1617709012
 - cmd: wget https://raw.githubusercontent.com/ITRussell/Portfolio/main/main.py?token=AHVHZII4PD5GFAY4UQ57SJLANREBO
   when: 1617709035
-- cmd: cd .config/fish/
-  when: 1617709208
-  paths:
-    - .config/fish/
 - cmd: cd .local/share/fish/
   when: 1617709231
   paths:
@@ -3062,10 +3040,6 @@
   when: 1617747225
   paths:
     - .local/share/fonts/NerdFonts/.uuid
-- cmd: config status
-  when: 1617747228
-- cmd: update
-  when: 1617747233
 - cmd: vi
   when: 1617748083
 - cmd: gith
@@ -3084,8 +3058,6 @@
     - ITRussell/
 - cmd: cd Portfolio/
   when: 1617749661
-- cmd: cd ..
-  when: 1617749663
 - cmd: mv Portfolio/ ITRussell.github.io
   when: 1617749676
   paths:
@@ -3094,12 +3066,6 @@
   when: 1617749683
   paths:
     - ITRussell.github.io/
-- cmd: ls
-  when: 1617749684
-- cmd: git status
-  when: 1617749763
-- cmd: ls
-  when: 1617749779
 - cmd: git add -A
   when: 1617749782
 - cmd: git status
@@ -3110,51 +3076,91 @@
   when: 1617749827
 - cmd: git branch -m main
   when: 1617749843
-- cmd: ls
-  when: 1617749846
 - cmd: git push origin main
   when: 1617749849
-- cmd: ls
-  when: 1617749937
-- cmd: update
-  when: 1617749947
-- cmd: ls
-  when: 1617749954
 - cmd: config status
   when: 1617749960
-- cmd: ls
-  when: 1617749966
-- cmd: ls
-  when: 1617801223
 - cmd: cd .config/fish/
   when: 1617801226
   paths:
     - .config/fish/
-- cmd: ls
-  when: 1617801227
-- cmd: cd ..
-  when: 1617801230
-  paths:
-    - ..
-- cmd: ls
-  when: 1617801230
 - cmd: rm test.sh
   when: 1617801242
   paths:
     - test.sh
-- cmd: ls
-  when: 1617801243
 - cmd: vi packages.list
   when: 1617801246
   paths:
     - packages.list
-- cmd: cd ..
-  when: 1617801258
-  paths:
-    - ..
 - cmd: vi .setup/run_setup.sh
   when: 1617801267
   paths:
     - .setup/run_setup.sh
 - cmd: update
   when: 1617801662
+- cmd: lsa
+  when: 1617802754
+- cmd: vi setup.log
+  when: 1617802765
+  paths:
+    - setup.log
+- cmd: cd .config/dconf/
+  when: 1617802920
+  paths:
+    - .config/dconf/
+- cmd: cd ..
+  when: 1617802921
+- cmd: vi dconf-settings.ini
+  when: 1617802929
+  paths:
+    - dconf-settings.ini
+- cmd: ls
+  when: 1617803613
+- cmd: rm setup.sh
+  when: 1617803634
+  paths:
+    - setup.sh
+- cmd: ls
+  when: 1617803635
+- cmd: config status
+  when: 1617803640
+- cmd: cd .setup/
+  when: 1617803644
+  paths:
+    - .setup/
+- cmd: ls
+  when: 1617803645
+- cmd: vi run_setup.sh
+  when: 1617803650
+  paths:
+    - run_setup.sh
+- cmd: ls
+  when: 1617803870
+- cmd: ./run_setup.sh
+  when: 1617803873
+- cmd: Lls
+  when: 1617803911
+- cmd: ls
+  when: 1617803912
+- cmd: vi run_setup.sh
+  when: 1617803917
+  paths:
+    - run_setup.sh
+- cmd: git reset --hard
+  when: 1617803940
+- cmd: config reset --hard
+  when: 1617803945
+- cmd: vi run_setup.sh
+  when: 1617803951
+  paths:
+    - run_setup.sh
+- cmd: source run_setup.sh
+  when: 1617804042
+  paths:
+    - run_setup.sh
+- cmd: bash
+  when: 1617804047
+- cmd: config status
+  when: 1617804260
+- cmd: update
+  when: 1617804266
