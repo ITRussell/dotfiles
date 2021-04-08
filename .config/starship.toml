@@ -2,7 +2,7 @@
 add_newline = false
 
 format = """ 
-[┌───────────────────](bold green) $time 
+[┌───────────────────](bold green) $time $jobs 
 [│](bold green)$charging_symbol$battery$cmd_duration $directory\
                 $git_branch$git_commit$git_state$git_status$python
 $character
