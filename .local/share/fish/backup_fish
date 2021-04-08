@@ -2517,8 +2517,6 @@
   when: 1617498950
 - cmd: config reset
   when: 1617499010
-- cmd: config add -A
-  when: 1617499025
 - cmd: config commit -m "Added transparency toggle to vim"
   when: 1617596388
 - cmd: config add ~/.setup.sh
@@ -2880,8 +2878,6 @@
   when: 1617707298
 - cmd: update_configs
   when: 1617707420
-- cmd: config push origin main
-  when: 1617707482
 - cmd: vi config.fish
   when: 1617707498
   paths:
@@ -3038,8 +3034,6 @@
   when: 1617801267
   paths:
     - .setup/run_setup.sh
-- cmd: update
-  when: 1617801662
 - cmd: config pull
   when: 1617820100
 - cmd: wget https://gist.githubusercontent.com/yerbestpal/e2989913e981ac8ed592c0122e37bcf2/raw/7b3b187cf307899b035741c60a163bdce15e8ebe/starship.toml
@@ -3110,8 +3104,6 @@
     - Hack/
 - cmd: vi .config/alacritty/alacritty.yml
   when: 1617831960
-- cmd: config status
-  when: 1617832021
 - cmd: home
   when: 1617833023
 - cmd: cd alacritty/
@@ -3268,10 +3260,6 @@
     - css/
 - cmd: cd ~/.local/share/fonts/
   when: 1617836869
-- cmd: cd NerdFonts/
-  when: 1617836872
-  paths:
-    - NerdFonts/
 - cmd: cd ../..
   when: 1617836979
   paths:
@@ -3362,12 +3350,6 @@
   when: 1617844166
   paths:
     - 10-nerd-font-symbols.conf
-- cmd: fc-cache -f -v
-  when: 1617844172
-- cmd: gith
-  when: 1617844184
-- cmd: cd Data-Challenges/
-  when: 1617844186
 - cmd: cd ITRussell.github.io/
   when: 1617844196
   paths:
@@ -3376,8 +3358,6 @@
   when: 1617844198
   paths:
     - js/
-- cmd: vi
-  when: 1617844234
 - cmd: cd ..
   when: 1617844336
 - cmd: mv ITRussell.github.io/ itrussell
@@ -3388,12 +3368,8 @@
   when: 1617844350
   paths:
     - itrussell/
-- cmd: cd
-  when: 1617844413
 - cmd: cd .local/share/fonts/
   when: 1617844422
-- cmd: ls
-  when: 1617844443
 - cmd: ls ~/.config/
   when: 1617844467
 - cmd: cd /
@@ -3418,53 +3394,83 @@
     - /etc/fonts/conf.d/
 - cmd: fc-cache -f -v
   when: 1617844599
-- cmd: ls
-  when: 1617844610
 - cmd: cd
   when: 1617844612
 - cmd: gith
   when: 1617844615
 - cmd: cd Data-Challenges/
   when: 1617844618
-  paths:
-    - Data-Challenges/
-- cmd: ls
-  when: 1617844618
 - cmd: cd NerdFonts/
   when: 1617844683
   paths:
     - NerdFonts/
-- cmd: ls
-  when: 1617844683
-- cmd: config status
-  when: 1617844855
 - cmd: config add .config/starship.toml
   when: 1617844868
   paths:
     - .config/starship.toml
-- cmd: config status
-  when: 1617844871
 - cmd: config commit -m "Added starship config"
   when: 1617844889
 - cmd: config push origin main
   when: 1617844895
-- cmd: vi
-  when: 1617844920
 - cmd: echo -ne \\007
   when: 1617845058
-- cmd: ls
-  when: 1617845101
 - cmd: vi
   when: 1617845176
 - cmd: yes
   when: 1617845193
 - cmd: yes &
   when: 1617845200
-- cmd: config status
-  when: 1617845236
 - cmd: config add -A
   when: 1617845251
 - cmd: config status
   when: 1617845256
 - cmd: update
   when: 1617845264
+- cmd: get_icon_names
+  when: 1617845341
+- cmd: ls
+  when: 1617845489
+- cmd: vi
+  when: 1617845926
+- cmd: ls
+  when: 1617845979
+- cmd: ls
+  when: 1617846136
+- cmd: cd ..
+  when: 1617846138
+  paths:
+    - ..
+- cmd: ls
+  when: 1617846138
+- cmd: gith
+  when: 1617846141
+- cmd: ls
+  when: 1617846142
+- cmd: cd itrussell/
+  when: 1617846144
+  paths:
+    - itrussell/
+- cmd: ls
+  when: 1617846146
+- cmd: clc
+  when: 1617846151
+- cmd: cl
+  when: 1617846153
+- cmd: ls
+  when: 1617846156
+- cmd: cd css/
+  when: 1617846160
+  paths:
+    - css/
+- cmd: ls
+  when: 1617846160
+- cmd: vi style.css
+  when: 1617846168
+  paths:
+    - style.css
+- cmd: cd
+  when: 1617846207
+- cmd: config status
+  when: 1617846220
+- cmd: update
+  when: 1617846229
