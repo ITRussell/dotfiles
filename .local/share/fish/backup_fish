@@ -56,8 +56,6 @@
   when: 1617227126
 - cmd: dconf watch /
   when: 1617227126
-- cmd: dat
-  when: 1617227126
 - cmd: rm tmp.ipynb
   when: 1617227126
 - cmd: git clone https://github.com/itrussell/Data-Challenges.git
@@ -364,8 +362,6 @@
   when: 1617227126
 - cmd: sudo gdebi ~/Minecraft.deb
   when: 1617227126
-- cmd: cd .config/nvim/
-  when: 1617227126
 - cmd: vi coc.vim
   when: 1617227126
 - cmd: pip install flask
@@ -464,8 +460,6 @@
   when: 1617227126
 - cmd: git remote add origin https://github.com/itrussell/Portfolio.git
   when: 1617227126
-- cmd: git push origin master
-  when: 1617227126
 - cmd: cat packages.el
   when: 1617227126
 - cmd: vi packages.el
@@ -544,8 +538,6 @@
   when: 1617227126
 - cmd: sudo rm -r .doom.d/
   when: 1617227126
-- cmd: vi init.vim
-  when: 1617227126
 - cmd: ci colors/
   when: 1617227126
 - cmd: cd colors/
@@ -586,8 +578,6 @@
   when: 1617227126
 - cmd: cp -r nvim/ ~/.config/
   when: 1617227126
-- cmd: cd autoload/
-  when: 1617227126
 - cmd: cd SpaceVim/
   when: 1617227126
 - cmd: cd core/
@@ -625,8 +615,6 @@
 - cmd: env
   when: 1617227126
 - cmd: git fetch
-  when: 1617227126
-- cmd: san
   when: 1617227126
 - cmd: nvim readme.json
   when: 1617227126
@@ -740,6 +728,8 @@
   when: 1617227126
 - cmd: rm -r fonts/
   when: 1617227126
+- cmd: cd Do
+  when: 1617227126
 - cmd: mkdir .local/share/fonts
   when: 1617227126
 - cmd: mv ~/Downloads/'Hack Regular Nerd Font Complete.ttf' ./
@@ -774,11 +764,15 @@
   when: 1617227126
 - cmd: sudo mv Hack-Regular.ttf /usr/share/fonts
   when: 1617227126
+- cmd: fc-cache -f -v
+  when: 1617227126
 - cmd: cd static/
   when: 1617227126
 - cmd: fc-list | grep "Hack"
   when: 1617227126
 - cmd: cd ../../
+  when: 1617227126
+- cmd: cd alacritty/
   when: 1617227126
 - cmd: cd usr/share/
   when: 1617227126
@@ -816,8 +810,6 @@
   when: 1617227126
 - cmd: du
   when: 1617227126
-- cmd: sudo apt install ncdu
-  when: 1617227126
 - cmd: mkdir .home
   when: 1617227126
 - cmd: cat .bashrc
@@ -843,6 +835,8 @@
 - cmd: touch .setup.sh
   when: 1617227126
 - cmd: mv .setup.sh ~
+  when: 1617227126
+- cmd: ls -la
   when: 1617227126
 - cmd: chmod +x .setup.sh
   when: 1617227126
@@ -1000,6 +994,8 @@
   when: 1617227126
 - cmd: firefox
   when: 1617227126
+- cmd: cd Downloads/
+  when: 1617227126
 - cmd: tar -zxvf awesome-configs-3.4.14.tar.xz
   when: 1617227126
 - cmd: rm -r r*
@@ -1136,8 +1132,6 @@
     - config.fish
 - cmd: which
   when: 1617238255
-- cmd: vi .bashrc
-  when: 1617238319
 - cmd: cd pyenvs/
   when: 1617239331
   paths:
@@ -1146,8 +1140,6 @@
   when: 1617239340
   paths:
     - home/
-- cmd: las
-  when: 1617239345
 - cmd: rm -r home/
   when: 1617239353
   paths:
@@ -1218,8 +1210,6 @@
   when: 1617242557
 - cmd: rofi run firefox
   when: 1617242565
-- cmd: sudo reboot
-  when: 1617242853
 - cmd: redshift -l 41:-71
   when: 1617242914
 - cmd: man redshift
@@ -1411,6 +1401,10 @@
   paths:
     - dotfiles/.config/alacritty/alacritty.yml
     - .config/alacritty/
+- cmd: cd .config/alacritty/
+  when: 1617279372
+- cmd: vi alacritty.yml
+  when: 1617279374
 - cmd: la
   when: 1617279471
 - cmd: compton
@@ -1646,8 +1640,6 @@
   when: 1617400868
 - cmd: config remote rm origin https://github.com/ITRussell/dotfiles.git
   when: 1617400885
-- cmd: git remote -v
-  when: 1617400893
 - cmd: config remote -v
   when: 1617400898
 - cmd: git remote remove origin
@@ -1746,8 +1738,6 @@
   when: 1617404219
 - cmd: git pull -f
   when: 1617404294
-- cmd: git reset --hard
-  when: 1617404308
 - cmd: cat LICENSE
   when: 1617404335
   paths:
@@ -2110,6 +2100,8 @@
   when: 1617466874
   paths:
     - menu.lua
+- cmd: l
+  when: 1617466902
 - cmd: vi init.lua
   when: 1617466910
   paths:
@@ -2158,6 +2150,8 @@
   when: 1617468086
   paths:
     - weather.lua
+- cmd: vi .config/alacritty/alacritty.yml
+  when: 1617471171
 - cmd: which fish
   when: 1617471374
 - cmd: config commit -m "Switching back to GNOME"
@@ -2354,10 +2348,6 @@
   when: 1617477042
   paths:
     - /
-- cmd: vi dconf-settings.ini
-  when: 1617477049
-  paths:
-    - dconf-settings.ini
 - cmd: mv dconf-settings.ini ~/.config/
   when: 1617477277
   paths:
@@ -2473,28 +2463,16 @@
   when: 1617496203
   paths:
     - i3.desktop
-- cmd: cd plug-config/
-  when: 1617496910
-- cmd: cd vim-plug/
-  when: 1617496913
-- cmd: vi plugins.vim
-  when: 1617497173
 - cmd: cd tmp
   when: 1617497185
   paths:
     - tmp
-- cmd: touch test.py
-  when: 1617497189
 - cmd: cd sandbox/
   when: 1617498107
   paths:
     - sandbox/
 - cmd: cd test/
   when: 1617498109
-- cmd: vi test.py
-  when: 1617498529
-  paths:
-    - test.py
 - cmd: git checkout master
   when: 1617498691
 - cmd: git config pull.rebase false
@@ -2509,14 +2487,14 @@
   when: 1617498794
 - cmd: git staus
   when: 1617498797
-- cmd: vi .gitignore
-  when: 1617498810
 - cmd: git commit -m "Ignoring vim config"
   when: 1617498878
 - cmd: config add ~/.local/share/fish/
   when: 1617498950
 - cmd: config reset
   when: 1617499010
+- cmd: config add -A
+  when: 1617499025
 - cmd: config commit -m "Added transparency toggle to vim"
   when: 1617596388
 - cmd: config add ~/.setup.sh
@@ -2536,8 +2514,6 @@
   when: 1617626388
   paths:
     - backup_fish
-- cmd: ncdu
-  when: 1617626392
 - cmd: config add ~/.local/share/fish/backup_fish
   when: 1617626412
 - cmd: config rm --cached ~/.local/share/fish/fish_history
@@ -2714,8 +2690,6 @@
     - .setup.sh
 - cmd: vi ~/.setup/run_setup.sh
   when: 1617645185
-- cmd: ./run_setup.sh
-  when: 1617645233
 - cmd: cat setup.log
   when: 1617645327
   paths:
@@ -2782,6 +2756,8 @@
   when: 1617648746
 - cmd: config commit -m "Uncommented git"
   when: 1617652170
+- cmd: cd .config/
+  when: 1617652677
 - cmd: config add .config/crontabs
   when: 1617652691
   paths:
@@ -2843,18 +2819,6 @@
   when: 1617656260
 - cmd: config commit -m "Fixing script"
   when: 1617656274
-- cmd: vi .config/fish/config.fish
-  when: 1617704954
-  paths:
-    - .config/fish/config.fish
-- cmd: cd .setup/
-  when: 1617704978
-  paths:
-    - .setup/
-- cmd: vi run_setup.sh
-  when: 1617704982
-  paths:
-    - run_setup.sh
 - cmd: rm setup.log spinner.sh test.log test.sh
   when: 1617705374
   paths:
@@ -2866,8 +2830,6 @@
   when: 1617705384
   paths:
     - newMachine/
-- cmd: cd .config/nvim
-  when: 1617705415
 - cmd: cd general/
   when: 1617705421
 - cmd: vi settings.vim
@@ -2878,10 +2840,8 @@
   when: 1617707298
 - cmd: update_configs
   when: 1617707420
-- cmd: vi config.fish
-  when: 1617707498
-  paths:
-    - config.fish
+- cmd: sync
+  when: 1617708068
 - cmd: config staus
   when: 1617708226
 - cmd: gpg -d backup_fish
@@ -2970,18 +2930,20 @@
   when: 1617744099
 - cmd: ls a
   when: 1617746178
-- cmd: ls -a
-  when: 1617746182
+- cmd: cd .local/share/fonts/
+  when: 1617746232
+- cmd: cd NerdFonts/
+  when: 1617746236
+  paths:
+    - NerdFonts/
 - cmd: cp ~/Downloads/Hack-v3.003-ttf
   when: 1617746300
 - cmd: cp ~/Downloads/Hack-v3.003-ttf/ttf/Hack-Regular.ttf ./
   when: 1617746314
   paths:
     - ./
-- cmd: cd ITRussell/
-  when: 1617746361
-  paths:
-    - ITRussell/
+- cmd: fc-cache -fv
+  when: 1617746322
 - cmd: config add .local/share/fonts/NerdFonts/
   when: 1617747172
   paths:
@@ -3012,16 +2974,16 @@
   when: 1617749676
   paths:
     - Portfolio/
+- cmd: cd ITRussell.github.io/
+  when: 1617749683
+  paths:
+    - ITRussell.github.io/
 - cmd: git commit -m "First commit!"
   when: 1617749804
 - cmd: git remote add origin git@github.com:ITRussell/ITRussell.github.io.git
   when: 1617749827
 - cmd: git branch -m main
   when: 1617749843
-- cmd: cd .config/fish/
-  when: 1617801226
-  paths:
-    - .config/fish/
 - cmd: rm test.sh
   when: 1617801242
   paths:
@@ -3030,447 +2992,418 @@
   when: 1617801246
   paths:
     - packages.list
-- cmd: vi .setup/run_setup.sh
-  when: 1617801267
+- cmd: lsa
+  when: 1617802754
+- cmd: vi setup.log
+  when: 1617802765
+  paths:
+    - setup.log
+- cmd: cd .config/dconf/
+  when: 1617802920
+  paths:
+    - .config/dconf/
+- cmd: vi dconf-settings.ini
+  when: 1617802929
+  paths:
+    - dconf-settings.ini
+- cmd: rm setup.sh
+  when: 1617803634
+  paths:
+    - setup.sh
+- cmd: cd .setup/
+  when: 1617803644
+  paths:
+    - .setup/
+- cmd: ./run_setup.sh
+  when: 1617803873
+- cmd: Lls
+  when: 1617803911
+- cmd: git reset --hard
+  when: 1617803940
+- cmd: config reset --hard
+  when: 1617803945
+- cmd: vi run_setup.sh
+  when: 1617803951
+  paths:
+    - run_setup.sh
+- cmd: source run_setup.sh
+  when: 1617804042
+  paths:
+    - run_setup.sh
+- cmd: subl .setup/run_setup.sh
+  when: 1617805284
   paths:
     - .setup/run_setup.sh
-- cmd: config pull
-  when: 1617820100
-- cmd: wget https://gist.githubusercontent.com/yerbestpal/e2989913e981ac8ed592c0122e37bcf2/raw/7b3b187cf307899b035741c60a163bdce15e8ebe/starship.toml
-  when: 1617830796
-- cmd: mv starship.toml.1 starship.toml
-  when: 1617830811
+- cmd: echo y | curl -fsSL https://starship.rs/install.sh | bash
+  when: 1617805453
+- cmd: curl -fsSL https://starship.rs/install.sh | yes | bash
+  when: 1617805548
+- cmd: curl -fsSL https://starship.rs/install.sh | bash | yes
+  when: 1617805569
+- cmd: yes | curl -fsSL https://starship.rs/install.sh | bash
+  when: 1617805575
+- cmd: man yes
+  when: 1617805586
+- cmd: sudo reboot
+  when: 1617805727
+- cmd: rm setup.log setup.sh
+  when: 1617805803
   paths:
-    - starship.toml.1
-- cmd: cp starship.toml ../Backups/
-  when: 1617831013
-  paths:
-    - starship.toml
-    - ../Backups/
-- cmd: config pull origin main
-  when: 1617831222
-- cmd: config add starship.toml
-  when: 1617831283
-  paths:
-    - starship.toml
-- cmd: cat README.txt
-  when: 1617831769
-  paths:
-    - README.txt
-- cmd: mv ttf/ Fira_code
-  when: 1617831809
-  paths:
-    - ttf/
-- cmd: mv Fira_code/ Fira_Code/
-  when: 1617831819
-  paths:
-    - Fira_code/
-- cmd: mv Fira_Code/ ~/.local/share/fonts/
-  when: 1617831831
-  paths:
-    - Fira_Code/
-- cmd: mv Fira_Code/ NerdFonts/
-  when: 1617831849
-  paths:
-    - Fira_Code/
-    - NerdFonts/
-- cmd: mkdir Hack
-  when: 1617831860
-- cmd: mv Hack-Bold.ttf Hack
-  when: 1617831874
-  paths:
-    - Hack-Bold.ttf
-    - Hack
-- cmd: mv Hack-Italic.ttf Hack/
-  when: 1617831888
-  paths:
-    - Hack-Italic.ttf
-    - Hack/
-- cmd: mv Hack-BoldItalic.ttf Hack/
-  when: 1617831899
-  paths:
-    - Hack-BoldItalic.ttf
-    - Hack/
+    - setup.log
+    - setup.sh
+- cmd: jls
+  when: 1617806395
 - cmd: ks
-  when: 1617831905
-- cmd: mv Hack-Regular.ttf hack/
-  when: 1617831914
+  when: 1617806406
+- cmd: curl "https://api.github.com/$CNTX/$NAME/repos?page=$PAGE&per_page=100" |\n  grep -e 'git_url*' |\n  cut -d \\" -f 4 |\n  xargs -L1 git clone\\
+  when: 1617806641
+- cmd: curl -s https://$GITHUB_AT:@api.github.com/orgs/itrussell/repos?per_page=200
+  when: 1617806851
+- cmd: curl -i https://github.com/api/v3/itrussell/repos
+  when: 1617806981
+- cmd: curl -i https://api.github.com/api/v3/itrussell/repos
+  when: 1617807014
+- cmd: curl -i https://api.github.com/api/v3/
+  when: 1617807022
+- cmd: curl -i https://api.github.com/
+  when: 1617807026
+- cmd: curl -i https://api.github.com/itrussell
+  when: 1617807034
+- cmd: curl -i https://api.github.com/ITRussell
+  when: 1617807041
+- cmd: curl -i https://api.github.com/users/ITRussell
+  when: 1617807067
+- cmd: curl -i https://api.github.com/users/ITRussell/repos | grep -e 'git_url*' | cut -d \\" -f 4 | xargs -L1 git clone
+  when: 1617807799
+- cmd: rm -r ITRussell/
+  when: 1617808102
   paths:
-    - Hack-Regular.ttf
-- cmd: mv Hack-Regular.ttf Hack/
-  when: 1617831921
+    - ITRussell/
+- cmd: sudo rm -r ITRussell/
+  when: 1617808108
   paths:
-    - Hack-Regular.ttf
-    - Hack/
-- cmd: vi .config/alacritty/alacritty.yml
-  when: 1617831960
-- cmd: home
-  when: 1617833023
-- cmd: cd alacritty/
-  when: 1617833030
-- cmd: mv Fira_Code_v5.2 ~/.local/share/fonts/
-  when: 1617833325
-  paths:
-    - Fira_Code_v5.2
-- cmd: cd Fira_Code_v5.2/
-  when: 1617833336
-  paths:
-    - Fira_Code_v5.2/
-- cmd: rm -R Fira_Code/
-  when: 1617833351
-  paths:
-    - Fira_Code/
-- cmd: mv ../Fira_Code_v5.2/ .
-  when: 1617833358
-  paths:
-    - ../Fira_Code_v5.2/
-    - .
-- cmd: cd ~/.config/alacritty/
-  when: 1617833426
-- cmd: mv ~/.local/share/fonts
-  when: 1617833535
-- cmd: rm Fira_Code_v5.2/
-  when: 1617833556
-  paths:
-    - Fira_Code_v5.2/
-- cmd: rm -r Fira_Code_v5.2/
-  when: 1617833559
-  paths:
-    - Fira_Code_v5.2/
-- cmd: sudo apt install fonts-firacode
-  when: 1617833575
-- cmd: mv Hack/ ..
-  when: 1617833657
-  paths:
-    - Hack/
-    - ..
-- cmd: rm NerdFonts/
-  when: 1617833666
-  paths:
-    - NerdFonts/
-- cmd: rm -r NerdFonts/
-  when: 1617833671
-  paths:
-    - NerdFonts/
-- cmd: touch install_fira.sh
-  when: 1617833692
-- cmd: vi install_fira.sh
-  when: 1617833698
-  paths:
-    - install_fira.sh
-- cmd: chmod +x install_fira.sh
-  when: 1617833709
-  paths:
-    - install_fira.sh
-- cmd: ./install_fira.sh
-  when: 1617833714
-- cmd: ITRussell.github.io/
-  when: 1617833737
-- cmd: bash
-  when: 1617833771
-- cmd: cd ~/.local/share/fonts
-  when: 1617834363
-- cmd: rm -r Fi*
-  when: 1617834375
-- cmd: rm install_fira.sh
-  when: 1617834381
-  paths:
-    - install_fira.sh
-- cmd: mv ~/Downloads/devicons-master ~/.local/share/fonts
-  when: 1617835392
-- cmd: fc-cache -fv
-  when: 1617835398
-- cmd: cd devicons-master/
-  when: 1617835454
-  paths:
-    - devicons-master/
-- cmd: vi README.md
-  when: 1617835464
-- cmd: sudo apt install devicons
-  when: 1617835498
-- cmd: fc-list
-  when: 1617835567
-- cmd: fc-list | grep "Devicons"
-  when: 1617835592
-- cmd: fc-list | grep "Dev*"
-  when: 1617835598
-- cmd: mv ~/Downloads/Hack .local/share/fonts
-  when: 1617835885
-  paths:
-    - .local/share/fonts
-- cmd: mv ~/Downloads/Hack .local/share/fonts/
-  when: 1617835895
-  paths:
-    - .local/share/fonts/
-- cmd: mv Hack Hack_Font
-  when: 1617835921
-- cmd: cd Do
-  when: 1617835969
-- cmd: mv Hack/ Hack-v3
-  when: 1617835985
-  paths:
-    - Hack/
-- cmd: mv Hack-v3/ ~/.local/share/fonts/
-  when: 1617836011
-  paths:
-    - Hack-v3/
-- cmd: rm -r Hack
-  when: 1617836059
-  paths:
-    - Hack
-- cmd: cd .config/alacritty/
-  when: 1617836103
-- cmd: vi alacritty.yml
-  when: 1617836105
-- cmd: cd Hack-v3/
-  when: 1617836147
-  paths:
-    - Hack-v3/
-- cmd: rm 1devicons-1.ttf
-  when: 1617836219
-  paths:
-    - 1devicons-1.ttf
-- cmd: sudo rm 1devicons-1.ttf
-  when: 1617836240
-  paths:
-    - 1devicons-1.ttf
-- cmd: sudo rm devicons-1.ttf
-  when: 1617836253
-  paths:
-    - devicons-1.ttf
-- cmd: sudo rm -r devicons-master/
-  when: 1617836259
-  paths:
-    - devicons-master/
-- cmd: sudo rm -r Hack-v3/
-  when: 1617836265
-  paths:
-    - Hack-v3/
-- cmd: git clone --depth 1 https://github.com/ryanoasis/nerd-fonts.git
-  when: 1617836459
-- cmd: cd nerd-fonts/
-  when: 1617836778
-  paths:
-    - nerd-fonts/
-- cmd: ./install.sh Hack
-  when: 1617836799
-- cmd: cd css/
-  when: 1617836847
-  paths:
-    - css/
-- cmd: cd ~/.local/share/fonts/
-  when: 1617836869
-- cmd: cd ../..
-  when: 1617836979
-  paths:
-    - ../..
-- cmd: sudo rm -r nerd-fonts/
-  when: 1617836995
-  paths:
-    - nerd-fonts/
-- cmd: sync
-  when: 1617837025
-- cmd: cd ITRussell.github.io/js
-  when: 1617837039
-  paths:
-    - ITRussell.github.io/js
-- cmd: \\ue0b0
-  when: 1617838932
-- cmd: sdfa
-  when: 1617838939
-- cmd: locale
-  when: 1617839044
-- cmd: sudo apt install noto-emoji
-  when: 1617839083
-- cmd: echo -e "\\xf0\\x9f\\x90\\x8d"
-  when: 1617839218
-- cmd: echo -e "\\xee\\x82\\xa0"
-  when: 1617839223
-- cmd: wget https://raw.githubusercontent.com/lixinyang123/StarshipConfig/master/starship.toml
-  when: 1617840538
-- cmd: https://gist.githubusercontent.com/ryo-ARAKI/48a11585299f9032fa4bda60c9bba593/raw/74be7c9c6a37a3ece24b8efebe27d
-  when: 1617840704
-- cmd: rm starship.toml
-  when: 1617840719
-  paths:
-    - starship.toml
-- cmd: https://gist.githubusercontent.com/ryo-ARAKI/48a11585299f9032fa4bda60c9bba593/raw/74be7c9c6a37a3ece24b8efebe27d75fd6f85fff/starship.toml
-  when: 1617840722
-- cmd: wget https://gist.githubusercontent.com/ryo-ARAKI/48a11585299f9032fa4bda60c9bba593/raw/74be7c9c6a37a3ece24b8efebe27d75fd6f85fff/starship.toml
-  when: 1617840725
-- cmd: vi s
-  when: 1617840731
-- cmd: vi starship.toml
-  when: 1617840737
-  paths:
-    - starship.toml
-- cmd: l
-  when: 1617840836
-- cmd: cd js
-  when: 1617840864
-  paths:
-    - js
-- cmd: jasdf
-  when: 1617842373
-- cmd: cd .config/
-  when: 1617842975
-- cmd: ls -la
-  when: 1617843332
-- cmd: git status
-  when: 1617843453
-- cmd: git add -A
-  when: 1617843460
-- cmd: git commit -m "Updates"
-  when: 1617843476
-- cmd: git push origin main
-  when: 1617843482
-- cmd: echo -e "\\e612"
-  when: 1617843695
-- cmd: echo -e  \\e612
-  when: 1617843706
-- cmd: echo -e \\e612
-  when: 1617843709
-- cmd: e612
-  when: 1617843757
-- cmd: echo e612
-  when: 1617843762
-- cmd: echo \\e612
-  when: 1617843766
-- cmd: printf '\\xE2\\x98\\xA0'
-  when: 1617843856
-- cmd: printf '\\xE2\\x98\\e612'
-  when: 1617843877
-- cmd: echo -e '\\e606'
-  when: 1617843920
-- cmd: cd Downloads/
-  when: 1617844030
-- cmd: wget https://raw.githubusercontent.com/ryanoasis/nerd-fonts/master/10-nerd-font-symbols.conf
-  when: 1617844038
-- cmd: cp 10-nerd-font-symbols.conf ~/.local/share/fonts
-  when: 1617844166
-  paths:
-    - 10-nerd-font-symbols.conf
-- cmd: cd ITRussell.github.io/
-  when: 1617844196
-  paths:
-    - ITRussell.github.io/
-- cmd: cd js/
-  when: 1617844198
-  paths:
-    - js/
-- cmd: cd ..
-  when: 1617844336
-- cmd: mv ITRussell.github.io/ itrussell
-  when: 1617844346
-  paths:
-    - ITRussell.github.io/
-- cmd: cd itrussell/
-  when: 1617844350
-  paths:
-    - itrussell/
-- cmd: cd .local/share/fonts/
-  when: 1617844422
-- cmd: ls ~/.config/
-  when: 1617844467
-- cmd: cd /
-  when: 1617844476
-- cmd: ls /etc/fonts/
-  when: 1617844496
-  paths:
-    - /etc/fonts/
-- cmd: cd conf.d
-  when: 1617844506
-- cmd: ls /etc/fonts/conf.d
-  when: 1617844519
-  paths:
-    - /etc/fonts/conf.d
-- cmd: mv ~/.local/share/fonts/10-nerd-font-symbols.conf /etc/fonts/conf.d/
-  when: 1617844584
-  paths:
-    - /etc/fonts/conf.d/
-- cmd: sudo mv ~/.local/share/fonts/10-nerd-font-symbols.conf /etc/fonts/conf.d/
-  when: 1617844591
-  paths:
-    - /etc/fonts/conf.d/
-- cmd: fc-cache -f -v
-  when: 1617844599
-- cmd: cd
-  when: 1617844612
-- cmd: gith
-  when: 1617844615
+    - ITRussell/
 - cmd: cd Data-Challenges/
-  when: 1617844618
-- cmd: cd NerdFonts/
-  when: 1617844683
+  when: 1617808124
+- cmd: vi practice.py
+  when: 1617808224
   paths:
-    - NerdFonts/
-- cmd: config add .config/starship.toml
-  when: 1617844868
+    - practice.py
+- cmd: python3 practice.py
+  when: 1617808313
   paths:
-    - .config/starship.toml
-- cmd: config commit -m "Added starship config"
-  when: 1617844889
+    - practice.py
+- cmd: rm -r tmp/
+  when: 1617808340
+  paths:
+    - tmp/
+- cmd: ls -a
+  when: 1617808392
+- cmd: vi .gitignore
+  when: 1617808405
+- cmd: git rm --cached tmp
+  when: 1617808540
+- cmd: git rm --cached /tmp
+  when: 1617808545
+  paths:
+    - /tmp
+- cmd: git push origin main
+  when: 1617808555
+- cmd: git remote -v
+  when: 1617808592
+- cmd: git remot set-url origin master https://github.com/ITRussell/Courses.git
+  when: 1617809256
+- cmd: git remote set-url origin master https://github.com/ITRussell/Courses.git
+  when: 1617809261
+- cmd: git remote set-url origin https://github.com/ITRussell/Courses.git
+  when: 1617809475
+- cmd: git status
+  when: 1617809649
+- cmd: git add -A
+  when: 1617809653
+- cmd: git commit -m "Updated editior"
+  when: 1617809664
+- cmd: git push origin master
+  when: 1617809672
+- cmd: curl -i https://api.github.com/users/ITRussell/repos
+  when: 1617810056
+- cmd: curl -i https://api.github.com/users/ITRussell/repos | grep -e 'html_url*' | cut -d \\" -f 4 | xargs -L1 git clone
+  when: 1617810130
+- cmd: rm -r *
+  when: 1617810161
+- cmd: cd Courses/
+  when: 1617810166
+  paths:
+    - Courses/
+- cmd: sudo rm -r *
+  when: 1617810181
+- cmd: curl -i https://api.github.com/users/ITRussell/repos | grep -e 'clone_url*' | cut -d \\" -f 4 | xargs -L1 git clone
+  when: 1617810206
+- cmd: vi .setup/run_setup.sh
+  when: 1617810243
+  paths:
+    - .setup/run_setup.sh
 - cmd: config push origin main
-  when: 1617844895
-- cmd: echo -ne \\007
-  when: 1617845058
+  when: 1617810321
+- cmd: cd Text-Mining/
+  when: 1617810347
+  paths:
+    - Text-Mining/
+- cmd: vi TextMiningScript.py
+  when: 1617810357
+  paths:
+    - TextMiningScript.py
+- cmd: vi README.md
+  when: 1617810424
+- cmd: home
+  when: 1617810491
+- cmd: sudo apt install ncdu
+  when: 1617813738
+- cmd: ncdu
+  when: 1617814429
+- cmd: cd /
+  when: 1617814697
+- cmd: cd /sys/
+  when: 1617814723
+  paths:
+    - /sys/
+- cmd: find /org
+  when: 1617814730
+- cmd: find /pop
+  when: 1617814735
+- cmd: find /gnome
+  when: 1617814738
+- cmd: find gnome
+  when: 1617814742
+- cmd: dconf
+  when: 1617814753
+- cmd: vi .config/fish/config.fish
+  when: 1617816276
+  paths:
+    - .config/fish/config.fish
+- cmd: dat
+  when: 1617816350
+- cmd: cd Grade-App/
+  when: 1617816393
+  paths:
+    - Grade-App/
+- cmd: kls
+  when: 1617816394
+- cmd: cd MyGradesV2/
+  when: 1617816396
+  paths:
+    - MyGradesV2/
+- cmd: vi myGradesV2.py
+  when: 1617816400
+  paths:
+    - myGradesV2.py
+- cmd: vi plugins.vim
+  when: 1617816635
+- cmd: touch codi.vim
+  when: 1617817666
+- cmd: cat search.vim
+  when: 1617817674
+  paths:
+    - search.vim
+- cmd: sudo apt install bat
+  when: 1617817708
+- cmd: batcat search.vim
+  when: 1617817732
+  paths:
+    - search.vim
+- cmd: vi ini
+  when: 1617817812
+- cmd: vi init.vim
+  when: 1617817820
+- cmd: cd vim-plug/
+  when: 1617817868
+- cmd: cd plug-config/
+  when: 1617817872
+- cmd: cd .config/nvim
+  when: 1617817953
+- cmd: mkdir log
+  when: 1617817965
+- cmd: rm codi.log
+  when: 1617818151
+  paths:
+    - codi.log
+- cmd: touch log.txt
+  when: 1617818157
+- cmd: rm log.txt
+  when: 1617818285
+  paths:
+    - log.txt
+- cmd: touch codi.log
+  when: 1617818452
+- cmd: las
+  when: 1617818463
+- cmd: cd .config/nvim/
+  when: 1617818732
+- cmd: cd autoload/
+  when: 1617818736
+- cmd: cd plugged/
+  when: 1617818737
+  paths:
+    - plugged/
+- cmd: cd codi.vim/
+  when: 1617818742
+  paths:
+    - codi.vim/
+- cmd: cd plugin/
+  when: 1617818757
+  paths:
+    - plugin/
+- cmd: vi codi.vim
+  when: 1617818917
+  paths:
+    - codi.vim
+- cmd: cd log/
+  when: 1617819113
+  paths:
+    - log/
+- cmd: vi codi.log
+  when: 1617819117
+  paths:
+    - codi.log
 - cmd: vi
-  when: 1617845176
-- cmd: yes
-  when: 1617845193
-- cmd: yes &
-  when: 1617845200
-- cmd: config add -A
-  when: 1617845251
-- cmd: config status
-  when: 1617845256
-- cmd: update
-  when: 1617845264
-- cmd: get_icon_names
-  when: 1617845341
-- cmd: ls
-  when: 1617845489
-- cmd: vi
-  when: 1617845926
-- cmd: ls
-  when: 1617845979
-- cmd: ls
-  when: 1617846136
-- cmd: cd ..
-  when: 1617846138
+  when: 1617819254
+- cmd: rm test.py
+  when: 1617819341
   paths:
-    - ..
-- cmd: ls
-  when: 1617846138
-- cmd: gith
-  when: 1617846141
-- cmd: ls
-  when: 1617846142
-- cmd: cd itrussell/
-  when: 1617846144
+    - test.py
+- cmd: cd Face-Recognition/
+  when: 1617819351
   paths:
-    - itrussell/
-- cmd: ls
-  when: 1617846146
-- cmd: clc
-  when: 1617846151
-- cmd: cl
-  when: 1617846153
-- cmd: ls
-  when: 1617846156
-- cmd: cd css/
-  when: 1617846160
+    - Face-Recognition/
+- cmd: vi LDA.py
+  when: 1617819358
   paths:
-    - css/
-- cmd: ls
-  when: 1617846160
-- cmd: vi style.css
-  when: 1617846168
-  paths:
-    - style.css
+    - LDA.py
 - cmd: cd
-  when: 1617846207
-- cmd: config status
-  when: 1617846220
+  when: 1617819415
+- cmd: san
+  when: 1617819418
+- cmd: cd scrap/
+  when: 1617819425
+  paths:
+    - scrap/
+- cmd: touch test.py
+  when: 1617819433
+- cmd: vi test.py
+  when: 1617819440
+  paths:
+    - test.py
+- cmd: vi .bashrc
+  when: 1617827956
+- cmd: bash
+  when: 1617828004
+- cmd: batcat .bashrc
+  when: 1617828055
+  paths:
+    - .bashrc
+- cmd: fish
+  when: 1617828065
+- cmd: cd .config/fish/
+  when: 1617828094
+  paths:
+    - .config/fish/
+- cmd: vi config.fish
+  when: 1617828097
+  paths:
+    - config.fish
+- cmd: config add .config/nvim/plug-config/
+  when: 1617831153
+  paths:
+    - .config/nvim/plug-config/
 - cmd: update
-  when: 1617846229
+  when: 1617831160
+- cmd: config pull origin main
+  when: 1617929705
+- cmd: config config pull.rebase false
+  when: 1617929744
+- cmd: config status
+  when: 1617929748
+- cmd: config pull
+  when: 1617929759
+- cmd: gith
+  when: 1617929790
+- cmd: cd ITRussell/
+  when: 1617929802
+  paths:
+    - ITRussell/
+- cmd: mv ITRussell/ itrussell
+  when: 1617929813
+  paths:
+    - ITRussell/
+- cmd: cd itrussell
+  when: 1617929816
+  paths:
+    - itrussell
+- cmd: cd ..
+  when: 1617929833
+- cmd: mv itrussell ITRussell
+  when: 1617929860
+  paths:
+    - itrussell
+- cmd: cd itrussell.github.io/
+  when: 1617929863
+  paths:
+    - itrussell.github.io/
+- cmd: ls
+  when: 1617929875
+- cmd: chrome
+  when: 1617929891
+- cmd: ls
+  when: 1617929949
+- cmd: config status
+  when: 1617930080
+- cmd: chromium
+  when: 1617930132
+- cmd: chromium-browser
+  when: 1617930138
+- cmd: sudo apt install chromium-browser
+  when: 1617930160
+- cmd: ls
+  when: 1617930216
+- cmd: gith
+  when: 1617930335
+- cmd: cd itrussell.github.io/
+  when: 1617930337
+  paths:
+    - itrussell.github.io/
+- cmd: vi
+  when: 1617930341
+- cmd: sudo apt install refind
+  when: 1617931975
+- cmd: refind-install
+  when: 1617932076
+- cmd: sudo reboot
+  when: 1617932091
+- cmd: cd .config
+  when: 1617975391
+  paths:
+    - .config
+- cmd: vi alacritty/alacritty.yml
+  when: 1617975395
+  paths:
+    - alacritty/alacritty.yml
+- cmd: ls
+  when: 1617975486
+- cmd: gith
+  when: 1617975488
+- cmd: ls
+  when: 1617975489
+- cmd: cd itrussell.github.io/
+  when: 1617975493
+  paths:
+    - itrussell.github.io/
+- cmd: git staus
+  when: 1617975496
+- cmd: git status
+  when: 1617975498
+- cmd: vi
+  when: 1617975511
+- cmd: config status
+  when: 1617975852
+- cmd: update
+  when: 1617975855
