@@ -12,6 +12,7 @@ alias update='update_configs'
 alias sync='sync_configs'
 #alias youtube-dl='python3 $(which youtube-dl)'
 alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
+alias copy='xclip -selection clipboard <'
 
 set -U fish_greeting
 

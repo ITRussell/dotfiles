@@ -7,3 +7,4 @@ alias dat='cd ~/WorkBench/sandbox/analysis && source ~/WorkBench/pyenvs/analysis
 alias san='cd ~/WorkBench/sandbox'
 alias python='python3'
 alias youtube-dl='python3 $(which youtube-dl)'
+alias copy='xclip -selection clipboard <'

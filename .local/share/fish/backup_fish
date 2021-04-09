@@ -3407,3 +3407,47 @@
   when: 1617975852
 - cmd: update
   when: 1617975855
+- cmd: ssh-keygen -t ed25519 -C "IanThomasR@gmail.com"
+  when: 1617975937
+- cmd: bash
+  when: 1617975975
+- cmd: vi .bashrc
+  when: 1617976100
+  paths:
+    - .bashrc
+- cmd: vi .bash_
+  when: 1617976113
+- cmd: vi .bash_aliases
+  when: 1617976118
+  paths:
+    - .bash_aliases
+- cmd: vi .config/fish/config.fish
+  when: 1617976208
+  paths:
+    - .config/fish/config.fish
+- cmd: bash
+  when: 1617976317
+- cmd: copy ~/.ssh/id_ed25519.pub
+  when: 1617976330
+- cmd: ls
+  when: 1617976346
+- cmd: vi ~/.ssh/id_ed25519.pub
+  when: 1617976397
+- cmd: ssh -T git@github.com
+  when: 1617976449
+- cmd: ls
+  when: 1617976492
+- cmd: cd .config
+  when: 1617976516
+  paths:
+    - .config
+- cmd: ls
+  when: 1617976518
+- cmd: config set-url origin git@github.com:ITRussell/dotfiles.git
+  when: 1617976587
+- cmd: config remote set-url origin git@github.com:ITRussell/dotfiles.git
+  when: 1617976600
+- cmd: config status
+  when: 1617976605
+- cmd: update
+  when: 1617976612
