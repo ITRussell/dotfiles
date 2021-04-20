@@ -13,6 +13,7 @@ alias sync='sync_configs'
 #alias youtube-dl='python3 $(which youtube-dl)'
 alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 alias copy='xclip -selection clipboard <'
+alias blog='cd ~/WorkBench/GitHub/itrussell.github.io/_drafts'
 
 set -U fish_greeting
 
