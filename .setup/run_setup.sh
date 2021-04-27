@@ -51,13 +51,6 @@ echo
 echo "Setting system preferences (GNOME)"
 dconf load / < ~/.config/dconf-settings.ini
 
-echo
-echo "Cloning my repos..."
-
-# Cloning my projects
-cd ~/WorkBench/GitHub/
-curl -i https://api.github.com/users/ITRussell/repos | grep -e 'clone_url*' | cut -d \" -f 4 | xargs -L1 git clone &>> setup.log
-cd 
 
 # Packages
 echo
