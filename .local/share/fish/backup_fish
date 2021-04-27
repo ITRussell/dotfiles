@@ -3503,3 +3503,5 @@
   when: 1619567053
 - cmd: update
   when: 1619567057
+- cmd: update -f
+  when: 1619567089
