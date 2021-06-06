@@ -1758,16 +1758,10 @@
   when: 1617405565
 - cmd: ./tutanota-desktop-linux.AppImage
   when: 1617405570
-- cmd: cd Apps/
-  when: 1617405669
-  paths:
-    - Apps/
 - cmd: mv tutanota-desktop-linux.AppImage tutanota
   when: 1617405680
   paths:
     - tutanota-desktop-linux.AppImage
-- cmd: ./tutanota
-  when: 1617405684
 - cmd: redshift & disown
   when: 1617405843
 - cmd: killall redshift
@@ -2374,8 +2368,6 @@
   when: 1617490041
 - cmd: apt update
   when: 1617490059
-- cmd: sudo apt update
-  when: 1617490066
 - cmd: apt list -a i3
   when: 1617490071
 - cmd: sudo apt remove i3
@@ -2811,10 +2803,6 @@
   when: 1617656260
 - cmd: config commit -m "Fixing script"
   when: 1617656274
-- cmd: vi .config/fish/config.fish
-  when: 1617704954
-  paths:
-    - .config/fish/config.fish
 - cmd: vi run_setup.sh
   when: 1617704982
   paths:
@@ -3150,8 +3138,6 @@
     - .local/share/fonts/
 - cmd: mv Hack Hack_Font
   when: 1617835921
-- cmd: cd Do
-  when: 1617835969
 - cmd: mv Hack/ Hack-v3
   when: 1617835985
   paths:
@@ -3344,16 +3330,12 @@
   when: 1617846160
   paths:
     - css/
-- cmd: update
-  when: 1617846229
 - cmd: cd .local/share/fonts/
   when: 1617846539
 - cmd: cd NerdFonts/
   when: 1617846544
   paths:
     - NerdFonts/
-- cmd: config status
-  when: 1618065475
 - cmd: cd itrussell/
   when: 1618065542
   paths:
@@ -3374,8 +3356,6 @@
   when: 1618065989
 - cmd: curl -i https://api.github.com/users/ITRussell/repos | grep -e 'clone_url*'| cut -d \\" -f 4 | xargs -L1 git clone
   when: 1618066009
-- cmd: l
-  when: 1618066094
 - cmd: git add -U
   when: 1618275871
 - cmd: git commit -m "Found a style, several updates to page, added vim nods"
@@ -3394,8 +3374,6 @@
   when: 1618314758
   paths:
     - images/
-- cmd: cd Downloads/
-  when: 1618314770
 - cmd: mv ~/Downloads/IMG_27151.jpg ./
   when: 1618314781
   paths:
@@ -4033,10 +4011,6 @@
   paths:
     - 2021-04-14-testdraft2.md
     - _posts/
-- cmd: cd _posts/
-  when: 1618452069
-  paths:
-    - _posts/
 - cmd: mv 2021-04-14-testdraft2.md ../_drafts/
   when: 1618452086
   paths:
@@ -4062,8 +4036,6 @@
   when: 1618452192
   paths:
     - 2021-04-14-testdraft2.md
-- cmd: cd ..
-  when: 1618452223
 - cmd: cp computers.html .
   when: 1618453613
   paths:
@@ -4077,10 +4049,6 @@
   when: 1618453637
   paths:
     - cars.html
-- cmd: jekyll serve
-  when: 1618453807
-- cmd: bash
-  when: 1618453824
 - cmd: git commit -m "Added a meta tag to hopefully fix mobile styles"
   when: 1618488616
 - cmd: vi _includes/nav.html
@@ -4141,8 +4109,6 @@
   when: 1618510654
 - cmd: git pull origin main
   when: 1618510686
-- cmd: vi
-  when: 1618510781
 - cmd: cp .setup/run_setup.sh
   when: 1618511524
   paths:
@@ -4156,29 +4122,17 @@
   when: 1618511538
   paths:
     - run_setup.sh
-- cmd: ls
-  when: 1618511540
 - cmd: mv setup.sh WorkBench/GitHub/itrussell.github.io/
   when: 1618511561
   paths:
     - setup.sh
     - WorkBench/GitHub/itrussell.github.io/
-- cmd: gith
-  when: 1618511564
 - cmd: cd itrussell.github.io/
   when: 1618511567
   paths:
     - itrussell.github.io/
-- cmd: git add -A
-  when: 1618511570
-- cmd: git status
-  when: 1618511572
 - cmd: git commit -m "Added my super top secret setup scrip..."
   when: 1618511598
-- cmd: git push origin main
-  when: 1618511601
-- cmd: ls
-  when: 1618511666
 - cmd: vi CNAME
   when: 1618511677
   paths:
@@ -4193,20 +4147,14 @@
   when: 1618512306
 - cmd: vi
   when: 1618512361
-- cmd: git add -A
-  when: 1618512387
 - cmd: git commit -m "Fixed broken link in navbar"
   when: 1618512404
 - cmd: git push origin main
   when: 1618512408
-- cmd: ls
-  when: 1618512421
 - cmd: cd _posts/
   when: 1618512451
   paths:
     - _posts/
-- cmd: ls
-  when: 1618512452
 - cmd: mkdir computers
   when: 1618512456
 - cmd: mv 2021-04-15-aquickbyte.md computers/
@@ -4214,48 +4162,30 @@
   paths:
     - 2021-04-15-aquickbyte.md
     - computers/
-- cmd: ls
-  when: 1618512462
 - cmd: git status
   when: 1618512464
 - cmd: git add -A
   when: 1618512467
-- cmd: jekyll serve
-  when: 1618512477
 - cmd: cd ..
   when: 1618512481
-  paths:
-    - ..
 - cmd: jekyll serve
   when: 1618512485
-- cmd: bash
-  when: 1618512489
 - cmd: gith
   when: 1618932282
 - cmd: cd itrussell.github.io/_drafts/
   when: 1618932288
   paths:
     - itrussell.github.io/_drafts/
-- cmd: ls
-  when: 1618932289
-- cmd: vi quicksort
-  when: 1618932301
-- cmd: ls
-  when: 1618932597
 - cmd: find ~ sqlite3
   when: 1618932609
 - cmd: find ~ *sqlite*
   when: 1618932632
 - cmd: find ~ db
   when: 1618932649
-- cmd: ls
-  when: 1618932830
 - cmd: typora quicksort
   when: 1618932842
   paths:
     - quicksort
-- cmd: ls
-  when: 1618933066
 - cmd: vi .config/fish/config.fish
   when: 1618933079
   paths:
@@ -4266,3 +4196,57 @@
   when: 1618933121
 - cmd: update
   when: 1618933134
+- cmd: vi quicksort
+  when: 1618933154
+- cmd: sudo apt install libusb-dev
+  when: 1619108529
+- cmd: sudo touch /etc/udev/rules.d/50-wally.rules
+  when: 1619108561
+- cmd: sudo vi /etc/udev/rules.d/50-wally.rules
+  when: 1619108575
+  paths:
+    - /etc/udev/rules.d/50-wally.rules
+- cmd: bash
+  when: 1619109184
+- cmd: cd Downloads/
+  when: 1619190180
+- cmd: ./wally
+  when: 1619190184
+- cmd: cd Do
+  when: 1619205770
+- cmd: ./tutanota
+  when: 1619372017
+- cmd: sudo apt install apt-transport-https curl
+  when: 1620657476
+- cmd: sudo curl -fsSLo /usr/share/keyrings/brave-browser-archive-keyring.gpg https://brave-browser-apt-release.s3.brave.com/brave-browser-archive-keyring.gpg
+  when: 1620657486
+- cmd: echo "deb [signed-by=/usr/share/keyrings/brave-browser-archive-keyring.gpg arch=amd64] https://brave-browser-apt-release.s3.brave.com/ stable main"|sudo tee /etc/apt/sources.list.d/brave-browser-release.list
+  when: 1620657493
+- cmd: sudo apt update
+  when: 1620657497
+- cmd: sudo apt install brave-browser
+  when: 1620657535
+- cmd: cd Apps/
+  when: 1620657601
+  paths:
+    - Apps/
+- cmd: ls
+  when: 1620657602
+- cmd: ./BitWarden.AppImage
+  when: 1620657605
+- cmd: ls
+  when: 1623013951
+- cmd: cd .config/fish/
+  when: 1623013977
+  paths:
+    - .config/fish/
+- cmd: ls
+  when: 1623013979
+- cmd: vim config.fish
+  when: 1623013982
+  paths:
+    - config.fish
+- cmd: config status
+  when: 1623014010
+- cmd: update
+  when: 1623014016
