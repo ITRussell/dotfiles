@@ -2956,10 +2956,6 @@
   when: 1617749804
 - cmd: git remote add origin git@github.com:ITRussell/ITRussell.github.io.git
   when: 1617749827
-- cmd: cd .config/fish/
-  when: 1617801226
-  paths:
-    - .config/fish/
 - cmd: rm test.sh
   when: 1617801242
   paths:
@@ -4192,10 +4188,6 @@
     - .config/fish/config.fish
 - cmd: blog
   when: 1618933115
-- cmd: config status
-  when: 1618933121
-- cmd: update
-  when: 1618933134
 - cmd: vi quicksort
   when: 1618933154
 - cmd: sudo apt install libusb-dev
@@ -4230,12 +4222,8 @@
   when: 1620657601
   paths:
     - Apps/
-- cmd: ls
-  when: 1620657602
 - cmd: ./BitWarden.AppImage
   when: 1620657605
-- cmd: ls
-  when: 1623013951
 - cmd: cd .config/fish/
   when: 1623013977
   paths:
@@ -4250,3 +4238,9 @@
   when: 1623014010
 - cmd: update
   when: 1623014016
+- cmd: config fetch
+  when: 1623014039
+- cmd: config reset --hard
+  when: 1623014048
+- cmd: update
+  when: 1623014060
