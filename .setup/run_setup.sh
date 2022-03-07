@@ -11,6 +11,7 @@ echo
 echo "Updating..."
 sudo apt update && sudo apt upgrade -y
 sudo apt install git
+sudo apt install curl
 echo "Finished!"
 echo "Building directories..."
 # Add directories
@@ -46,24 +47,27 @@ xargs -I{} mv {} .config-backup/{}
 # Set to not show untracked files
 /usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME config --local status.showUntrackedFiles no
 
-# Set system preferences
-echo
-echo "Setting system preferences (GNOME)"
-dconf load / < ~/.config/dconf-settings.ini
-
 
 # Packages
 echo
 echo "Installing software..."
 xargs -a ~/.config/packages.list sudo apt install -y -qq 
+
+sudo add-apt-repository ppa:aslatter/ppa
+sudo apt install alacritty
+
 curl -fsSL https://starship.rs/install.sh | bash
+
 sudo npm i -g yarn 
+
 sudo apt-get install fuse libfuse2 git python3-pip ack-grep -y 
+
 sudo apt install python3-venv -y 
+
 wget -q https://packages.microsoft.com/keys/microsoft.asc -O- | sudo apt-key add - 
 sudo add-apt-repository "deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main" -y 
 sudo apt install code -y 
-sudo apt install atom -y 
+
 sudo apt-get update 
 wget -qO - https://download.sublimetext.com/sublimehq-pub.gpg | sudo apt-key add - 
 echo "deb https://download.sublimetext.com/ apt/stable/" | sudo tee /etc/apt/sources.list.d/sublime-text.list 
