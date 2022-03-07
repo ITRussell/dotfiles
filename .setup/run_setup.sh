@@ -10,6 +10,7 @@ read ANS
 echo
 echo "Updating..."
 sudo apt update && sudo apt upgrade -y
+sudo apt install git
 echo "Finished!"
 echo "Building directories..."
 # Add directories
@@ -54,8 +55,8 @@ dconf load / < ~/.config/dconf-settings.ini
 # Packages
 echo
 echo "Installing software..."
-curl -fsSL https://starship.rs/install.sh | bash
 xargs -a ~/.config/packages.list sudo apt install -y -qq 
+curl -fsSL https://starship.rs/install.sh | bash
 sudo npm i -g yarn 
 sudo apt-get install fuse libfuse2 git python3-pip ack-grep -y 
 sudo apt install python3-venv -y 
