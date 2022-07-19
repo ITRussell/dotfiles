@@ -12,15 +12,17 @@ mkdir -p WorkBench/sandbox
 mkdir -p WorkBench/sandbox/analysis
 mkdir -p WorkBench/sandbox/scrap
 
+# SOFTWARE
+# apt
+sudo apt install $(cat $HOME/.config/packages.list) -y
+
 # GIT CONFIG
 GITUSER="ITRussell";
 git config --global user.name "${GITUSER}"
 GITEMAIL="IanThomasR@gmail.com";
 git config --global user.email "${GITEMAIL}"
 
-# SOFTWARE
-# apt
-sudo apt install $(cat $HOME/.config/packages.list) -y
+
 
 # Alacritty & Starship
 curl -fsSL https://starship.rs/install.sh | bash # Starship prompt
