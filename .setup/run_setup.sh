@@ -37,6 +37,8 @@ xargs -I{} mv {} .config-backup/{}
 echo
 echo "Installing software..."
 sudo add-apt-repository ppa:mmstick76/alacritty
+sudo apt update
+sudo apt install alacritty
 curl -fsSL https://starship.rs/install.sh | bash
 sudo apt install $(cat ~/.config/packages.list) -y
 
