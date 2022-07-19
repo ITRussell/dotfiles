@@ -20,7 +20,7 @@ git config --global user.email "${GITEMAIL}"
 
 # SOFTWARE
 # apt
-sudo apt install $(cat ~/.config/packages.list) -y
+sudo apt install $(cat $HOME/.config/packages.list) -y
 
 # Alacritty & Starship
 curl -fsSL https://starship.rs/install.sh | bash # Starship prompt
