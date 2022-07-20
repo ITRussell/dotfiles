@@ -14,7 +14,8 @@ mkdir -p WorkBench/sandbox/scrap
 
 # SOFTWARE
 # apt
-sudo apt install $(cat $HOME/.config/packages.list) -y
+sudo apt install curl git lynis fonts-hack-ttf ranger cmatrix trash-cli neofetch htop \
+neovim firefox fish
 
 # GIT CONFIG
 GITUSER="ITRussell";
