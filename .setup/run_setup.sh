@@ -45,7 +45,6 @@ cp extra/completions/alacritty.fish $fish_complete_path[1]/alacritty.fish
 mkdir -p ~/.bash_completion
 cp extra/completions/alacritty.bash ~/.bash_completion/alacritty
 echo "source ~/.bash_completion/alacritty" >> ~/.bashrc
-rm -r $HOME/Alacritty
 
 # DOT FILES
 # And that your source repository ignores the folder where you'll clone it, so that you don't create weird recursion problems:
