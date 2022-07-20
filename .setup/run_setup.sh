@@ -15,7 +15,8 @@ mkdir -p WorkBench/sandbox/scrap
 # SOFTWARE
 # apt
 sudo apt install curl git lynis fonts-hack-ttf ranger cmatrix trash-cli neofetch htop \
-neovim firefox fish
+neovim firefox fish node-typescript make
+
 
 # GIT CONFIG
 GITUSER="ITRussell";
@@ -40,6 +41,7 @@ xargs -I{} mv {} .config-backup/{}
 # Set to not show untracked files
 /usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME config --local status.showUntrackedFiles no
 
+# OTHER SOFTWARE
 # Alacritty & Starship
 curl -fsSL https://starship.rs/install.sh | bash # Starship prompt
 git clone https://github.com/alacritty/alacritty.git 
@@ -60,6 +62,12 @@ cp extra/completions/alacritty.fish $fish_complete_path[1]/alacritty.fish
 mkdir -p ~/.bash_completion
 cp extra/completions/alacritty.bash ~/.bash_completion/alacritty
 echo "source ~/.bash_completion/alacritty" >> ~/.bashrc
+
+# Pop Shell
+git clone https://github.com/pop-os/shell.git
+cd shell
+make local-install
+
 
 
 
