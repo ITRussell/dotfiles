@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # SYSTEM UPDATE
-sudo apt update && sudo apt upgrade -y
+sudo apt update && sudo apt upgrade
 
 # DIRECTORIES
 cd ~
