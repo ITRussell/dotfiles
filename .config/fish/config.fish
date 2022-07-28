@@ -1,6 +1,5 @@
 # ~/.config/fish/config.fish
 
-starship init fish | source
 alias docs='cd ~/Documents'
 alias downloads='cd ~/Downloads'
 alias work='cd ~/WorkBench'
