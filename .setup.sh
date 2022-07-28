@@ -15,7 +15,7 @@ mkdir -p WorkBench/sandbox/scrap
 # SOFTWARE
 # apt
 echo "Installing..."
-sudo apt install debsums apt-transport-https curl snap git lynis fonts-hack-ttf ranger cmatrix trash-cli neofetch htop \
+sudo apt install debsums apt-transport-https curl virtualbox snap git lynis fonts-hack-ttf ranger cmatrix trash-cli neofetch htop \
 neovim firefox fish gpg node-typescript make ufw fail2ban -y >> /dev/null
 sudo snap install code --classic >> /dev/null
 echo "Done!"
