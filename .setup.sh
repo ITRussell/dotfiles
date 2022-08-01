@@ -46,7 +46,7 @@ mkdir -p .config-backup && \
 xargs -I{} mv {} .config-backup/{}
 
 # Checkout
-/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME checkout Ubuntu
+/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME checkout
 # Set to not show untracked files
 /usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME config --local status.showUntrackedFiles no
 
